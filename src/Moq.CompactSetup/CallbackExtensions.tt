@@ -106,10 +106,33 @@ using Moq.Language.Flow;
 
 namespace Moq.CompactSetup
 {
+<#
+    for(int i = 1; i <= PARAMETER_COUNT; i++) 
+    {
+        var startVariation = 1; // Skip the first, as the first is just no out parameter.
+        var maxVariations = (int)Math.Pow(2, i);
+        for(int variation = 1; variation < maxVariations; variation++)
+        {
+#>
+    /// <summary>
+    /// The signature for a method with in and out parameters.
+    /// </summary>
+<#          for(int j = 1; j <= i; j++) { #>
+    /// <typeparam name="TParameter<#=j#>"> The type of the <#=j#>. parameter. </typeparam>
+<#          } #>
+<#          for(int j = 1; j <= i; j++) { #>
+    /// <param name="parameter<#=j#>"> The <#=j#>. parameter. </param>
+<#          } #>
+    public delegate void Out<#=i#>Action<#=variation#><<#=GetParameterTypesStringWithRoles(i, variation)#>>(<#=GetParameterTypedNamesString(i, variation)#>);
+
+<#
+        }
+    }
+#>  
     /// <summary>
     /// The extension class for Moq callbacks.
     /// </summary>
-    public static partial class CallbackExtensions
+    internal static partial class CallbackExtensions
     {
 <#
     for(int i = 1; i <= PARAMETER_COUNT; i++) 
@@ -118,19 +141,7 @@ namespace Moq.CompactSetup
         var maxVariations = (int)Math.Pow(2, i);
         for(int variation = 1; variation < maxVariations; variation++)
         {
-        
 #>
-        /// <summary>
-        /// The signature for a method with in and out parameters.
-        /// </summary>
-<#          for(int j = 1; j <= i; j++) { #>
-        /// <typeparam name="TParameter<#=j#>"> The type of the <#=j#>. parameter. </typeparam>
-<#          } #>
-<#          for(int j = 1; j <= i; j++) { #>
-        /// <param name="parameter<#=j#>"> The <#=j#>. parameter. </param>
-<#          } #>
-        public delegate void Out<#=i#>Action<#=variation#><<#=GetParameterTypesStringWithRoles(i, variation)#>>(<#=GetParameterTypedNamesString(i, variation)#>);
-
         /// <summary>
         /// Applies the callback called.
         /// </summary>
@@ -161,6 +172,7 @@ namespace Moq.CompactSetup
         {
             return SetOutCallback(mock, action);
         }
+
 <#
         }
     }
