@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AssemblyName>Moq.CompactSetup</AssemblyName>
+    <RootNamespace>Moq.CompactSetup</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Version>0.1.0.0</Version>
+    <Company>Christoph Meißner</Company>
+    <Title>Moq.CompactSetup</Title>
+    <Product>Moq.CompactSetup</Product>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Moq" Version="4.16.1" />
+  </ItemGroup>
+
+</Project>
