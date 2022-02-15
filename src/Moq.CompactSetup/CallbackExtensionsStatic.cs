@@ -7,7 +7,7 @@ namespace Moq.CompactSetup
     /// <summary>
     /// The extension class for Moq callbacks.
     /// </summary>
-    public static partial class CallbackExtensions
+    internal static partial class CallbackExtensions
     {
         /// <summary>
         /// Sets the a callback using the internal Moq facilities.

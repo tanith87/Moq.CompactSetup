@@ -69,7 +69,7 @@
             parameters.Add($"{types[i]}");
         }
 
-        return String.Join(", ", parameters) + (count > 0 ? ", " : string.Empty);
+        return String.Join(", ", parameters);
     }
         
     string GetParameterTypesStringWithRoles(int count, int variation)
@@ -127,6 +127,39 @@ namespace Moq.CompactSetup
         }
 #>
         /// <summary>
+        /// Sets up a member with the specified callback action.
+        /// </summary>
+        /// <typeparam name="TMockable"> The type of the mockable class or interface. </typeparam>
+<#          for(int j = 1; j <= i; j++) { #>
+        /// <typeparam name="TParameter<#=j#>"> The type of the <#=j#>. parameter. </typeparam>
+<#          } #>
+        /// <param name="mock"> The mock. </param>
+        /// <param name="memberExpression"> The member expression to set up. </param>
+        /// <param name="action"> The action to call when the member is utilized. </param>
+        /// <returns> The same mock again. </returns>
+        public static Mock<TMockable> WithCallback<TMockable<#=(i > 0 ? ", " : "")#><#=GetParameterTypesString(i)#>>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Action<#=(i > 0 ? "<" : "")#><#=GetParameterTypesString(i)#><#=(i > 0 ? ">" : "")#> action)
+            where TMockable : class
+        {
+            if (mock == null)
+            {
+                throw new ArgumentNullException(nameof(mock));
+            }
+
+            if (memberExpression == null)
+            {
+                throw new ArgumentNullException(nameof(memberExpression));
+            }
+
+            if (action == null)
+            {
+                throw new ArgumentNullException(nameof(action));
+            }
+
+            mock.Setup(memberExpression).Callback(action);
+            return mock;
+        }
+
+        /// <summary>
         /// Sets up a member with the specified value selector.
         /// </summary>
         /// <typeparam name="TMockable"> The type of the mockable class or interface. </typeparam>
@@ -138,7 +171,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        public static Mock<TMockable> With<TMockable, <#=GetParameterTypesString(i)#>TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Func<<#=GetParameterTypesString(i)#>TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, <#=GetParameterTypesString(i)#><#=(i > 0 ? ", " : "")#>TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Func<<#=GetParameterTypesString(i)#><#=(i > 0 ? ", " : "")#>TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -149,6 +182,11 @@ namespace Moq.CompactSetup
             if (memberExpression == null)
             {
                 throw new ArgumentNullException(nameof(memberExpression));
+            }
+
+            if (valueSelector == null)
+            {
+                throw new ArgumentNullException(nameof(valueSelector));
             }
 
             mock.Setup(memberExpression).Returns(valueSelector);
