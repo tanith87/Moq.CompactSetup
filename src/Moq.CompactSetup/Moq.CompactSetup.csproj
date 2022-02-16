@@ -23,8 +23,12 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>CallbackExtensions.cs</LastGenOutput>
     </None>
-    <None Update="MockExtensions.tt">
-      <LastGenOutput>MockExtensions.cs</LastGenOutput>
+    <None Update="MockExtensions.Actions.tt">
+      <LastGenOutput>MockExtensions.Actions.cs</LastGenOutput>
+      <Generator>TextTemplatingFileGenerator</Generator>
+    </None>
+    <None Update="MockExtensions.Functions.tt">
+      <LastGenOutput>MockExtensions.Functions.cs</LastGenOutput>
       <Generator>TextTemplatingFileGenerator</Generator>
     </None>
   </ItemGroup>
@@ -35,10 +39,15 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>CallbackExtensions.tt</DependentUpon>
     </Compile>
-    <Compile Update="MockExtensions.cs">
+    <Compile Update="MockExtensions.Actions.cs">
+      <DependentUpon>MockExtensions.Actions.tt</DependentUpon>
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
-      <DependentUpon>MockExtensions.tt</DependentUpon>
+    </Compile>
+    <Compile Update="MockExtensions.Functions.cs">
+      <DependentUpon>MockExtensions.Functions.tt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
     </Compile>
   </ItemGroup>
 
