@@ -1,0 +1,166 @@
+﻿<#@ output extension=".cs" #>
+<#@ assembly name="System" #>
+<#@ assembly name="System.Core" #>
+<#@ assembly name="System.Xml" #>
+<#@ assembly name="System.Linq" #>
+<#@ assembly name="System.Collections" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#
+    const int PARAMETER_COUNT = 15;
+
+    IEnumerable<string> GetParameterTypes(int count)
+    {
+        for(int i = 1; i <= count; i++)
+        {
+            yield return $"TParameter{i}";
+        }
+    }
+
+    IEnumerable<string> GetParameterNames(int count)
+    {
+        for(int i = 1; i <= count; i++)
+        {
+            yield return $"parameter{i}";
+        }
+    }
+
+    IEnumerable<string> GetParameterRole(int count, int variation)
+    {
+        for(int i = 1; i <= count; i++)
+        {
+            if (IsVariationIndexOut(variation, i))
+            {
+                yield return $"out ";
+            }
+            else 
+            {
+                yield return $"";
+            }
+        }
+    }
+
+    IEnumerable<string> GetTypeParameterRole(int count, int variation)
+    {
+        for(int i = 1; i <= count; i++)
+        {
+            if (IsVariationIndexOut(variation, i))
+            {
+                yield return $"";
+            }
+            else 
+            {
+                yield return $"in ";
+            }
+        }
+    }
+
+    bool IsVariationIndexOut(int variation, int index)
+    {
+        return (variation & index) != 0;
+    }
+        
+    string GetParameterTypesString(int count)
+    {
+        var types = GetParameterTypes(count).ToArray();
+        var parameters = new List<string>();
+        for(int i = 0; i < types.Length; i++)
+        {
+            parameters.Add($"{types[i]}");
+        }
+
+        return String.Join(", ", parameters);
+    }
+        
+    string GetParameterTypesStringWithRoles(int count, int variation)
+    {
+        var types = GetParameterTypes(count).ToArray();
+        var roles = GetTypeParameterRole(count, variation).ToArray();
+        var parameters = new List<string>();
+        for(int i = 0; i < types.Length; i++)
+        {
+            parameters.Add($"{roles[i]}{types[i]}");
+        }
+
+        return String.Join(", ", parameters);
+    }
+        
+    string GetParameterTypedNamesString(int count, int variation)
+    {
+        var types = GetParameterTypes(count).ToArray();
+        var names = GetParameterNames(count).ToArray();
+        var roles = GetParameterRole(count, variation).ToArray();
+        var parameters = new List<string>();
+        for(int i = 0; i < types.Length; i++)
+        {
+            parameters.Add($"{roles[i]}{types[i]} {names[i]}");
+        }
+
+        return String.Join(", ", parameters);
+    }
+
+
+#>
+using System;
+using System.Linq.Expressions;
+using Moq;
+
+namespace Moq.CompactSetup
+{
+    /// <summary>
+    /// The mock extensions class.
+    /// </summary>
+    public static partial class MockExtensions
+    {
+<#
+    for(int i = 0; i <= PARAMETER_COUNT; i++) 
+    {
+        if (i > 0)
+        {
+            var startVariation = 1; // Skip the first, as the first is just no out parameter.
+            var maxVariations = (int)Math.Pow(2, i);
+            for(int variation = 1; variation < maxVariations; variation++)
+            {        
+#>
+<#
+            }
+        }
+#>
+        /// <summary>
+        /// Sets up a member with the specified callback action.
+        /// </summary>
+        /// <typeparam name="TMockable"> The type of the mockable class or interface. </typeparam>
+<#          for(int j = 1; j <= i; j++) { #>
+        /// <typeparam name="TParameter<#=j#>"> The type of the <#=j#>. parameter. </typeparam>
+<#          } #>
+        /// <param name="mock"> The mock. </param>
+        /// <param name="memberExpression"> The member expression to set up. </param>
+        /// <param name="action"> The action to call when the member is utilized. </param>
+        /// <returns> The same mock again. </returns>
+        public static Mock<TMockable> WithCallback<TMockable<#=(i > 0 ? ", " : "")#><#=GetParameterTypesString(i)#>>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Action<#=(i > 0 ? "<" : "")#><#=GetParameterTypesString(i)#><#=(i > 0 ? ">" : "")#> action)
+            where TMockable : class
+        {
+            if (mock == null)
+            {
+                throw new ArgumentNullException(nameof(mock));
+            }
+
+            if (memberExpression == null)
+            {
+                throw new ArgumentNullException(nameof(memberExpression));
+            }
+
+            if (action == null)
+            {
+                throw new ArgumentNullException(nameof(action));
+            }
+
+            mock.Setup(memberExpression).Callback(action);
+            return mock;
+        }
+
+<#
+    }
+#>  
+    }
+} 
