@@ -19,10 +19,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="CallbackExtensions.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>CallbackExtensions.cs</LastGenOutput>
-    </None>
     <None Update="MockExtensions.Actions.tt">
       <LastGenOutput>MockExtensions.Actions.cs</LastGenOutput>
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -31,14 +27,13 @@
       <LastGenOutput>MockExtensions.Functions.cs</LastGenOutput>
       <Generator>TextTemplatingFileGenerator</Generator>
     </None>
+    <None Update="MockExtensions.OutActions.tt">
+      <LastGenOutput>MockExtensions.OutActions.cs</LastGenOutput>
+      <Generator>TextTemplatingFileGenerator</Generator>
+    </None>
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="CallbackExtensions.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>CallbackExtensions.tt</DependentUpon>
-    </Compile>
     <Compile Update="MockExtensions.Actions.cs">
       <DependentUpon>MockExtensions.Actions.tt</DependentUpon>
       <DesignTime>True</DesignTime>
@@ -46,6 +41,11 @@
     </Compile>
     <Compile Update="MockExtensions.Functions.cs">
       <DependentUpon>MockExtensions.Functions.tt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="MockExtensions.OutActions.cs">
+      <DependentUpon>MockExtensions.OutActions.tt</DependentUpon>
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
     </Compile>
