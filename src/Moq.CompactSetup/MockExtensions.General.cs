@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
+using Moq.Protected;
 
 namespace Moq.CompactSetup
 {
@@ -122,13 +123,12 @@ namespace Moq.CompactSetup
                 throw new ArgumentNullException(nameof(mockedValue));
             }
 
+            mock.Setup(memberExpression).Returns(() => mockedValue.Object);
             if (enableSetBack)
             {
-                mock.SetupProperty(memberExpression, mockedValue.Object);
-            }
-            else
-            {
-                mock.Setup(memberExpression).Returns(() => mockedValue.Object);
+                // This is not using SetupProperty, as SetupProperty directly creates the object of the mock, which might breaks some later setup in user code.
+                var itIsAnyExpression = Expression.Lambda<Action<TMockable>>(Expression.Assign(memberExpression.Body, ItExpr.IsAny<TResult>()), memberExpression.Parameters[0]);
+                mock.SetupSet(itIsAnyExpression.Compile()).Callback<TResult>(newValue => { mock.Setup(memberExpression).Returns(newValue); });
             }
 
             return mock;
@@ -233,6 +233,38 @@ namespace Moq.CompactSetup
             }
 
             mock.Setup(memberExpression).Callback(action);
+            return mock;
+        }
+
+        /// <summary>
+        /// Sets up the property setter with a callback, that is called when the setter is invoked.
+        /// </summary>
+        /// <typeparam name="TMockable"> The type of the mockable class or interface. </typeparam>
+        /// <typeparam name="TProperty"> The type of the property. </typeparam>
+        /// <param name="mock"> The mock. </param>
+        /// <param name="propertySetter"> The property setter. </param>
+        /// <param name="callback"> The callback action. </param>
+        /// <returns> The same mock again. </returns>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="propertySetter"/> or <paramref name="callback"/> is <c>null</c>. </exception>
+        public static Mock<TMockable> WithSet<TMockable, TProperty>(this Mock<TMockable> mock, Action<TMockable> propertySetter, Action<TProperty> callback)
+            where TMockable : class
+        {
+            if (mock == null)
+            {
+                throw new ArgumentNullException(nameof(mock));
+            }
+
+            if (propertySetter == null)
+            {
+                throw new ArgumentNullException(nameof(propertySetter));
+            }
+
+            if (callback == null)
+            {
+                throw new ArgumentNullException(nameof(callback));
+            }
+
+            mock.SetupSet(propertySetter).Callback(callback);
             return mock;
         }
     }
