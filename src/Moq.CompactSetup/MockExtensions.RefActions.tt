@@ -142,7 +142,7 @@ namespace Moq.CompactSetup.Delegates
 <#
             }
 #>
-    public delegate void Out<#= i #>Action<#= variation #><<#= GetParameterTypesStringWithRoles(i, variation) #>>(<#= GetParameterTypedNamesString(i, variation) #>);
+    public delegate void Ref<#= i #>Action<#= variation #><<#= GetParameterTypesStringWithRoles(i, variation) #>>(<#= GetParameterTypedNamesString(i, variation) #>);
 
 <#
         }
@@ -182,7 +182,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable<#= (i > 0 ? ", " : "") #><#= GetParameterTypesString(i) #>>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out<#= i #>Action<#= variation #><#= (i > 0 ? "<" : "") #><#= GetParameterTypesString(i) #><#= (i > 0 ? ">" : "") #> action)
+        public static Mock<TMockable> WithCallback<TMockable<#= (i > 0 ? ", " : "") #><#= GetParameterTypesString(i) #>>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Ref<#= i #>Action<#= variation #><#= (i > 0 ? "<" : "") #><#= GetParameterTypesString(i) #><#= (i > 0 ? ">" : "") #> action)
             where TMockable : class
         {
             if (mock == null)

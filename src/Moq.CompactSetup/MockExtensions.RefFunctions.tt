@@ -144,7 +144,7 @@ namespace Moq.CompactSetup.Delegates
             }
 #>
     /// <returns> The result. </returns>
-    public delegate TResult Out<#= i #>Func<#= variation #><<#= GetParameterTypesStringWithRoles(i, variation) #>, out TResult>(<#= GetParameterTypedNamesString(i, variation) #>);
+    public delegate TResult Ref<#= i #>Func<#= variation #><<#= GetParameterTypesStringWithRoles(i, variation) #>, out TResult>(<#= GetParameterTypedNamesString(i, variation) #>);
 
 <#
         }
@@ -185,7 +185,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable<#= (i > 0 ? ", " : "") #><#= GetParameterTypesString(i) #>, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out<#= i #>Func<#= variation #><<#= GetParameterTypesString(i) #><#= (i > 0 ? ", " : "") #>TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable<#= (i > 0 ? ", " : "") #><#= GetParameterTypesString(i) #>, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref<#= i #>Func<#= variation #><<#= GetParameterTypesString(i) #><#= (i > 0 ? ", " : "") #>TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)

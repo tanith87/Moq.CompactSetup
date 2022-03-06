@@ -11,7 +11,7 @@ namespace Moq.CompactSetup.Delegates
     /// <typeparam name="TResult"> The type of the result. </typeparam>
     /// <param name="parameter1"> The 1. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out1Func1<TParameter1, out TResult>(out TParameter1 parameter1);
+    public delegate TResult Ref1Func1<TParameter1, out TResult>(out TParameter1 parameter1);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -20,7 +20,7 @@ namespace Moq.CompactSetup.Delegates
     /// <typeparam name="TResult"> The type of the result. </typeparam>
     /// <param name="parameter1"> The 1. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out1Func2<TParameter1, out TResult>(ref TParameter1 parameter1);
+    public delegate TResult Ref1Func2<TParameter1, out TResult>(ref TParameter1 parameter1);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -31,7 +31,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter1"> The 1. parameter. </param>
     /// <param name="parameter2"> The 2. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out2Func1<TParameter1, in TParameter2, out TResult>(out TParameter1 parameter1, TParameter2 parameter2);
+    public delegate TResult Ref2Func1<TParameter1, in TParameter2, out TResult>(out TParameter1 parameter1, TParameter2 parameter2);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -42,7 +42,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter1"> The 1. parameter. </param>
     /// <param name="parameter2"> The 2. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out2Func2<TParameter1, in TParameter2, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2);
+    public delegate TResult Ref2Func2<TParameter1, in TParameter2, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -53,7 +53,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter1"> The 1. parameter. </param>
     /// <param name="parameter2"> The 2. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out2Func3<in TParameter1, TParameter2, out TResult>(TParameter1 parameter1, out TParameter2 parameter2);
+    public delegate TResult Ref2Func3<in TParameter1, TParameter2, out TResult>(TParameter1 parameter1, out TParameter2 parameter2);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -64,7 +64,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter1"> The 1. parameter. </param>
     /// <param name="parameter2"> The 2. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out2Func4<TParameter1, TParameter2, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2);
+    public delegate TResult Ref2Func4<TParameter1, TParameter2, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -75,7 +75,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter1"> The 1. parameter. </param>
     /// <param name="parameter2"> The 2. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out2Func5<TParameter1, TParameter2, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2);
+    public delegate TResult Ref2Func5<TParameter1, TParameter2, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -86,7 +86,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter1"> The 1. parameter. </param>
     /// <param name="parameter2"> The 2. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out2Func6<in TParameter1, TParameter2, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2);
+    public delegate TResult Ref2Func6<in TParameter1, TParameter2, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -97,7 +97,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter1"> The 1. parameter. </param>
     /// <param name="parameter2"> The 2. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out2Func7<TParameter1, TParameter2, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2);
+    public delegate TResult Ref2Func7<TParameter1, TParameter2, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -108,7 +108,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter1"> The 1. parameter. </param>
     /// <param name="parameter2"> The 2. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out2Func8<TParameter1, TParameter2, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2);
+    public delegate TResult Ref2Func8<TParameter1, TParameter2, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -121,7 +121,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter2"> The 2. parameter. </param>
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out3Func1<TParameter1, in TParameter2, in TParameter3, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3);
+    public delegate TResult Ref3Func1<TParameter1, in TParameter2, in TParameter3, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -134,7 +134,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter2"> The 2. parameter. </param>
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out3Func2<TParameter1, in TParameter2, in TParameter3, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3);
+    public delegate TResult Ref3Func2<TParameter1, in TParameter2, in TParameter3, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -147,7 +147,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter2"> The 2. parameter. </param>
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out3Func3<in TParameter1, TParameter2, in TParameter3, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3);
+    public delegate TResult Ref3Func3<in TParameter1, TParameter2, in TParameter3, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -160,7 +160,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter2"> The 2. parameter. </param>
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out3Func4<TParameter1, TParameter2, in TParameter3, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3);
+    public delegate TResult Ref3Func4<TParameter1, TParameter2, in TParameter3, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -173,7 +173,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter2"> The 2. parameter. </param>
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out3Func5<TParameter1, TParameter2, in TParameter3, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3);
+    public delegate TResult Ref3Func5<TParameter1, TParameter2, in TParameter3, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -186,7 +186,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter2"> The 2. parameter. </param>
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out3Func6<in TParameter1, TParameter2, in TParameter3, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3);
+    public delegate TResult Ref3Func6<in TParameter1, TParameter2, in TParameter3, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -199,7 +199,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter2"> The 2. parameter. </param>
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out3Func7<TParameter1, TParameter2, in TParameter3, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3);
+    public delegate TResult Ref3Func7<TParameter1, TParameter2, in TParameter3, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -212,7 +212,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter2"> The 2. parameter. </param>
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out3Func8<TParameter1, TParameter2, in TParameter3, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3);
+    public delegate TResult Ref3Func8<TParameter1, TParameter2, in TParameter3, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -225,7 +225,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter2"> The 2. parameter. </param>
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out3Func9<in TParameter1, in TParameter2, TParameter3, out TResult>(TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3);
+    public delegate TResult Ref3Func9<in TParameter1, in TParameter2, TParameter3, out TResult>(TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -238,7 +238,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter2"> The 2. parameter. </param>
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out3Func10<TParameter1, in TParameter2, TParameter3, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3);
+    public delegate TResult Ref3Func10<TParameter1, in TParameter2, TParameter3, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -251,7 +251,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter2"> The 2. parameter. </param>
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out3Func11<TParameter1, in TParameter2, TParameter3, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3);
+    public delegate TResult Ref3Func11<TParameter1, in TParameter2, TParameter3, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -264,7 +264,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter2"> The 2. parameter. </param>
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out3Func12<in TParameter1, TParameter2, TParameter3, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3);
+    public delegate TResult Ref3Func12<in TParameter1, TParameter2, TParameter3, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -277,7 +277,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter2"> The 2. parameter. </param>
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out3Func13<TParameter1, TParameter2, TParameter3, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3);
+    public delegate TResult Ref3Func13<TParameter1, TParameter2, TParameter3, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -290,7 +290,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter2"> The 2. parameter. </param>
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out3Func14<TParameter1, TParameter2, TParameter3, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3);
+    public delegate TResult Ref3Func14<TParameter1, TParameter2, TParameter3, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -303,7 +303,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter2"> The 2. parameter. </param>
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out3Func15<in TParameter1, TParameter2, TParameter3, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3);
+    public delegate TResult Ref3Func15<in TParameter1, TParameter2, TParameter3, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -316,7 +316,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter2"> The 2. parameter. </param>
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out3Func16<TParameter1, TParameter2, TParameter3, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3);
+    public delegate TResult Ref3Func16<TParameter1, TParameter2, TParameter3, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -329,7 +329,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter2"> The 2. parameter. </param>
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out3Func17<TParameter1, TParameter2, TParameter3, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3);
+    public delegate TResult Ref3Func17<TParameter1, TParameter2, TParameter3, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -342,7 +342,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter2"> The 2. parameter. </param>
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out3Func18<in TParameter1, in TParameter2, TParameter3, out TResult>(TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3);
+    public delegate TResult Ref3Func18<in TParameter1, in TParameter2, TParameter3, out TResult>(TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -355,7 +355,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter2"> The 2. parameter. </param>
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out3Func19<TParameter1, in TParameter2, TParameter3, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3);
+    public delegate TResult Ref3Func19<TParameter1, in TParameter2, TParameter3, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -368,7 +368,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter2"> The 2. parameter. </param>
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out3Func20<TParameter1, in TParameter2, TParameter3, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3);
+    public delegate TResult Ref3Func20<TParameter1, in TParameter2, TParameter3, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -381,7 +381,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter2"> The 2. parameter. </param>
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out3Func21<in TParameter1, TParameter2, TParameter3, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3);
+    public delegate TResult Ref3Func21<in TParameter1, TParameter2, TParameter3, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -394,7 +394,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter2"> The 2. parameter. </param>
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out3Func22<TParameter1, TParameter2, TParameter3, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3);
+    public delegate TResult Ref3Func22<TParameter1, TParameter2, TParameter3, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -407,7 +407,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter2"> The 2. parameter. </param>
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out3Func23<TParameter1, TParameter2, TParameter3, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3);
+    public delegate TResult Ref3Func23<TParameter1, TParameter2, TParameter3, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -420,7 +420,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter2"> The 2. parameter. </param>
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out3Func24<in TParameter1, TParameter2, TParameter3, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3);
+    public delegate TResult Ref3Func24<in TParameter1, TParameter2, TParameter3, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -433,7 +433,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter2"> The 2. parameter. </param>
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out3Func25<TParameter1, TParameter2, TParameter3, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3);
+    public delegate TResult Ref3Func25<TParameter1, TParameter2, TParameter3, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -446,7 +446,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter2"> The 2. parameter. </param>
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out3Func26<TParameter1, TParameter2, TParameter3, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3);
+    public delegate TResult Ref3Func26<TParameter1, TParameter2, TParameter3, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -461,7 +461,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func1<TParameter1, in TParameter2, in TParameter3, in TParameter4, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4);
+    public delegate TResult Ref4Func1<TParameter1, in TParameter2, in TParameter3, in TParameter4, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -476,7 +476,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func2<TParameter1, in TParameter2, in TParameter3, in TParameter4, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4);
+    public delegate TResult Ref4Func2<TParameter1, in TParameter2, in TParameter3, in TParameter4, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -491,7 +491,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func3<in TParameter1, TParameter2, in TParameter3, in TParameter4, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4);
+    public delegate TResult Ref4Func3<in TParameter1, TParameter2, in TParameter3, in TParameter4, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -506,7 +506,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func4<TParameter1, TParameter2, in TParameter3, in TParameter4, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4);
+    public delegate TResult Ref4Func4<TParameter1, TParameter2, in TParameter3, in TParameter4, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -521,7 +521,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func5<TParameter1, TParameter2, in TParameter3, in TParameter4, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4);
+    public delegate TResult Ref4Func5<TParameter1, TParameter2, in TParameter3, in TParameter4, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -536,7 +536,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func6<in TParameter1, TParameter2, in TParameter3, in TParameter4, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4);
+    public delegate TResult Ref4Func6<in TParameter1, TParameter2, in TParameter3, in TParameter4, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -551,7 +551,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func7<TParameter1, TParameter2, in TParameter3, in TParameter4, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4);
+    public delegate TResult Ref4Func7<TParameter1, TParameter2, in TParameter3, in TParameter4, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -566,7 +566,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func8<TParameter1, TParameter2, in TParameter3, in TParameter4, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4);
+    public delegate TResult Ref4Func8<TParameter1, TParameter2, in TParameter3, in TParameter4, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -581,7 +581,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func9<in TParameter1, in TParameter2, TParameter3, in TParameter4, out TResult>(TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4);
+    public delegate TResult Ref4Func9<in TParameter1, in TParameter2, TParameter3, in TParameter4, out TResult>(TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -596,7 +596,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func10<TParameter1, in TParameter2, TParameter3, in TParameter4, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4);
+    public delegate TResult Ref4Func10<TParameter1, in TParameter2, TParameter3, in TParameter4, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -611,7 +611,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func11<TParameter1, in TParameter2, TParameter3, in TParameter4, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4);
+    public delegate TResult Ref4Func11<TParameter1, in TParameter2, TParameter3, in TParameter4, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -626,7 +626,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func12<in TParameter1, TParameter2, TParameter3, in TParameter4, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4);
+    public delegate TResult Ref4Func12<in TParameter1, TParameter2, TParameter3, in TParameter4, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -641,7 +641,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func13<TParameter1, TParameter2, TParameter3, in TParameter4, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4);
+    public delegate TResult Ref4Func13<TParameter1, TParameter2, TParameter3, in TParameter4, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -656,7 +656,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func14<TParameter1, TParameter2, TParameter3, in TParameter4, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4);
+    public delegate TResult Ref4Func14<TParameter1, TParameter2, TParameter3, in TParameter4, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -671,7 +671,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func15<in TParameter1, TParameter2, TParameter3, in TParameter4, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4);
+    public delegate TResult Ref4Func15<in TParameter1, TParameter2, TParameter3, in TParameter4, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -686,7 +686,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func16<TParameter1, TParameter2, TParameter3, in TParameter4, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4);
+    public delegate TResult Ref4Func16<TParameter1, TParameter2, TParameter3, in TParameter4, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -701,7 +701,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func17<TParameter1, TParameter2, TParameter3, in TParameter4, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4);
+    public delegate TResult Ref4Func17<TParameter1, TParameter2, TParameter3, in TParameter4, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -716,7 +716,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func18<in TParameter1, in TParameter2, TParameter3, in TParameter4, out TResult>(TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4);
+    public delegate TResult Ref4Func18<in TParameter1, in TParameter2, TParameter3, in TParameter4, out TResult>(TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -731,7 +731,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func19<TParameter1, in TParameter2, TParameter3, in TParameter4, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4);
+    public delegate TResult Ref4Func19<TParameter1, in TParameter2, TParameter3, in TParameter4, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -746,7 +746,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func20<TParameter1, in TParameter2, TParameter3, in TParameter4, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4);
+    public delegate TResult Ref4Func20<TParameter1, in TParameter2, TParameter3, in TParameter4, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -761,7 +761,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func21<in TParameter1, TParameter2, TParameter3, in TParameter4, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4);
+    public delegate TResult Ref4Func21<in TParameter1, TParameter2, TParameter3, in TParameter4, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -776,7 +776,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func22<TParameter1, TParameter2, TParameter3, in TParameter4, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4);
+    public delegate TResult Ref4Func22<TParameter1, TParameter2, TParameter3, in TParameter4, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -791,7 +791,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func23<TParameter1, TParameter2, TParameter3, in TParameter4, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4);
+    public delegate TResult Ref4Func23<TParameter1, TParameter2, TParameter3, in TParameter4, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -806,7 +806,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func24<in TParameter1, TParameter2, TParameter3, in TParameter4, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4);
+    public delegate TResult Ref4Func24<in TParameter1, TParameter2, TParameter3, in TParameter4, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -821,7 +821,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func25<TParameter1, TParameter2, TParameter3, in TParameter4, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4);
+    public delegate TResult Ref4Func25<TParameter1, TParameter2, TParameter3, in TParameter4, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -836,7 +836,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func26<TParameter1, TParameter2, TParameter3, in TParameter4, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4);
+    public delegate TResult Ref4Func26<TParameter1, TParameter2, TParameter3, in TParameter4, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -851,7 +851,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func27<in TParameter1, in TParameter2, in TParameter3, TParameter4, out TResult>(TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4);
+    public delegate TResult Ref4Func27<in TParameter1, in TParameter2, in TParameter3, TParameter4, out TResult>(TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -866,7 +866,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func28<TParameter1, in TParameter2, in TParameter3, TParameter4, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4);
+    public delegate TResult Ref4Func28<TParameter1, in TParameter2, in TParameter3, TParameter4, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -881,7 +881,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func29<TParameter1, in TParameter2, in TParameter3, TParameter4, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4);
+    public delegate TResult Ref4Func29<TParameter1, in TParameter2, in TParameter3, TParameter4, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -896,7 +896,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func30<in TParameter1, TParameter2, in TParameter3, TParameter4, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4);
+    public delegate TResult Ref4Func30<in TParameter1, TParameter2, in TParameter3, TParameter4, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -911,7 +911,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func31<TParameter1, TParameter2, in TParameter3, TParameter4, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4);
+    public delegate TResult Ref4Func31<TParameter1, TParameter2, in TParameter3, TParameter4, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -926,7 +926,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func32<TParameter1, TParameter2, in TParameter3, TParameter4, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4);
+    public delegate TResult Ref4Func32<TParameter1, TParameter2, in TParameter3, TParameter4, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -941,7 +941,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func33<in TParameter1, TParameter2, in TParameter3, TParameter4, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4);
+    public delegate TResult Ref4Func33<in TParameter1, TParameter2, in TParameter3, TParameter4, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -956,7 +956,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func34<TParameter1, TParameter2, in TParameter3, TParameter4, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4);
+    public delegate TResult Ref4Func34<TParameter1, TParameter2, in TParameter3, TParameter4, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -971,7 +971,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func35<TParameter1, TParameter2, in TParameter3, TParameter4, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4);
+    public delegate TResult Ref4Func35<TParameter1, TParameter2, in TParameter3, TParameter4, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -986,7 +986,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func36<in TParameter1, in TParameter2, TParameter3, TParameter4, out TResult>(TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4);
+    public delegate TResult Ref4Func36<in TParameter1, in TParameter2, TParameter3, TParameter4, out TResult>(TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1001,7 +1001,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func37<TParameter1, in TParameter2, TParameter3, TParameter4, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4);
+    public delegate TResult Ref4Func37<TParameter1, in TParameter2, TParameter3, TParameter4, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1016,7 +1016,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func38<TParameter1, in TParameter2, TParameter3, TParameter4, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4);
+    public delegate TResult Ref4Func38<TParameter1, in TParameter2, TParameter3, TParameter4, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1031,7 +1031,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func39<in TParameter1, TParameter2, TParameter3, TParameter4, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4);
+    public delegate TResult Ref4Func39<in TParameter1, TParameter2, TParameter3, TParameter4, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1046,7 +1046,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func40<TParameter1, TParameter2, TParameter3, TParameter4, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4);
+    public delegate TResult Ref4Func40<TParameter1, TParameter2, TParameter3, TParameter4, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1061,7 +1061,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func41<TParameter1, TParameter2, TParameter3, TParameter4, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4);
+    public delegate TResult Ref4Func41<TParameter1, TParameter2, TParameter3, TParameter4, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1076,7 +1076,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func42<in TParameter1, TParameter2, TParameter3, TParameter4, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4);
+    public delegate TResult Ref4Func42<in TParameter1, TParameter2, TParameter3, TParameter4, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1091,7 +1091,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func43<TParameter1, TParameter2, TParameter3, TParameter4, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4);
+    public delegate TResult Ref4Func43<TParameter1, TParameter2, TParameter3, TParameter4, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1106,7 +1106,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func44<TParameter1, TParameter2, TParameter3, TParameter4, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4);
+    public delegate TResult Ref4Func44<TParameter1, TParameter2, TParameter3, TParameter4, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1121,7 +1121,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func45<in TParameter1, in TParameter2, TParameter3, TParameter4, out TResult>(TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4);
+    public delegate TResult Ref4Func45<in TParameter1, in TParameter2, TParameter3, TParameter4, out TResult>(TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1136,7 +1136,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func46<TParameter1, in TParameter2, TParameter3, TParameter4, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4);
+    public delegate TResult Ref4Func46<TParameter1, in TParameter2, TParameter3, TParameter4, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1151,7 +1151,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func47<TParameter1, in TParameter2, TParameter3, TParameter4, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4);
+    public delegate TResult Ref4Func47<TParameter1, in TParameter2, TParameter3, TParameter4, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1166,7 +1166,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func48<in TParameter1, TParameter2, TParameter3, TParameter4, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4);
+    public delegate TResult Ref4Func48<in TParameter1, TParameter2, TParameter3, TParameter4, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1181,7 +1181,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func49<TParameter1, TParameter2, TParameter3, TParameter4, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4);
+    public delegate TResult Ref4Func49<TParameter1, TParameter2, TParameter3, TParameter4, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1196,7 +1196,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func50<TParameter1, TParameter2, TParameter3, TParameter4, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4);
+    public delegate TResult Ref4Func50<TParameter1, TParameter2, TParameter3, TParameter4, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1211,7 +1211,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func51<in TParameter1, TParameter2, TParameter3, TParameter4, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4);
+    public delegate TResult Ref4Func51<in TParameter1, TParameter2, TParameter3, TParameter4, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1226,7 +1226,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func52<TParameter1, TParameter2, TParameter3, TParameter4, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4);
+    public delegate TResult Ref4Func52<TParameter1, TParameter2, TParameter3, TParameter4, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1241,7 +1241,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func53<TParameter1, TParameter2, TParameter3, TParameter4, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4);
+    public delegate TResult Ref4Func53<TParameter1, TParameter2, TParameter3, TParameter4, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1256,7 +1256,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func54<in TParameter1, in TParameter2, in TParameter3, TParameter4, out TResult>(TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4);
+    public delegate TResult Ref4Func54<in TParameter1, in TParameter2, in TParameter3, TParameter4, out TResult>(TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1271,7 +1271,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func55<TParameter1, in TParameter2, in TParameter3, TParameter4, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4);
+    public delegate TResult Ref4Func55<TParameter1, in TParameter2, in TParameter3, TParameter4, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1286,7 +1286,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func56<TParameter1, in TParameter2, in TParameter3, TParameter4, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4);
+    public delegate TResult Ref4Func56<TParameter1, in TParameter2, in TParameter3, TParameter4, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1301,7 +1301,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func57<in TParameter1, TParameter2, in TParameter3, TParameter4, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4);
+    public delegate TResult Ref4Func57<in TParameter1, TParameter2, in TParameter3, TParameter4, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1316,7 +1316,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func58<TParameter1, TParameter2, in TParameter3, TParameter4, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4);
+    public delegate TResult Ref4Func58<TParameter1, TParameter2, in TParameter3, TParameter4, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1331,7 +1331,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func59<TParameter1, TParameter2, in TParameter3, TParameter4, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4);
+    public delegate TResult Ref4Func59<TParameter1, TParameter2, in TParameter3, TParameter4, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1346,7 +1346,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func60<in TParameter1, TParameter2, in TParameter3, TParameter4, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4);
+    public delegate TResult Ref4Func60<in TParameter1, TParameter2, in TParameter3, TParameter4, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1361,7 +1361,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func61<TParameter1, TParameter2, in TParameter3, TParameter4, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4);
+    public delegate TResult Ref4Func61<TParameter1, TParameter2, in TParameter3, TParameter4, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1376,7 +1376,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func62<TParameter1, TParameter2, in TParameter3, TParameter4, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4);
+    public delegate TResult Ref4Func62<TParameter1, TParameter2, in TParameter3, TParameter4, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1391,7 +1391,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func63<in TParameter1, in TParameter2, TParameter3, TParameter4, out TResult>(TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4);
+    public delegate TResult Ref4Func63<in TParameter1, in TParameter2, TParameter3, TParameter4, out TResult>(TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1406,7 +1406,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func64<TParameter1, in TParameter2, TParameter3, TParameter4, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4);
+    public delegate TResult Ref4Func64<TParameter1, in TParameter2, TParameter3, TParameter4, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1421,7 +1421,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func65<TParameter1, in TParameter2, TParameter3, TParameter4, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4);
+    public delegate TResult Ref4Func65<TParameter1, in TParameter2, TParameter3, TParameter4, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1436,7 +1436,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func66<in TParameter1, TParameter2, TParameter3, TParameter4, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4);
+    public delegate TResult Ref4Func66<in TParameter1, TParameter2, TParameter3, TParameter4, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1451,7 +1451,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func67<TParameter1, TParameter2, TParameter3, TParameter4, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4);
+    public delegate TResult Ref4Func67<TParameter1, TParameter2, TParameter3, TParameter4, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1466,7 +1466,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func68<TParameter1, TParameter2, TParameter3, TParameter4, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4);
+    public delegate TResult Ref4Func68<TParameter1, TParameter2, TParameter3, TParameter4, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1481,7 +1481,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func69<in TParameter1, TParameter2, TParameter3, TParameter4, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4);
+    public delegate TResult Ref4Func69<in TParameter1, TParameter2, TParameter3, TParameter4, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1496,7 +1496,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func70<TParameter1, TParameter2, TParameter3, TParameter4, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4);
+    public delegate TResult Ref4Func70<TParameter1, TParameter2, TParameter3, TParameter4, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1511,7 +1511,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func71<TParameter1, TParameter2, TParameter3, TParameter4, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4);
+    public delegate TResult Ref4Func71<TParameter1, TParameter2, TParameter3, TParameter4, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1526,7 +1526,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func72<in TParameter1, in TParameter2, TParameter3, TParameter4, out TResult>(TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4);
+    public delegate TResult Ref4Func72<in TParameter1, in TParameter2, TParameter3, TParameter4, out TResult>(TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1541,7 +1541,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func73<TParameter1, in TParameter2, TParameter3, TParameter4, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4);
+    public delegate TResult Ref4Func73<TParameter1, in TParameter2, TParameter3, TParameter4, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1556,7 +1556,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func74<TParameter1, in TParameter2, TParameter3, TParameter4, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4);
+    public delegate TResult Ref4Func74<TParameter1, in TParameter2, TParameter3, TParameter4, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1571,7 +1571,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func75<in TParameter1, TParameter2, TParameter3, TParameter4, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4);
+    public delegate TResult Ref4Func75<in TParameter1, TParameter2, TParameter3, TParameter4, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1586,7 +1586,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func76<TParameter1, TParameter2, TParameter3, TParameter4, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4);
+    public delegate TResult Ref4Func76<TParameter1, TParameter2, TParameter3, TParameter4, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1601,7 +1601,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func77<TParameter1, TParameter2, TParameter3, TParameter4, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4);
+    public delegate TResult Ref4Func77<TParameter1, TParameter2, TParameter3, TParameter4, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1616,7 +1616,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func78<in TParameter1, TParameter2, TParameter3, TParameter4, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4);
+    public delegate TResult Ref4Func78<in TParameter1, TParameter2, TParameter3, TParameter4, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1631,7 +1631,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func79<TParameter1, TParameter2, TParameter3, TParameter4, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4);
+    public delegate TResult Ref4Func79<TParameter1, TParameter2, TParameter3, TParameter4, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1646,7 +1646,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter3"> The 3. parameter. </param>
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out4Func80<TParameter1, TParameter2, TParameter3, TParameter4, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4);
+    public delegate TResult Ref4Func80<TParameter1, TParameter2, TParameter3, TParameter4, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1663,7 +1663,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func1<TParameter1, in TParameter2, in TParameter3, in TParameter4, in TParameter5, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func1<TParameter1, in TParameter2, in TParameter3, in TParameter4, in TParameter5, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1680,7 +1680,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func2<TParameter1, in TParameter2, in TParameter3, in TParameter4, in TParameter5, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func2<TParameter1, in TParameter2, in TParameter3, in TParameter4, in TParameter5, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1697,7 +1697,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func3<in TParameter1, TParameter2, in TParameter3, in TParameter4, in TParameter5, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func3<in TParameter1, TParameter2, in TParameter3, in TParameter4, in TParameter5, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1714,7 +1714,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func4<TParameter1, TParameter2, in TParameter3, in TParameter4, in TParameter5, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func4<TParameter1, TParameter2, in TParameter3, in TParameter4, in TParameter5, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1731,7 +1731,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func5<TParameter1, TParameter2, in TParameter3, in TParameter4, in TParameter5, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func5<TParameter1, TParameter2, in TParameter3, in TParameter4, in TParameter5, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1748,7 +1748,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func6<in TParameter1, TParameter2, in TParameter3, in TParameter4, in TParameter5, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func6<in TParameter1, TParameter2, in TParameter3, in TParameter4, in TParameter5, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1765,7 +1765,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func7<TParameter1, TParameter2, in TParameter3, in TParameter4, in TParameter5, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func7<TParameter1, TParameter2, in TParameter3, in TParameter4, in TParameter5, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1782,7 +1782,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func8<TParameter1, TParameter2, in TParameter3, in TParameter4, in TParameter5, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func8<TParameter1, TParameter2, in TParameter3, in TParameter4, in TParameter5, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1799,7 +1799,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func9<in TParameter1, in TParameter2, TParameter3, in TParameter4, in TParameter5, out TResult>(TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func9<in TParameter1, in TParameter2, TParameter3, in TParameter4, in TParameter5, out TResult>(TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1816,7 +1816,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func10<TParameter1, in TParameter2, TParameter3, in TParameter4, in TParameter5, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func10<TParameter1, in TParameter2, TParameter3, in TParameter4, in TParameter5, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1833,7 +1833,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func11<TParameter1, in TParameter2, TParameter3, in TParameter4, in TParameter5, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func11<TParameter1, in TParameter2, TParameter3, in TParameter4, in TParameter5, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1850,7 +1850,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func12<in TParameter1, TParameter2, TParameter3, in TParameter4, in TParameter5, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func12<in TParameter1, TParameter2, TParameter3, in TParameter4, in TParameter5, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1867,7 +1867,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func13<TParameter1, TParameter2, TParameter3, in TParameter4, in TParameter5, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func13<TParameter1, TParameter2, TParameter3, in TParameter4, in TParameter5, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1884,7 +1884,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func14<TParameter1, TParameter2, TParameter3, in TParameter4, in TParameter5, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func14<TParameter1, TParameter2, TParameter3, in TParameter4, in TParameter5, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1901,7 +1901,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func15<in TParameter1, TParameter2, TParameter3, in TParameter4, in TParameter5, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func15<in TParameter1, TParameter2, TParameter3, in TParameter4, in TParameter5, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1918,7 +1918,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func16<TParameter1, TParameter2, TParameter3, in TParameter4, in TParameter5, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func16<TParameter1, TParameter2, TParameter3, in TParameter4, in TParameter5, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1935,7 +1935,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func17<TParameter1, TParameter2, TParameter3, in TParameter4, in TParameter5, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func17<TParameter1, TParameter2, TParameter3, in TParameter4, in TParameter5, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1952,7 +1952,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func18<in TParameter1, in TParameter2, TParameter3, in TParameter4, in TParameter5, out TResult>(TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func18<in TParameter1, in TParameter2, TParameter3, in TParameter4, in TParameter5, out TResult>(TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1969,7 +1969,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func19<TParameter1, in TParameter2, TParameter3, in TParameter4, in TParameter5, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func19<TParameter1, in TParameter2, TParameter3, in TParameter4, in TParameter5, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -1986,7 +1986,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func20<TParameter1, in TParameter2, TParameter3, in TParameter4, in TParameter5, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func20<TParameter1, in TParameter2, TParameter3, in TParameter4, in TParameter5, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -2003,7 +2003,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func21<in TParameter1, TParameter2, TParameter3, in TParameter4, in TParameter5, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func21<in TParameter1, TParameter2, TParameter3, in TParameter4, in TParameter5, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -2020,7 +2020,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func22<TParameter1, TParameter2, TParameter3, in TParameter4, in TParameter5, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func22<TParameter1, TParameter2, TParameter3, in TParameter4, in TParameter5, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -2037,7 +2037,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func23<TParameter1, TParameter2, TParameter3, in TParameter4, in TParameter5, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func23<TParameter1, TParameter2, TParameter3, in TParameter4, in TParameter5, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -2054,7 +2054,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func24<in TParameter1, TParameter2, TParameter3, in TParameter4, in TParameter5, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func24<in TParameter1, TParameter2, TParameter3, in TParameter4, in TParameter5, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -2071,7 +2071,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func25<TParameter1, TParameter2, TParameter3, in TParameter4, in TParameter5, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func25<TParameter1, TParameter2, TParameter3, in TParameter4, in TParameter5, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -2088,7 +2088,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func26<TParameter1, TParameter2, TParameter3, in TParameter4, in TParameter5, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func26<TParameter1, TParameter2, TParameter3, in TParameter4, in TParameter5, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -2105,7 +2105,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func27<in TParameter1, in TParameter2, in TParameter3, TParameter4, in TParameter5, out TResult>(TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func27<in TParameter1, in TParameter2, in TParameter3, TParameter4, in TParameter5, out TResult>(TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -2122,7 +2122,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func28<TParameter1, in TParameter2, in TParameter3, TParameter4, in TParameter5, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func28<TParameter1, in TParameter2, in TParameter3, TParameter4, in TParameter5, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -2139,7 +2139,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func29<TParameter1, in TParameter2, in TParameter3, TParameter4, in TParameter5, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func29<TParameter1, in TParameter2, in TParameter3, TParameter4, in TParameter5, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -2156,7 +2156,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func30<in TParameter1, TParameter2, in TParameter3, TParameter4, in TParameter5, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func30<in TParameter1, TParameter2, in TParameter3, TParameter4, in TParameter5, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -2173,7 +2173,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func31<TParameter1, TParameter2, in TParameter3, TParameter4, in TParameter5, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func31<TParameter1, TParameter2, in TParameter3, TParameter4, in TParameter5, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -2190,7 +2190,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func32<TParameter1, TParameter2, in TParameter3, TParameter4, in TParameter5, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func32<TParameter1, TParameter2, in TParameter3, TParameter4, in TParameter5, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -2207,7 +2207,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func33<in TParameter1, TParameter2, in TParameter3, TParameter4, in TParameter5, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func33<in TParameter1, TParameter2, in TParameter3, TParameter4, in TParameter5, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -2224,7 +2224,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func34<TParameter1, TParameter2, in TParameter3, TParameter4, in TParameter5, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func34<TParameter1, TParameter2, in TParameter3, TParameter4, in TParameter5, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -2241,7 +2241,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func35<TParameter1, TParameter2, in TParameter3, TParameter4, in TParameter5, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func35<TParameter1, TParameter2, in TParameter3, TParameter4, in TParameter5, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -2258,7 +2258,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func36<in TParameter1, in TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func36<in TParameter1, in TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -2275,7 +2275,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func37<TParameter1, in TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func37<TParameter1, in TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -2292,7 +2292,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func38<TParameter1, in TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func38<TParameter1, in TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -2309,7 +2309,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func39<in TParameter1, TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func39<in TParameter1, TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -2326,7 +2326,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func40<TParameter1, TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func40<TParameter1, TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -2343,7 +2343,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func41<TParameter1, TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func41<TParameter1, TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -2360,7 +2360,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func42<in TParameter1, TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func42<in TParameter1, TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -2377,7 +2377,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func43<TParameter1, TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func43<TParameter1, TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -2394,7 +2394,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func44<TParameter1, TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func44<TParameter1, TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -2411,7 +2411,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func45<in TParameter1, in TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func45<in TParameter1, in TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -2428,7 +2428,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func46<TParameter1, in TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func46<TParameter1, in TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -2445,7 +2445,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func47<TParameter1, in TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func47<TParameter1, in TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -2462,7 +2462,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func48<in TParameter1, TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func48<in TParameter1, TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -2479,7 +2479,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func49<TParameter1, TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func49<TParameter1, TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -2496,7 +2496,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func50<TParameter1, TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func50<TParameter1, TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -2513,7 +2513,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func51<in TParameter1, TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func51<in TParameter1, TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -2530,7 +2530,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func52<TParameter1, TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func52<TParameter1, TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -2547,7 +2547,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func53<TParameter1, TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func53<TParameter1, TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -2564,7 +2564,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func54<in TParameter1, in TParameter2, in TParameter3, TParameter4, in TParameter5, out TResult>(TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func54<in TParameter1, in TParameter2, in TParameter3, TParameter4, in TParameter5, out TResult>(TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -2581,7 +2581,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func55<TParameter1, in TParameter2, in TParameter3, TParameter4, in TParameter5, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func55<TParameter1, in TParameter2, in TParameter3, TParameter4, in TParameter5, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -2598,7 +2598,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func56<TParameter1, in TParameter2, in TParameter3, TParameter4, in TParameter5, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func56<TParameter1, in TParameter2, in TParameter3, TParameter4, in TParameter5, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -2615,7 +2615,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func57<in TParameter1, TParameter2, in TParameter3, TParameter4, in TParameter5, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func57<in TParameter1, TParameter2, in TParameter3, TParameter4, in TParameter5, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -2632,7 +2632,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func58<TParameter1, TParameter2, in TParameter3, TParameter4, in TParameter5, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func58<TParameter1, TParameter2, in TParameter3, TParameter4, in TParameter5, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -2649,7 +2649,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func59<TParameter1, TParameter2, in TParameter3, TParameter4, in TParameter5, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func59<TParameter1, TParameter2, in TParameter3, TParameter4, in TParameter5, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -2666,7 +2666,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func60<in TParameter1, TParameter2, in TParameter3, TParameter4, in TParameter5, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func60<in TParameter1, TParameter2, in TParameter3, TParameter4, in TParameter5, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -2683,7 +2683,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func61<TParameter1, TParameter2, in TParameter3, TParameter4, in TParameter5, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func61<TParameter1, TParameter2, in TParameter3, TParameter4, in TParameter5, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -2700,7 +2700,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func62<TParameter1, TParameter2, in TParameter3, TParameter4, in TParameter5, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func62<TParameter1, TParameter2, in TParameter3, TParameter4, in TParameter5, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -2717,7 +2717,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func63<in TParameter1, in TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func63<in TParameter1, in TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -2734,7 +2734,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func64<TParameter1, in TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func64<TParameter1, in TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -2751,7 +2751,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func65<TParameter1, in TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func65<TParameter1, in TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -2768,7 +2768,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func66<in TParameter1, TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func66<in TParameter1, TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -2785,7 +2785,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func67<TParameter1, TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func67<TParameter1, TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -2802,7 +2802,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func68<TParameter1, TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func68<TParameter1, TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -2819,7 +2819,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func69<in TParameter1, TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func69<in TParameter1, TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -2836,7 +2836,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func70<TParameter1, TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func70<TParameter1, TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -2853,7 +2853,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func71<TParameter1, TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func71<TParameter1, TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -2870,7 +2870,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func72<in TParameter1, in TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func72<in TParameter1, in TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -2887,7 +2887,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func73<TParameter1, in TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func73<TParameter1, in TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -2904,7 +2904,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func74<TParameter1, in TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func74<TParameter1, in TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -2921,7 +2921,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func75<in TParameter1, TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func75<in TParameter1, TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -2938,7 +2938,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func76<TParameter1, TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func76<TParameter1, TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -2955,7 +2955,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func77<TParameter1, TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func77<TParameter1, TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -2972,7 +2972,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func78<in TParameter1, TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func78<in TParameter1, TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -2989,7 +2989,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func79<TParameter1, TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func79<TParameter1, TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -3006,7 +3006,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func80<TParameter1, TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4, TParameter5 parameter5);
+    public delegate TResult Ref5Func80<TParameter1, TParameter2, TParameter3, TParameter4, in TParameter5, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4, TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -3023,7 +3023,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func81<in TParameter1, in TParameter2, in TParameter3, in TParameter4, TParameter5, out TResult>(TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func81<in TParameter1, in TParameter2, in TParameter3, in TParameter4, TParameter5, out TResult>(TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -3040,7 +3040,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func82<TParameter1, in TParameter2, in TParameter3, in TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func82<TParameter1, in TParameter2, in TParameter3, in TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -3057,7 +3057,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func83<TParameter1, in TParameter2, in TParameter3, in TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func83<TParameter1, in TParameter2, in TParameter3, in TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -3074,7 +3074,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func84<in TParameter1, TParameter2, in TParameter3, in TParameter4, TParameter5, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func84<in TParameter1, TParameter2, in TParameter3, in TParameter4, TParameter5, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -3091,7 +3091,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func85<TParameter1, TParameter2, in TParameter3, in TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func85<TParameter1, TParameter2, in TParameter3, in TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -3108,7 +3108,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func86<TParameter1, TParameter2, in TParameter3, in TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func86<TParameter1, TParameter2, in TParameter3, in TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -3125,7 +3125,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func87<in TParameter1, TParameter2, in TParameter3, in TParameter4, TParameter5, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func87<in TParameter1, TParameter2, in TParameter3, in TParameter4, TParameter5, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -3142,7 +3142,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func88<TParameter1, TParameter2, in TParameter3, in TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func88<TParameter1, TParameter2, in TParameter3, in TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -3159,7 +3159,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func89<TParameter1, TParameter2, in TParameter3, in TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func89<TParameter1, TParameter2, in TParameter3, in TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -3176,7 +3176,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func90<in TParameter1, in TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func90<in TParameter1, in TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -3193,7 +3193,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func91<TParameter1, in TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func91<TParameter1, in TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -3210,7 +3210,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func92<TParameter1, in TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func92<TParameter1, in TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -3227,7 +3227,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func93<in TParameter1, TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func93<in TParameter1, TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -3244,7 +3244,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func94<TParameter1, TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func94<TParameter1, TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -3261,7 +3261,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func95<TParameter1, TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func95<TParameter1, TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -3278,7 +3278,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func96<in TParameter1, TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func96<in TParameter1, TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -3295,7 +3295,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func97<TParameter1, TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func97<TParameter1, TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -3312,7 +3312,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func98<TParameter1, TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func98<TParameter1, TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -3329,7 +3329,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func99<in TParameter1, in TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func99<in TParameter1, in TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -3346,7 +3346,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func100<TParameter1, in TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func100<TParameter1, in TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -3363,7 +3363,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func101<TParameter1, in TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func101<TParameter1, in TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -3380,7 +3380,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func102<in TParameter1, TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func102<in TParameter1, TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -3397,7 +3397,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func103<TParameter1, TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func103<TParameter1, TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -3414,7 +3414,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func104<TParameter1, TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func104<TParameter1, TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -3431,7 +3431,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func105<in TParameter1, TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func105<in TParameter1, TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -3448,7 +3448,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func106<TParameter1, TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func106<TParameter1, TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -3465,7 +3465,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func107<TParameter1, TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func107<TParameter1, TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -3482,7 +3482,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func108<in TParameter1, in TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func108<in TParameter1, in TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -3499,7 +3499,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func109<TParameter1, in TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func109<TParameter1, in TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -3516,7 +3516,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func110<TParameter1, in TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func110<TParameter1, in TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -3533,7 +3533,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func111<in TParameter1, TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func111<in TParameter1, TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -3550,7 +3550,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func112<TParameter1, TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func112<TParameter1, TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -3567,7 +3567,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func113<TParameter1, TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func113<TParameter1, TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -3584,7 +3584,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func114<in TParameter1, TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func114<in TParameter1, TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -3601,7 +3601,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func115<TParameter1, TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func115<TParameter1, TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -3618,7 +3618,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func116<TParameter1, TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func116<TParameter1, TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -3635,7 +3635,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func117<in TParameter1, in TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func117<in TParameter1, in TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -3652,7 +3652,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func118<TParameter1, in TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func118<TParameter1, in TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -3669,7 +3669,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func119<TParameter1, in TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func119<TParameter1, in TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -3686,7 +3686,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func120<in TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func120<in TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -3703,7 +3703,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func121<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func121<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -3720,7 +3720,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func122<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func122<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -3737,7 +3737,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func123<in TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func123<in TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -3754,7 +3754,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func124<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func124<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -3771,7 +3771,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func125<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func125<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -3788,7 +3788,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func126<in TParameter1, in TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func126<in TParameter1, in TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -3805,7 +3805,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func127<TParameter1, in TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func127<TParameter1, in TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -3822,7 +3822,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func128<TParameter1, in TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func128<TParameter1, in TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -3839,7 +3839,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func129<in TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func129<in TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -3856,7 +3856,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func130<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func130<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -3873,7 +3873,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func131<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func131<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -3890,7 +3890,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func132<in TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func132<in TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -3907,7 +3907,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func133<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func133<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -3924,7 +3924,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func134<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func134<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -3941,7 +3941,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func135<in TParameter1, in TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func135<in TParameter1, in TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -3958,7 +3958,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func136<TParameter1, in TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func136<TParameter1, in TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -3975,7 +3975,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func137<TParameter1, in TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func137<TParameter1, in TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -3992,7 +3992,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func138<in TParameter1, TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func138<in TParameter1, TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -4009,7 +4009,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func139<TParameter1, TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func139<TParameter1, TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -4026,7 +4026,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func140<TParameter1, TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func140<TParameter1, TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -4043,7 +4043,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func141<in TParameter1, TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func141<in TParameter1, TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -4060,7 +4060,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func142<TParameter1, TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func142<TParameter1, TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -4077,7 +4077,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func143<TParameter1, TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func143<TParameter1, TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -4094,7 +4094,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func144<in TParameter1, in TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func144<in TParameter1, in TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -4111,7 +4111,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func145<TParameter1, in TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func145<TParameter1, in TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -4128,7 +4128,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func146<TParameter1, in TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func146<TParameter1, in TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -4145,7 +4145,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func147<in TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func147<in TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -4162,7 +4162,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func148<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func148<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -4179,7 +4179,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func149<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func149<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -4196,7 +4196,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func150<in TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func150<in TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -4213,7 +4213,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func151<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func151<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -4230,7 +4230,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func152<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func152<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -4247,7 +4247,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func153<in TParameter1, in TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func153<in TParameter1, in TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -4264,7 +4264,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func154<TParameter1, in TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func154<TParameter1, in TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -4281,7 +4281,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func155<TParameter1, in TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func155<TParameter1, in TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -4298,7 +4298,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func156<in TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func156<in TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -4315,7 +4315,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func157<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func157<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -4332,7 +4332,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func158<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func158<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -4349,7 +4349,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func159<in TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func159<in TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -4366,7 +4366,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func160<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func160<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -4383,7 +4383,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func161<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4, out TParameter5 parameter5);
+    public delegate TResult Ref5Func161<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4, out TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -4400,7 +4400,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func162<in TParameter1, in TParameter2, in TParameter3, in TParameter4, TParameter5, out TResult>(TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func162<in TParameter1, in TParameter2, in TParameter3, in TParameter4, TParameter5, out TResult>(TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -4417,7 +4417,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func163<TParameter1, in TParameter2, in TParameter3, in TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func163<TParameter1, in TParameter2, in TParameter3, in TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -4434,7 +4434,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func164<TParameter1, in TParameter2, in TParameter3, in TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func164<TParameter1, in TParameter2, in TParameter3, in TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -4451,7 +4451,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func165<in TParameter1, TParameter2, in TParameter3, in TParameter4, TParameter5, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func165<in TParameter1, TParameter2, in TParameter3, in TParameter4, TParameter5, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -4468,7 +4468,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func166<TParameter1, TParameter2, in TParameter3, in TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func166<TParameter1, TParameter2, in TParameter3, in TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -4485,7 +4485,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func167<TParameter1, TParameter2, in TParameter3, in TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func167<TParameter1, TParameter2, in TParameter3, in TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -4502,7 +4502,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func168<in TParameter1, TParameter2, in TParameter3, in TParameter4, TParameter5, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func168<in TParameter1, TParameter2, in TParameter3, in TParameter4, TParameter5, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -4519,7 +4519,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func169<TParameter1, TParameter2, in TParameter3, in TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func169<TParameter1, TParameter2, in TParameter3, in TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -4536,7 +4536,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func170<TParameter1, TParameter2, in TParameter3, in TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func170<TParameter1, TParameter2, in TParameter3, in TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -4553,7 +4553,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func171<in TParameter1, in TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func171<in TParameter1, in TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -4570,7 +4570,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func172<TParameter1, in TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func172<TParameter1, in TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -4587,7 +4587,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func173<TParameter1, in TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func173<TParameter1, in TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -4604,7 +4604,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func174<in TParameter1, TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func174<in TParameter1, TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -4621,7 +4621,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func175<TParameter1, TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func175<TParameter1, TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -4638,7 +4638,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func176<TParameter1, TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func176<TParameter1, TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -4655,7 +4655,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func177<in TParameter1, TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func177<in TParameter1, TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -4672,7 +4672,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func178<TParameter1, TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func178<TParameter1, TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -4689,7 +4689,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func179<TParameter1, TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func179<TParameter1, TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -4706,7 +4706,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func180<in TParameter1, in TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func180<in TParameter1, in TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -4723,7 +4723,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func181<TParameter1, in TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func181<TParameter1, in TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -4740,7 +4740,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func182<TParameter1, in TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func182<TParameter1, in TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -4757,7 +4757,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func183<in TParameter1, TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func183<in TParameter1, TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -4774,7 +4774,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func184<TParameter1, TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func184<TParameter1, TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -4791,7 +4791,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func185<TParameter1, TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func185<TParameter1, TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -4808,7 +4808,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func186<in TParameter1, TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func186<in TParameter1, TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -4825,7 +4825,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func187<TParameter1, TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func187<TParameter1, TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -4842,7 +4842,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func188<TParameter1, TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func188<TParameter1, TParameter2, TParameter3, in TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -4859,7 +4859,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func189<in TParameter1, in TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func189<in TParameter1, in TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -4876,7 +4876,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func190<TParameter1, in TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func190<TParameter1, in TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -4893,7 +4893,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func191<TParameter1, in TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func191<TParameter1, in TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -4910,7 +4910,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func192<in TParameter1, TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func192<in TParameter1, TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -4927,7 +4927,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func193<TParameter1, TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func193<TParameter1, TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -4944,7 +4944,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func194<TParameter1, TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func194<TParameter1, TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -4961,7 +4961,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func195<in TParameter1, TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func195<in TParameter1, TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -4978,7 +4978,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func196<TParameter1, TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func196<TParameter1, TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -4995,7 +4995,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func197<TParameter1, TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func197<TParameter1, TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, out TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -5012,7 +5012,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func198<in TParameter1, in TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func198<in TParameter1, in TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -5029,7 +5029,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func199<TParameter1, in TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func199<TParameter1, in TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -5046,7 +5046,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func200<TParameter1, in TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func200<TParameter1, in TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -5063,7 +5063,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func201<in TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func201<in TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -5080,7 +5080,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func202<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func202<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -5097,7 +5097,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func203<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func203<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -5114,7 +5114,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func204<in TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func204<in TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -5131,7 +5131,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func205<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func205<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -5148,7 +5148,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func206<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func206<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, out TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -5165,7 +5165,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func207<in TParameter1, in TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func207<in TParameter1, in TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -5182,7 +5182,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func208<TParameter1, in TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func208<TParameter1, in TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -5199,7 +5199,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func209<TParameter1, in TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func209<TParameter1, in TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -5216,7 +5216,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func210<in TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func210<in TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -5233,7 +5233,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func211<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func211<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -5250,7 +5250,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func212<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func212<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -5267,7 +5267,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func213<in TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func213<in TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -5284,7 +5284,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func214<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func214<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -5301,7 +5301,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func215<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func215<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, out TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -5318,7 +5318,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func216<in TParameter1, in TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func216<in TParameter1, in TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -5335,7 +5335,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func217<TParameter1, in TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func217<TParameter1, in TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -5352,7 +5352,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func218<TParameter1, in TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func218<TParameter1, in TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -5369,7 +5369,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func219<in TParameter1, TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func219<in TParameter1, TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -5386,7 +5386,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func220<TParameter1, TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func220<TParameter1, TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -5403,7 +5403,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func221<TParameter1, TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func221<TParameter1, TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -5420,7 +5420,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func222<in TParameter1, TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func222<in TParameter1, TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -5437,7 +5437,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func223<TParameter1, TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func223<TParameter1, TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -5454,7 +5454,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func224<TParameter1, TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func224<TParameter1, TParameter2, in TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, TParameter3 parameter3, ref TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -5471,7 +5471,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func225<in TParameter1, in TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func225<in TParameter1, in TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -5488,7 +5488,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func226<TParameter1, in TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func226<TParameter1, in TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -5505,7 +5505,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func227<TParameter1, in TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func227<TParameter1, in TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -5522,7 +5522,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func228<in TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func228<in TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -5539,7 +5539,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func229<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func229<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -5556,7 +5556,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func230<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func230<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -5573,7 +5573,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func231<in TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func231<in TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -5590,7 +5590,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func232<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func232<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -5607,7 +5607,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func233<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func233<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, out TParameter3 parameter3, ref TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -5624,7 +5624,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func234<in TParameter1, in TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func234<in TParameter1, in TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -5641,7 +5641,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func235<TParameter1, in TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func235<TParameter1, in TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -5658,7 +5658,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func236<TParameter1, in TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func236<TParameter1, in TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -5675,7 +5675,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func237<in TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func237<in TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -5692,7 +5692,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func238<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func238<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -5709,7 +5709,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func239<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func239<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, out TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -5726,7 +5726,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func240<in TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func240<in TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -5743,7 +5743,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func241<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func241<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(out TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4, ref TParameter5 parameter5);
 
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -5760,7 +5760,7 @@ namespace Moq.CompactSetup.Delegates
     /// <param name="parameter4"> The 4. parameter. </param>
     /// <param name="parameter5"> The 5. parameter. </param>
     /// <returns> The result. </returns>
-    public delegate TResult Out5Func242<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4, ref TParameter5 parameter5);
+    public delegate TResult Ref5Func242<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, out TResult>(ref TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4, ref TParameter5 parameter5);
 
 }
 
@@ -5783,7 +5783,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out1Func1<TParameter1, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref1Func1<TParameter1, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -5817,7 +5817,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out1Func2<TParameter1, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref1Func2<TParameter1, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -5852,7 +5852,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out2Func1<TParameter1, TParameter2, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref2Func1<TParameter1, TParameter2, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -5887,7 +5887,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out2Func2<TParameter1, TParameter2, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref2Func2<TParameter1, TParameter2, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -5922,7 +5922,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out2Func3<TParameter1, TParameter2, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref2Func3<TParameter1, TParameter2, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -5957,7 +5957,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out2Func4<TParameter1, TParameter2, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref2Func4<TParameter1, TParameter2, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -5992,7 +5992,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out2Func5<TParameter1, TParameter2, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref2Func5<TParameter1, TParameter2, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -6027,7 +6027,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out2Func6<TParameter1, TParameter2, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref2Func6<TParameter1, TParameter2, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -6062,7 +6062,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out2Func7<TParameter1, TParameter2, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref2Func7<TParameter1, TParameter2, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -6097,7 +6097,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out2Func8<TParameter1, TParameter2, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref2Func8<TParameter1, TParameter2, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -6133,7 +6133,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out3Func1<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref3Func1<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -6169,7 +6169,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out3Func2<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref3Func2<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -6205,7 +6205,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out3Func3<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref3Func3<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -6241,7 +6241,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out3Func4<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref3Func4<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -6277,7 +6277,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out3Func5<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref3Func5<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -6313,7 +6313,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out3Func6<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref3Func6<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -6349,7 +6349,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out3Func7<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref3Func7<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -6385,7 +6385,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out3Func8<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref3Func8<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -6421,7 +6421,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out3Func9<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref3Func9<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -6457,7 +6457,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out3Func10<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref3Func10<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -6493,7 +6493,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out3Func11<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref3Func11<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -6529,7 +6529,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out3Func12<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref3Func12<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -6565,7 +6565,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out3Func13<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref3Func13<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -6601,7 +6601,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out3Func14<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref3Func14<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -6637,7 +6637,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out3Func15<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref3Func15<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -6673,7 +6673,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out3Func16<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref3Func16<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -6709,7 +6709,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out3Func17<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref3Func17<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -6745,7 +6745,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out3Func18<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref3Func18<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -6781,7 +6781,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out3Func19<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref3Func19<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -6817,7 +6817,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out3Func20<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref3Func20<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -6853,7 +6853,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out3Func21<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref3Func21<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -6889,7 +6889,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out3Func22<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref3Func22<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -6925,7 +6925,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out3Func23<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref3Func23<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -6961,7 +6961,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out3Func24<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref3Func24<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -6997,7 +6997,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out3Func25<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref3Func25<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -7033,7 +7033,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out3Func26<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref3Func26<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -7070,7 +7070,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func1<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func1<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -7107,7 +7107,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func2<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func2<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -7144,7 +7144,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func3<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func3<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -7181,7 +7181,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func4<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func4<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -7218,7 +7218,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func5<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func5<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -7255,7 +7255,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func6<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func6<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -7292,7 +7292,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func7<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func7<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -7329,7 +7329,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func8<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func8<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -7366,7 +7366,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func9<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func9<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -7403,7 +7403,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func10<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func10<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -7440,7 +7440,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func11<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func11<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -7477,7 +7477,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func12<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func12<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -7514,7 +7514,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func13<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func13<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -7551,7 +7551,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func14<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func14<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -7588,7 +7588,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func15<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func15<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -7625,7 +7625,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func16<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func16<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -7662,7 +7662,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func17<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func17<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -7699,7 +7699,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func18<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func18<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -7736,7 +7736,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func19<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func19<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -7773,7 +7773,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func20<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func20<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -7810,7 +7810,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func21<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func21<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -7847,7 +7847,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func22<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func22<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -7884,7 +7884,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func23<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func23<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -7921,7 +7921,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func24<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func24<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -7958,7 +7958,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func25<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func25<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -7995,7 +7995,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func26<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func26<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -8032,7 +8032,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func27<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func27<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -8069,7 +8069,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func28<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func28<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -8106,7 +8106,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func29<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func29<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -8143,7 +8143,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func30<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func30<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -8180,7 +8180,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func31<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func31<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -8217,7 +8217,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func32<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func32<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -8254,7 +8254,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func33<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func33<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -8291,7 +8291,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func34<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func34<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -8328,7 +8328,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func35<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func35<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -8365,7 +8365,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func36<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func36<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -8402,7 +8402,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func37<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func37<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -8439,7 +8439,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func38<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func38<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -8476,7 +8476,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func39<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func39<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -8513,7 +8513,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func40<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func40<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -8550,7 +8550,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func41<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func41<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -8587,7 +8587,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func42<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func42<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -8624,7 +8624,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func43<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func43<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -8661,7 +8661,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func44<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func44<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -8698,7 +8698,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func45<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func45<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -8735,7 +8735,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func46<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func46<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -8772,7 +8772,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func47<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func47<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -8809,7 +8809,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func48<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func48<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -8846,7 +8846,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func49<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func49<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -8883,7 +8883,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func50<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func50<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -8920,7 +8920,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func51<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func51<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -8957,7 +8957,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func52<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func52<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -8994,7 +8994,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func53<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func53<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -9031,7 +9031,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func54<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func54<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -9068,7 +9068,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func55<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func55<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -9105,7 +9105,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func56<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func56<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -9142,7 +9142,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func57<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func57<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -9179,7 +9179,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func58<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func58<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -9216,7 +9216,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func59<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func59<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -9253,7 +9253,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func60<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func60<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -9290,7 +9290,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func61<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func61<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -9327,7 +9327,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func62<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func62<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -9364,7 +9364,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func63<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func63<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -9401,7 +9401,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func64<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func64<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -9438,7 +9438,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func65<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func65<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -9475,7 +9475,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func66<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func66<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -9512,7 +9512,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func67<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func67<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -9549,7 +9549,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func68<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func68<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -9586,7 +9586,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func69<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func69<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -9623,7 +9623,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func70<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func70<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -9660,7 +9660,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func71<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func71<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -9697,7 +9697,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func72<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func72<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -9734,7 +9734,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func73<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func73<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -9771,7 +9771,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func74<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func74<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -9808,7 +9808,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func75<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func75<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -9845,7 +9845,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func76<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func76<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -9882,7 +9882,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func77<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func77<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -9919,7 +9919,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func78<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func78<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -9956,7 +9956,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func79<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func79<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -9993,7 +9993,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out4Func80<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func80<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -10031,7 +10031,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func1<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func1<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -10069,7 +10069,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func2<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func2<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -10107,7 +10107,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func3<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func3<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -10145,7 +10145,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func4<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func4<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -10183,7 +10183,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func5<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func5<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -10221,7 +10221,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func6<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func6<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -10259,7 +10259,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func7<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func7<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -10297,7 +10297,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func8<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func8<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -10335,7 +10335,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func9<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func9<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -10373,7 +10373,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func10<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func10<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -10411,7 +10411,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func11<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func11<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -10449,7 +10449,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func12<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func12<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -10487,7 +10487,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func13<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func13<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -10525,7 +10525,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func14<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func14<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -10563,7 +10563,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func15<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func15<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -10601,7 +10601,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func16<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func16<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -10639,7 +10639,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func17<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func17<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -10677,7 +10677,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func18<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func18<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -10715,7 +10715,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func19<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func19<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -10753,7 +10753,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func20<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func20<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -10791,7 +10791,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func21<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func21<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -10829,7 +10829,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func22<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func22<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -10867,7 +10867,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func23<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func23<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -10905,7 +10905,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func24<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func24<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -10943,7 +10943,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func25<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func25<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -10981,7 +10981,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func26<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func26<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -11019,7 +11019,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func27<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func27<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -11057,7 +11057,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func28<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func28<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -11095,7 +11095,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func29<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func29<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -11133,7 +11133,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func30<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func30<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -11171,7 +11171,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func31<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func31<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -11209,7 +11209,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func32<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func32<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -11247,7 +11247,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func33<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func33<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -11285,7 +11285,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func34<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func34<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -11323,7 +11323,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func35<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func35<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -11361,7 +11361,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func36<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func36<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -11399,7 +11399,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func37<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func37<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -11437,7 +11437,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func38<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func38<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -11475,7 +11475,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func39<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func39<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -11513,7 +11513,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func40<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func40<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -11551,7 +11551,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func41<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func41<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -11589,7 +11589,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func42<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func42<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -11627,7 +11627,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func43<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func43<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -11665,7 +11665,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func44<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func44<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -11703,7 +11703,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func45<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func45<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -11741,7 +11741,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func46<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func46<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -11779,7 +11779,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func47<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func47<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -11817,7 +11817,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func48<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func48<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -11855,7 +11855,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func49<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func49<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -11893,7 +11893,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func50<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func50<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -11931,7 +11931,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func51<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func51<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -11969,7 +11969,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func52<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func52<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -12007,7 +12007,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func53<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func53<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -12045,7 +12045,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func54<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func54<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -12083,7 +12083,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func55<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func55<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -12121,7 +12121,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func56<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func56<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -12159,7 +12159,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func57<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func57<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -12197,7 +12197,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func58<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func58<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -12235,7 +12235,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func59<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func59<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -12273,7 +12273,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func60<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func60<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -12311,7 +12311,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func61<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func61<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -12349,7 +12349,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func62<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func62<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -12387,7 +12387,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func63<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func63<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -12425,7 +12425,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func64<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func64<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -12463,7 +12463,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func65<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func65<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -12501,7 +12501,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func66<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func66<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -12539,7 +12539,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func67<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func67<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -12577,7 +12577,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func68<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func68<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -12615,7 +12615,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func69<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func69<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -12653,7 +12653,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func70<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func70<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -12691,7 +12691,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func71<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func71<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -12729,7 +12729,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func72<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func72<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -12767,7 +12767,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func73<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func73<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -12805,7 +12805,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func74<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func74<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -12843,7 +12843,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func75<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func75<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -12881,7 +12881,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func76<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func76<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -12919,7 +12919,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func77<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func77<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -12957,7 +12957,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func78<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func78<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -12995,7 +12995,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func79<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func79<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -13033,7 +13033,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func80<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func80<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -13071,7 +13071,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func81<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func81<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -13109,7 +13109,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func82<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func82<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -13147,7 +13147,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func83<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func83<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -13185,7 +13185,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func84<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func84<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -13223,7 +13223,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func85<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func85<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -13261,7 +13261,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func86<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func86<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -13299,7 +13299,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func87<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func87<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -13337,7 +13337,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func88<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func88<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -13375,7 +13375,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func89<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func89<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -13413,7 +13413,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func90<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func90<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -13451,7 +13451,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func91<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func91<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -13489,7 +13489,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func92<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func92<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -13527,7 +13527,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func93<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func93<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -13565,7 +13565,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func94<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func94<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -13603,7 +13603,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func95<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func95<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -13641,7 +13641,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func96<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func96<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -13679,7 +13679,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func97<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func97<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -13717,7 +13717,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func98<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func98<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -13755,7 +13755,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func99<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func99<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -13793,7 +13793,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func100<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func100<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -13831,7 +13831,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func101<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func101<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -13869,7 +13869,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func102<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func102<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -13907,7 +13907,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func103<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func103<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -13945,7 +13945,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func104<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func104<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -13983,7 +13983,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func105<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func105<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -14021,7 +14021,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func106<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func106<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -14059,7 +14059,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func107<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func107<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -14097,7 +14097,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func108<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func108<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -14135,7 +14135,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func109<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func109<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -14173,7 +14173,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func110<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func110<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -14211,7 +14211,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func111<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func111<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -14249,7 +14249,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func112<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func112<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -14287,7 +14287,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func113<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func113<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -14325,7 +14325,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func114<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func114<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -14363,7 +14363,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func115<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func115<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -14401,7 +14401,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func116<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func116<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -14439,7 +14439,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func117<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func117<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -14477,7 +14477,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func118<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func118<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -14515,7 +14515,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func119<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func119<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -14553,7 +14553,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func120<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func120<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -14591,7 +14591,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func121<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func121<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -14629,7 +14629,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func122<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func122<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -14667,7 +14667,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func123<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func123<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -14705,7 +14705,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func124<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func124<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -14743,7 +14743,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func125<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func125<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -14781,7 +14781,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func126<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func126<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -14819,7 +14819,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func127<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func127<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -14857,7 +14857,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func128<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func128<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -14895,7 +14895,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func129<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func129<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -14933,7 +14933,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func130<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func130<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -14971,7 +14971,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func131<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func131<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -15009,7 +15009,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func132<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func132<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -15047,7 +15047,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func133<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func133<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -15085,7 +15085,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func134<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func134<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -15123,7 +15123,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func135<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func135<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -15161,7 +15161,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func136<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func136<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -15199,7 +15199,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func137<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func137<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -15237,7 +15237,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func138<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func138<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -15275,7 +15275,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func139<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func139<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -15313,7 +15313,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func140<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func140<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -15351,7 +15351,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func141<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func141<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -15389,7 +15389,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func142<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func142<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -15427,7 +15427,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func143<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func143<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -15465,7 +15465,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func144<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func144<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -15503,7 +15503,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func145<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func145<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -15541,7 +15541,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func146<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func146<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -15579,7 +15579,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func147<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func147<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -15617,7 +15617,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func148<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func148<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -15655,7 +15655,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func149<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func149<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -15693,7 +15693,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func150<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func150<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -15731,7 +15731,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func151<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func151<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -15769,7 +15769,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func152<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func152<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -15807,7 +15807,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func153<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func153<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -15845,7 +15845,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func154<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func154<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -15883,7 +15883,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func155<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func155<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -15921,7 +15921,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func156<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func156<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -15959,7 +15959,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func157<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func157<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -15997,7 +15997,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func158<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func158<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -16035,7 +16035,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func159<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func159<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -16073,7 +16073,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func160<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func160<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -16111,7 +16111,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func161<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func161<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -16149,7 +16149,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func162<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func162<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -16187,7 +16187,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func163<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func163<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -16225,7 +16225,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func164<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func164<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -16263,7 +16263,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func165<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func165<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -16301,7 +16301,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func166<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func166<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -16339,7 +16339,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func167<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func167<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -16377,7 +16377,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func168<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func168<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -16415,7 +16415,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func169<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func169<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -16453,7 +16453,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func170<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func170<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -16491,7 +16491,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func171<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func171<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -16529,7 +16529,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func172<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func172<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -16567,7 +16567,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func173<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func173<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -16605,7 +16605,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func174<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func174<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -16643,7 +16643,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func175<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func175<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -16681,7 +16681,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func176<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func176<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -16719,7 +16719,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func177<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func177<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -16757,7 +16757,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func178<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func178<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -16795,7 +16795,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func179<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func179<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -16833,7 +16833,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func180<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func180<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -16871,7 +16871,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func181<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func181<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -16909,7 +16909,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func182<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func182<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -16947,7 +16947,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func183<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func183<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -16985,7 +16985,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func184<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func184<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -17023,7 +17023,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func185<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func185<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -17061,7 +17061,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func186<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func186<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -17099,7 +17099,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func187<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func187<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -17137,7 +17137,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func188<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func188<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -17175,7 +17175,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func189<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func189<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -17213,7 +17213,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func190<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func190<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -17251,7 +17251,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func191<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func191<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -17289,7 +17289,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func192<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func192<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -17327,7 +17327,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func193<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func193<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -17365,7 +17365,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func194<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func194<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -17403,7 +17403,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func195<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func195<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -17441,7 +17441,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func196<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func196<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -17479,7 +17479,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func197<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func197<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -17517,7 +17517,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func198<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func198<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -17555,7 +17555,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func199<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func199<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -17593,7 +17593,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func200<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func200<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -17631,7 +17631,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func201<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func201<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -17669,7 +17669,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func202<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func202<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -17707,7 +17707,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func203<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func203<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -17745,7 +17745,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func204<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func204<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -17783,7 +17783,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func205<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func205<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -17821,7 +17821,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func206<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func206<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -17859,7 +17859,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func207<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func207<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -17897,7 +17897,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func208<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func208<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -17935,7 +17935,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func209<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func209<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -17973,7 +17973,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func210<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func210<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -18011,7 +18011,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func211<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func211<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -18049,7 +18049,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func212<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func212<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -18087,7 +18087,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func213<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func213<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -18125,7 +18125,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func214<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func214<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -18163,7 +18163,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func215<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func215<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -18201,7 +18201,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func216<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func216<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -18239,7 +18239,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func217<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func217<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -18277,7 +18277,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func218<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func218<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -18315,7 +18315,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func219<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func219<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -18353,7 +18353,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func220<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func220<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -18391,7 +18391,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func221<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func221<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -18429,7 +18429,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func222<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func222<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -18467,7 +18467,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func223<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func223<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -18505,7 +18505,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func224<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func224<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -18543,7 +18543,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func225<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func225<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -18581,7 +18581,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func226<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func226<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -18619,7 +18619,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func227<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func227<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -18657,7 +18657,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func228<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func228<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -18695,7 +18695,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func229<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func229<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -18733,7 +18733,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func230<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func230<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -18771,7 +18771,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func231<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func231<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -18809,7 +18809,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func232<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func232<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -18847,7 +18847,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func233<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func233<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -18885,7 +18885,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func234<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func234<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -18923,7 +18923,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func235<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func235<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -18961,7 +18961,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func236<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func236<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -18999,7 +18999,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func237<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func237<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -19037,7 +19037,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func238<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func238<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -19075,7 +19075,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func239<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func239<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -19113,7 +19113,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func240<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func240<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -19151,7 +19151,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func241<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func241<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
@@ -19189,7 +19189,7 @@ namespace Moq.CompactSetup
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Out5Func242<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
+        public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref5Func242<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5, TResult> valueSelector)
             where TMockable : class
         {
             if (mock == null)
