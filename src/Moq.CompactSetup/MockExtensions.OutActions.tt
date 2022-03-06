@@ -113,7 +113,7 @@ using System;
 using System.Linq.Expressions;
 using Moq;
 
-namespace Moq.CompactSetup
+namespace Moq.CompactSetup.Delegates
 {
 <#
     for (int i = 0; i <= PARAMETER_COUNT; i++)
@@ -148,7 +148,10 @@ namespace Moq.CompactSetup
         }
     }
 #>
+}
 
+namespace Moq.CompactSetup
+{
     /// <summary>
     /// The mock extensions class.
     /// </summary>
@@ -179,7 +182,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable<#= (i > 0 ? ", " : "") #><#= GetParameterTypesString(i) #>>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out<#= i #>Action<#= variation #><#= (i > 0 ? "<" : "") #><#= GetParameterTypesString(i) #><#= (i > 0 ? ">" : "") #> action)
+        public static Mock<TMockable> WithCallback<TMockable<#= (i > 0 ? ", " : "") #><#= GetParameterTypesString(i) #>>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out<#= i #>Action<#= variation #><#= (i > 0 ? "<" : "") #><#= GetParameterTypesString(i) #><#= (i > 0 ? ">" : "") #> action)
             where TMockable : class
         {
             if (mock == null)

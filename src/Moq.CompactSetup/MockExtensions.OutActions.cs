@@ -2,7 +2,7 @@
 using System.Linq.Expressions;
 using Moq;
 
-namespace Moq.CompactSetup
+namespace Moq.CompactSetup.Delegates
 {
     /// <summary>
     /// The signature for a method with in and out parameters.
@@ -5046,7 +5046,10 @@ namespace Moq.CompactSetup
     /// <param name="parameter5"> The 5. parameter. </param>
     public delegate void Out5Action242<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(ref TParameter1 parameter1, ref TParameter2 parameter2, ref TParameter3 parameter3, ref TParameter4 parameter4, ref TParameter5 parameter5);
 
+}
 
+namespace Moq.CompactSetup
+{
     /// <summary>
     /// The mock extensions class.
     /// </summary>
@@ -5063,7 +5066,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out1Action1<TParameter1> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out1Action1<TParameter1> action)
             where TMockable : class
         {
             if (mock == null)
@@ -5096,7 +5099,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out1Action2<TParameter1> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out1Action2<TParameter1> action)
             where TMockable : class
         {
             if (mock == null)
@@ -5130,7 +5133,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out2Action1<TParameter1, TParameter2> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out2Action1<TParameter1, TParameter2> action)
             where TMockable : class
         {
             if (mock == null)
@@ -5164,7 +5167,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out2Action2<TParameter1, TParameter2> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out2Action2<TParameter1, TParameter2> action)
             where TMockable : class
         {
             if (mock == null)
@@ -5198,7 +5201,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out2Action3<TParameter1, TParameter2> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out2Action3<TParameter1, TParameter2> action)
             where TMockable : class
         {
             if (mock == null)
@@ -5232,7 +5235,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out2Action4<TParameter1, TParameter2> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out2Action4<TParameter1, TParameter2> action)
             where TMockable : class
         {
             if (mock == null)
@@ -5266,7 +5269,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out2Action5<TParameter1, TParameter2> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out2Action5<TParameter1, TParameter2> action)
             where TMockable : class
         {
             if (mock == null)
@@ -5300,7 +5303,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out2Action6<TParameter1, TParameter2> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out2Action6<TParameter1, TParameter2> action)
             where TMockable : class
         {
             if (mock == null)
@@ -5334,7 +5337,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out2Action7<TParameter1, TParameter2> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out2Action7<TParameter1, TParameter2> action)
             where TMockable : class
         {
             if (mock == null)
@@ -5368,7 +5371,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out2Action8<TParameter1, TParameter2> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out2Action8<TParameter1, TParameter2> action)
             where TMockable : class
         {
             if (mock == null)
@@ -5403,7 +5406,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out3Action1<TParameter1, TParameter2, TParameter3> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out3Action1<TParameter1, TParameter2, TParameter3> action)
             where TMockable : class
         {
             if (mock == null)
@@ -5438,7 +5441,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out3Action2<TParameter1, TParameter2, TParameter3> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out3Action2<TParameter1, TParameter2, TParameter3> action)
             where TMockable : class
         {
             if (mock == null)
@@ -5473,7 +5476,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out3Action3<TParameter1, TParameter2, TParameter3> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out3Action3<TParameter1, TParameter2, TParameter3> action)
             where TMockable : class
         {
             if (mock == null)
@@ -5508,7 +5511,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out3Action4<TParameter1, TParameter2, TParameter3> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out3Action4<TParameter1, TParameter2, TParameter3> action)
             where TMockable : class
         {
             if (mock == null)
@@ -5543,7 +5546,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out3Action5<TParameter1, TParameter2, TParameter3> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out3Action5<TParameter1, TParameter2, TParameter3> action)
             where TMockable : class
         {
             if (mock == null)
@@ -5578,7 +5581,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out3Action6<TParameter1, TParameter2, TParameter3> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out3Action6<TParameter1, TParameter2, TParameter3> action)
             where TMockable : class
         {
             if (mock == null)
@@ -5613,7 +5616,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out3Action7<TParameter1, TParameter2, TParameter3> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out3Action7<TParameter1, TParameter2, TParameter3> action)
             where TMockable : class
         {
             if (mock == null)
@@ -5648,7 +5651,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out3Action8<TParameter1, TParameter2, TParameter3> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out3Action8<TParameter1, TParameter2, TParameter3> action)
             where TMockable : class
         {
             if (mock == null)
@@ -5683,7 +5686,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out3Action9<TParameter1, TParameter2, TParameter3> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out3Action9<TParameter1, TParameter2, TParameter3> action)
             where TMockable : class
         {
             if (mock == null)
@@ -5718,7 +5721,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out3Action10<TParameter1, TParameter2, TParameter3> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out3Action10<TParameter1, TParameter2, TParameter3> action)
             where TMockable : class
         {
             if (mock == null)
@@ -5753,7 +5756,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out3Action11<TParameter1, TParameter2, TParameter3> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out3Action11<TParameter1, TParameter2, TParameter3> action)
             where TMockable : class
         {
             if (mock == null)
@@ -5788,7 +5791,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out3Action12<TParameter1, TParameter2, TParameter3> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out3Action12<TParameter1, TParameter2, TParameter3> action)
             where TMockable : class
         {
             if (mock == null)
@@ -5823,7 +5826,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out3Action13<TParameter1, TParameter2, TParameter3> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out3Action13<TParameter1, TParameter2, TParameter3> action)
             where TMockable : class
         {
             if (mock == null)
@@ -5858,7 +5861,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out3Action14<TParameter1, TParameter2, TParameter3> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out3Action14<TParameter1, TParameter2, TParameter3> action)
             where TMockable : class
         {
             if (mock == null)
@@ -5893,7 +5896,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out3Action15<TParameter1, TParameter2, TParameter3> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out3Action15<TParameter1, TParameter2, TParameter3> action)
             where TMockable : class
         {
             if (mock == null)
@@ -5928,7 +5931,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out3Action16<TParameter1, TParameter2, TParameter3> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out3Action16<TParameter1, TParameter2, TParameter3> action)
             where TMockable : class
         {
             if (mock == null)
@@ -5963,7 +5966,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out3Action17<TParameter1, TParameter2, TParameter3> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out3Action17<TParameter1, TParameter2, TParameter3> action)
             where TMockable : class
         {
             if (mock == null)
@@ -5998,7 +6001,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out3Action18<TParameter1, TParameter2, TParameter3> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out3Action18<TParameter1, TParameter2, TParameter3> action)
             where TMockable : class
         {
             if (mock == null)
@@ -6033,7 +6036,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out3Action19<TParameter1, TParameter2, TParameter3> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out3Action19<TParameter1, TParameter2, TParameter3> action)
             where TMockable : class
         {
             if (mock == null)
@@ -6068,7 +6071,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out3Action20<TParameter1, TParameter2, TParameter3> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out3Action20<TParameter1, TParameter2, TParameter3> action)
             where TMockable : class
         {
             if (mock == null)
@@ -6103,7 +6106,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out3Action21<TParameter1, TParameter2, TParameter3> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out3Action21<TParameter1, TParameter2, TParameter3> action)
             where TMockable : class
         {
             if (mock == null)
@@ -6138,7 +6141,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out3Action22<TParameter1, TParameter2, TParameter3> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out3Action22<TParameter1, TParameter2, TParameter3> action)
             where TMockable : class
         {
             if (mock == null)
@@ -6173,7 +6176,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out3Action23<TParameter1, TParameter2, TParameter3> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out3Action23<TParameter1, TParameter2, TParameter3> action)
             where TMockable : class
         {
             if (mock == null)
@@ -6208,7 +6211,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out3Action24<TParameter1, TParameter2, TParameter3> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out3Action24<TParameter1, TParameter2, TParameter3> action)
             where TMockable : class
         {
             if (mock == null)
@@ -6243,7 +6246,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out3Action25<TParameter1, TParameter2, TParameter3> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out3Action25<TParameter1, TParameter2, TParameter3> action)
             where TMockable : class
         {
             if (mock == null)
@@ -6278,7 +6281,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out3Action26<TParameter1, TParameter2, TParameter3> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out3Action26<TParameter1, TParameter2, TParameter3> action)
             where TMockable : class
         {
             if (mock == null)
@@ -6314,7 +6317,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action1<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action1<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -6350,7 +6353,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action2<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action2<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -6386,7 +6389,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action3<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action3<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -6422,7 +6425,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action4<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action4<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -6458,7 +6461,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action5<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action5<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -6494,7 +6497,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action6<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action6<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -6530,7 +6533,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action7<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action7<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -6566,7 +6569,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action8<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action8<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -6602,7 +6605,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action9<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action9<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -6638,7 +6641,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action10<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action10<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -6674,7 +6677,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action11<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action11<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -6710,7 +6713,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action12<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action12<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -6746,7 +6749,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action13<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action13<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -6782,7 +6785,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action14<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action14<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -6818,7 +6821,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action15<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action15<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -6854,7 +6857,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action16<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action16<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -6890,7 +6893,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action17<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action17<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -6926,7 +6929,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action18<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action18<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -6962,7 +6965,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action19<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action19<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -6998,7 +7001,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action20<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action20<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -7034,7 +7037,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action21<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action21<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -7070,7 +7073,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action22<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action22<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -7106,7 +7109,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action23<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action23<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -7142,7 +7145,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action24<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action24<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -7178,7 +7181,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action25<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action25<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -7214,7 +7217,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action26<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action26<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -7250,7 +7253,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action27<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action27<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -7286,7 +7289,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action28<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action28<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -7322,7 +7325,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action29<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action29<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -7358,7 +7361,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action30<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action30<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -7394,7 +7397,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action31<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action31<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -7430,7 +7433,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action32<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action32<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -7466,7 +7469,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action33<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action33<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -7502,7 +7505,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action34<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action34<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -7538,7 +7541,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action35<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action35<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -7574,7 +7577,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action36<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action36<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -7610,7 +7613,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action37<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action37<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -7646,7 +7649,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action38<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action38<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -7682,7 +7685,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action39<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action39<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -7718,7 +7721,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action40<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action40<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -7754,7 +7757,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action41<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action41<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -7790,7 +7793,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action42<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action42<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -7826,7 +7829,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action43<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action43<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -7862,7 +7865,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action44<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action44<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -7898,7 +7901,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action45<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action45<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -7934,7 +7937,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action46<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action46<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -7970,7 +7973,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action47<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action47<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -8006,7 +8009,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action48<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action48<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -8042,7 +8045,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action49<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action49<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -8078,7 +8081,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action50<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action50<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -8114,7 +8117,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action51<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action51<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -8150,7 +8153,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action52<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action52<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -8186,7 +8189,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action53<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action53<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -8222,7 +8225,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action54<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action54<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -8258,7 +8261,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action55<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action55<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -8294,7 +8297,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action56<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action56<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -8330,7 +8333,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action57<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action57<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -8366,7 +8369,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action58<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action58<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -8402,7 +8405,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action59<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action59<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -8438,7 +8441,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action60<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action60<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -8474,7 +8477,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action61<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action61<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -8510,7 +8513,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action62<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action62<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -8546,7 +8549,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action63<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action63<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -8582,7 +8585,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action64<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action64<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -8618,7 +8621,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action65<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action65<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -8654,7 +8657,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action66<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action66<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -8690,7 +8693,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action67<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action67<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -8726,7 +8729,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action68<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action68<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -8762,7 +8765,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action69<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action69<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -8798,7 +8801,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action70<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action70<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -8834,7 +8837,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action71<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action71<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -8870,7 +8873,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action72<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action72<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -8906,7 +8909,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action73<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action73<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -8942,7 +8945,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action74<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action74<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -8978,7 +8981,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action75<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action75<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -9014,7 +9017,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action76<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action76<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -9050,7 +9053,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action77<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action77<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -9086,7 +9089,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action78<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action78<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -9122,7 +9125,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action79<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action79<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -9158,7 +9161,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out4Action80<TParameter1, TParameter2, TParameter3, TParameter4> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out4Action80<TParameter1, TParameter2, TParameter3, TParameter4> action)
             where TMockable : class
         {
             if (mock == null)
@@ -9195,7 +9198,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action1<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action1<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -9232,7 +9235,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action2<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action2<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -9269,7 +9272,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action3<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action3<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -9306,7 +9309,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action4<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action4<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -9343,7 +9346,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action5<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action5<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -9380,7 +9383,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action6<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action6<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -9417,7 +9420,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action7<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action7<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -9454,7 +9457,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action8<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action8<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -9491,7 +9494,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action9<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action9<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -9528,7 +9531,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action10<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action10<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -9565,7 +9568,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action11<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action11<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -9602,7 +9605,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action12<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action12<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -9639,7 +9642,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action13<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action13<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -9676,7 +9679,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action14<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action14<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -9713,7 +9716,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action15<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action15<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -9750,7 +9753,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action16<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action16<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -9787,7 +9790,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action17<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action17<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -9824,7 +9827,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action18<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action18<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -9861,7 +9864,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action19<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action19<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -9898,7 +9901,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action20<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action20<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -9935,7 +9938,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action21<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action21<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -9972,7 +9975,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action22<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action22<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -10009,7 +10012,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action23<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action23<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -10046,7 +10049,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action24<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action24<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -10083,7 +10086,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action25<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action25<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -10120,7 +10123,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action26<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action26<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -10157,7 +10160,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action27<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action27<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -10194,7 +10197,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action28<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action28<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -10231,7 +10234,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action29<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action29<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -10268,7 +10271,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action30<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action30<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -10305,7 +10308,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action31<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action31<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -10342,7 +10345,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action32<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action32<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -10379,7 +10382,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action33<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action33<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -10416,7 +10419,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action34<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action34<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -10453,7 +10456,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action35<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action35<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -10490,7 +10493,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action36<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action36<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -10527,7 +10530,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action37<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action37<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -10564,7 +10567,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action38<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action38<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -10601,7 +10604,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action39<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action39<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -10638,7 +10641,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action40<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action40<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -10675,7 +10678,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action41<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action41<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -10712,7 +10715,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action42<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action42<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -10749,7 +10752,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action43<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action43<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -10786,7 +10789,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action44<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action44<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -10823,7 +10826,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action45<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action45<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -10860,7 +10863,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action46<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action46<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -10897,7 +10900,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action47<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action47<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -10934,7 +10937,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action48<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action48<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -10971,7 +10974,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action49<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action49<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -11008,7 +11011,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action50<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action50<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -11045,7 +11048,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action51<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action51<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -11082,7 +11085,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action52<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action52<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -11119,7 +11122,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action53<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action53<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -11156,7 +11159,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action54<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action54<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -11193,7 +11196,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action55<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action55<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -11230,7 +11233,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action56<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action56<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -11267,7 +11270,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action57<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action57<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -11304,7 +11307,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action58<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action58<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -11341,7 +11344,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action59<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action59<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -11378,7 +11381,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action60<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action60<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -11415,7 +11418,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action61<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action61<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -11452,7 +11455,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action62<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action62<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -11489,7 +11492,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action63<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action63<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -11526,7 +11529,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action64<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action64<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -11563,7 +11566,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action65<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action65<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -11600,7 +11603,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action66<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action66<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -11637,7 +11640,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action67<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action67<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -11674,7 +11677,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action68<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action68<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -11711,7 +11714,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action69<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action69<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -11748,7 +11751,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action70<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action70<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -11785,7 +11788,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action71<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action71<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -11822,7 +11825,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action72<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action72<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -11859,7 +11862,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action73<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action73<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -11896,7 +11899,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action74<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action74<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -11933,7 +11936,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action75<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action75<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -11970,7 +11973,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action76<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action76<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -12007,7 +12010,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action77<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action77<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -12044,7 +12047,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action78<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action78<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -12081,7 +12084,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action79<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action79<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -12118,7 +12121,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action80<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action80<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -12155,7 +12158,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action81<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action81<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -12192,7 +12195,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action82<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action82<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -12229,7 +12232,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action83<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action83<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -12266,7 +12269,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action84<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action84<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -12303,7 +12306,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action85<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action85<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -12340,7 +12343,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action86<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action86<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -12377,7 +12380,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action87<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action87<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -12414,7 +12417,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action88<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action88<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -12451,7 +12454,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action89<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action89<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -12488,7 +12491,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action90<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action90<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -12525,7 +12528,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action91<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action91<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -12562,7 +12565,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action92<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action92<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -12599,7 +12602,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action93<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action93<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -12636,7 +12639,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action94<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action94<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -12673,7 +12676,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action95<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action95<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -12710,7 +12713,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action96<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action96<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -12747,7 +12750,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action97<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action97<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -12784,7 +12787,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action98<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action98<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -12821,7 +12824,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action99<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action99<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -12858,7 +12861,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action100<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action100<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -12895,7 +12898,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action101<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action101<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -12932,7 +12935,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action102<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action102<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -12969,7 +12972,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action103<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action103<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -13006,7 +13009,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action104<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action104<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -13043,7 +13046,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action105<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action105<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -13080,7 +13083,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action106<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action106<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -13117,7 +13120,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action107<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action107<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -13154,7 +13157,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action108<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action108<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -13191,7 +13194,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action109<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action109<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -13228,7 +13231,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action110<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action110<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -13265,7 +13268,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action111<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action111<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -13302,7 +13305,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action112<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action112<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -13339,7 +13342,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action113<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action113<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -13376,7 +13379,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action114<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action114<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -13413,7 +13416,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action115<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action115<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -13450,7 +13453,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action116<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action116<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -13487,7 +13490,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action117<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action117<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -13524,7 +13527,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action118<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action118<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -13561,7 +13564,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action119<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action119<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -13598,7 +13601,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action120<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action120<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -13635,7 +13638,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action121<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action121<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -13672,7 +13675,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action122<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action122<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -13709,7 +13712,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action123<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action123<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -13746,7 +13749,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action124<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action124<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -13783,7 +13786,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action125<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action125<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -13820,7 +13823,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action126<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action126<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -13857,7 +13860,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action127<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action127<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -13894,7 +13897,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action128<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action128<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -13931,7 +13934,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action129<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action129<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -13968,7 +13971,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action130<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action130<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -14005,7 +14008,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action131<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action131<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -14042,7 +14045,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action132<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action132<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -14079,7 +14082,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action133<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action133<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -14116,7 +14119,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action134<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action134<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -14153,7 +14156,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action135<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action135<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -14190,7 +14193,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action136<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action136<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -14227,7 +14230,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action137<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action137<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -14264,7 +14267,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action138<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action138<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -14301,7 +14304,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action139<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action139<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -14338,7 +14341,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action140<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action140<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -14375,7 +14378,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action141<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action141<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -14412,7 +14415,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action142<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action142<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -14449,7 +14452,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action143<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action143<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -14486,7 +14489,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action144<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action144<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -14523,7 +14526,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action145<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action145<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -14560,7 +14563,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action146<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action146<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -14597,7 +14600,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action147<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action147<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -14634,7 +14637,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action148<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action148<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -14671,7 +14674,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action149<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action149<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -14708,7 +14711,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action150<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action150<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -14745,7 +14748,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action151<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action151<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -14782,7 +14785,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action152<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action152<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -14819,7 +14822,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action153<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action153<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -14856,7 +14859,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action154<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action154<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -14893,7 +14896,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action155<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action155<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -14930,7 +14933,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action156<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action156<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -14967,7 +14970,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action157<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action157<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -15004,7 +15007,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action158<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action158<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -15041,7 +15044,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action159<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action159<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -15078,7 +15081,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action160<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action160<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -15115,7 +15118,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action161<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action161<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -15152,7 +15155,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action162<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action162<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -15189,7 +15192,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action163<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action163<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -15226,7 +15229,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action164<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action164<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -15263,7 +15266,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action165<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action165<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -15300,7 +15303,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action166<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action166<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -15337,7 +15340,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action167<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action167<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -15374,7 +15377,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action168<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action168<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -15411,7 +15414,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action169<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action169<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -15448,7 +15451,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action170<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action170<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -15485,7 +15488,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action171<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action171<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -15522,7 +15525,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action172<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action172<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -15559,7 +15562,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action173<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action173<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -15596,7 +15599,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action174<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action174<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -15633,7 +15636,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action175<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action175<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -15670,7 +15673,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action176<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action176<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -15707,7 +15710,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action177<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action177<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -15744,7 +15747,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action178<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action178<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -15781,7 +15784,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action179<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action179<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -15818,7 +15821,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action180<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action180<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -15855,7 +15858,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action181<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action181<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -15892,7 +15895,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action182<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action182<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -15929,7 +15932,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action183<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action183<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -15966,7 +15969,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action184<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action184<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -16003,7 +16006,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action185<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action185<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -16040,7 +16043,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action186<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action186<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -16077,7 +16080,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action187<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action187<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -16114,7 +16117,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action188<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action188<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -16151,7 +16154,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action189<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action189<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -16188,7 +16191,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action190<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action190<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -16225,7 +16228,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action191<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action191<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -16262,7 +16265,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action192<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action192<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -16299,7 +16302,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action193<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action193<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -16336,7 +16339,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action194<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action194<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -16373,7 +16376,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action195<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action195<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -16410,7 +16413,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action196<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action196<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -16447,7 +16450,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action197<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action197<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -16484,7 +16487,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action198<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action198<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -16521,7 +16524,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action199<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action199<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -16558,7 +16561,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action200<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action200<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -16595,7 +16598,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action201<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action201<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -16632,7 +16635,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action202<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action202<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -16669,7 +16672,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action203<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action203<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -16706,7 +16709,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action204<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action204<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -16743,7 +16746,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action205<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action205<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -16780,7 +16783,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action206<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action206<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -16817,7 +16820,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action207<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action207<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -16854,7 +16857,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action208<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action208<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -16891,7 +16894,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action209<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action209<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -16928,7 +16931,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action210<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action210<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -16965,7 +16968,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action211<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action211<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -17002,7 +17005,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action212<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action212<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -17039,7 +17042,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action213<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action213<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -17076,7 +17079,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action214<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action214<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -17113,7 +17116,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action215<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action215<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -17150,7 +17153,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action216<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action216<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -17187,7 +17190,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action217<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action217<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -17224,7 +17227,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action218<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action218<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -17261,7 +17264,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action219<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action219<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -17298,7 +17301,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action220<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action220<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -17335,7 +17338,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action221<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action221<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -17372,7 +17375,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action222<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action222<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -17409,7 +17412,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action223<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action223<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -17446,7 +17449,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action224<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action224<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -17483,7 +17486,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action225<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action225<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -17520,7 +17523,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action226<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action226<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -17557,7 +17560,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action227<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action227<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -17594,7 +17597,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action228<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action228<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -17631,7 +17634,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action229<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action229<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -17668,7 +17671,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action230<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action230<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -17705,7 +17708,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action231<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action231<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -17742,7 +17745,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action232<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action232<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -17779,7 +17782,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action233<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action233<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -17816,7 +17819,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action234<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action234<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -17853,7 +17856,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action235<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action235<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -17890,7 +17893,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action236<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action236<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -17927,7 +17930,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action237<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action237<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -17964,7 +17967,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action238<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action238<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -18001,7 +18004,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action239<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action239<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -18038,7 +18041,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action240<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action240<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -18075,7 +18078,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action241<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action241<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
@@ -18112,7 +18115,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <c>null</c>. </exception>
-        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Out5Action242<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
+        public static Mock<TMockable> WithCallback<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TParameter5>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Out5Action242<TParameter1, TParameter2, TParameter3, TParameter4, TParameter5> action)
             where TMockable : class
         {
             if (mock == null)
