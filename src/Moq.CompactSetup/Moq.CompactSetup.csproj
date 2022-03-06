@@ -31,6 +31,10 @@
       <LastGenOutput>MockExtensions.OutActions.cs</LastGenOutput>
       <Generator>TextTemplatingFileGenerator</Generator>
     </None>
+    <None Update="MockExtensions.OutFunctions.tt">
+      <LastGenOutput>MockExtensions.OutFunctions.cs</LastGenOutput>
+      <Generator>TextTemplatingFileGenerator</Generator>
+    </None>
   </ItemGroup>
 
   <ItemGroup>
@@ -46,6 +50,11 @@
     </Compile>
     <Compile Update="MockExtensions.OutActions.cs">
       <DependentUpon>MockExtensions.OutActions.tt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="MockExtensions.OutFunctions.cs">
+      <DependentUpon>MockExtensions.OutFunctions.tt</DependentUpon>
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
     </Compile>
