@@ -6,7 +6,7 @@ using Moq.Protected;
 namespace Moq.CompactSetup
 {
     /// <summary>
-    /// The mock extensions class.
+    /// The mock extensions class part for static value setups.
     /// </summary>
     public static partial class MockExtensions
     {

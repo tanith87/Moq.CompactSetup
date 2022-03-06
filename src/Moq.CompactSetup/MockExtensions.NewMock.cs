@@ -4,7 +4,7 @@ using System.Linq.Expressions;
 namespace Moq.CompactSetup
 {
     /// <summary>
-    /// The mock extensions class.
+    /// The mock extensions class part for setups with new created mocks.
     /// </summary>
     public static partial class MockExtensions
     {

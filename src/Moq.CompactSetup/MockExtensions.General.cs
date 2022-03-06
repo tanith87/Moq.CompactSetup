@@ -5,7 +5,7 @@ using System.Linq;
 namespace Moq.CompactSetup
 {
     /// <summary>
-    /// The mock extensions class.
+    /// The mock extensions class part for general purposes.
     /// </summary>
     public static partial class MockExtensions
     {

@@ -4,7 +4,7 @@ using System.Linq.Expressions;
 namespace Moq.CompactSetup
 {
     /// <summary>
-    /// The mock extensions class.
+    /// The mock extensions class part for delegated ref callbacks and ref value selector functions.
     /// </summary>
     public static partial class MockExtensions
     {

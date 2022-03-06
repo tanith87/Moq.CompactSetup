@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 namespace Moq.CompactSetup
 {
     /// <summary>
-    /// The mock extensions class.
+    /// The mock extensions class part for setting up thrown exceptions.
     /// </summary>
     public static partial class MockExtensions
     {
