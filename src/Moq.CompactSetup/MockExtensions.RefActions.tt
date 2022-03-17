@@ -7,7 +7,7 @@
 <#@ import namespace="System.Linq" #>
 <#@ import namespace="System.Collections.Generic" #>
 <#
-    const int PARAMETER_COUNT = 5;
+    const int PARAMETER_COUNT = 4;
     const int VARIATION_INDEX_TYPE_OUT = 1;
     const int VARIATION_INDEX_TYPE_REF = 2;
 
@@ -111,7 +111,6 @@
 #>
 using System;
 using System.Linq.Expressions;
-using Moq;
 
 namespace Moq.CompactSetup.Delegates
 {
