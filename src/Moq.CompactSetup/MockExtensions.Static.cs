@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 using Moq.Protected;
@@ -47,7 +48,7 @@ namespace Moq.CompactSetup
         }
 
         /// <summary>
-        /// Sets up a member with the specified value in an pseudo asynchronous way.
+        /// Sets up a member with the specified value in a pseudo asynchronous way.
         /// </summary>
         /// <typeparam name="TMockable"> The type of the mockable class or interface. </typeparam>
         /// <typeparam name="TResult"> The type of the result. </typeparam>
@@ -115,7 +116,7 @@ namespace Moq.CompactSetup
         }
 
         /// <summary>
-        /// Sets up a member with the specified mocked value in an pseudo asynchronous way.
+        /// Sets up a member with the specified mocked value in a pseudo asynchronous way.
         /// </summary>
         /// <typeparam name="TMockable"> The type of the mockable class or interface. </typeparam>
         /// <typeparam name="TResult"> The type of the result. </typeparam>
@@ -144,6 +145,72 @@ namespace Moq.CompactSetup
             }
 
             mock.Setup(memberExpression).Returns(() => Task.FromResult(mockedValue.Object));
+            return mock;
+        }
+
+        /// <summary>
+        /// Sets up a member with the specified mocked values.
+        /// </summary>
+        /// <typeparam name="TMockable"> The type of the mockable class or interface. </typeparam>
+        /// <typeparam name="TElement"> The type of the element of the values. </typeparam>
+        /// <param name="mock"> The mock. </param>
+        /// <param name="memberExpression"> The member expression to set up. </param>
+        /// <param name="mockedValues"> The mocked values to set. </param>
+        /// <returns> The same mock again. </returns>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="mockedValues"/> is <c>null</c>. </exception>
+        public static Mock<TMockable> With<TMockable, TElement>(this Mock<TMockable> mock, Expression<Func<TMockable, IEnumerable<TElement>>> memberExpression, IEnumerable<Mock<TElement>> mockedValues)
+            where TMockable : class
+            where TElement : class
+        {
+            if (mock == null)
+            {
+                throw new ArgumentNullException(nameof(mock));
+            }
+
+            if (memberExpression == null)
+            {
+                throw new ArgumentNullException(nameof(memberExpression));
+            }
+
+            if (mockedValues == null)
+            {
+                throw new ArgumentNullException(nameof(mockedValues));
+            }
+
+            mock.Setup(memberExpression).Returns(mockedValues.Objects);
+            return mock;
+        }
+
+        /// <summary>
+        /// Sets up a member with the specified mocked values in a pseudo asynchronous way.
+        /// </summary>
+        /// <typeparam name="TMockable"> The type of the mockable class or interface. </typeparam>
+        /// <typeparam name="TElement"> The type of the element of the values. </typeparam>
+        /// <param name="mock"> The mock. </param>
+        /// <param name="memberExpression"> The member expression to set up. </param>
+        /// <param name="mockedValues"> The mocked values to set. </param>
+        /// <returns> The same mock again. </returns>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="mockedValues"/> is <c>null</c>. </exception>
+        public static Mock<TMockable> With<TMockable, TElement>(this Mock<TMockable> mock, Expression<Func<TMockable, Task<IEnumerable<TElement>>>> memberExpression, IEnumerable<Mock<TElement>> mockedValues)
+            where TMockable : class
+            where TElement : class
+        {
+            if (mock == null)
+            {
+                throw new ArgumentNullException(nameof(mock));
+            }
+
+            if (memberExpression == null)
+            {
+                throw new ArgumentNullException(nameof(memberExpression));
+            }
+
+            if (mockedValues == null)
+            {
+                throw new ArgumentNullException(nameof(mockedValues));
+            }
+
+            mock.Setup(memberExpression).Returns(() => Task.FromResult(mockedValues.Objects()));
             return mock;
         }
 
