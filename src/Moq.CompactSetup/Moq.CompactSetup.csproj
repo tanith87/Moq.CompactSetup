@@ -41,7 +41,7 @@
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
-    <None Include="Package\packageicon.png">
+    <None Include="..\Packaging\packageicon.png">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
