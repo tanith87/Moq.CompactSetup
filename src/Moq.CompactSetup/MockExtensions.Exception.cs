@@ -18,7 +18,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="exception"> The exception to throw. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="exception"/> is <c>null</c>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="exception"/> is <see langword="null"/>. </exception>
         public static Mock<TMockable> WithException<TMockable, TException>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, TException exception)
             where TMockable : class
             where TException : Exception
@@ -50,7 +50,7 @@ namespace Moq.CompactSetup
         /// <param name="mock"> The mock. </param>
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/> or <paramref name="memberExpression"/> is <c>null</c>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/> or <paramref name="memberExpression"/> is <see langword="null"/>. </exception>
         public static Mock<TMockable> WithException<TMockable, TException>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression)
             where TMockable : class
             where TException : Exception, new()
@@ -78,7 +78,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="exception"> The exception to throw. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="exception"/> is <c>null</c>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="exception"/> is <see langword="null"/>. </exception>
         public static Mock<TMockable> WithException<TMockable, TException>(this Mock<TMockable> mock, Expression<Func<TMockable, Task>> memberExpression, TException exception)
             where TMockable : class
             where TException : Exception
@@ -110,7 +110,7 @@ namespace Moq.CompactSetup
         /// <param name="mock"> The mock. </param>
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/> or <paramref name="memberExpression"/> is <c>null</c>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/> or <paramref name="memberExpression"/> is <see langword="null"/>. </exception>
         public static Mock<TMockable> WithException<TMockable, TException>(this Mock<TMockable> mock, Expression<Func<TMockable, Task>> memberExpression)
             where TMockable : class
             where TException : Exception, new()

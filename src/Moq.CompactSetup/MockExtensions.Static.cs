@@ -21,7 +21,7 @@ namespace Moq.CompactSetup
         /// <param name="value"> The value to set. </param>
         /// <param name="enableSetBack"> The value indicating, whether for properties the simple set back should be enabled. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/> or <paramref name="memberExpression"/> is <c>null</c>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/> or <paramref name="memberExpression"/> is <see langword="null"/>. </exception>
         public static Mock<TMockable> With<TMockable, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, TResult value, bool enableSetBack = false)
             where TMockable : class
         {
@@ -56,7 +56,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="value"> The value to set. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/> or <paramref name="memberExpression"/> is <c>null</c>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/> or <paramref name="memberExpression"/> is <see langword="null"/>. </exception>
         public static Mock<TMockable> With<TMockable, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, Task<TResult>>> memberExpression, TResult value)
             where TMockable : class
         {
@@ -84,7 +84,7 @@ namespace Moq.CompactSetup
         /// <param name="mockedValue"> The mocked value to set. </param>
         /// <param name="enableSetBack"> The value indicating, whether for properties the simple set back should be enabled. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="mockedValue"/> is <c>null</c>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="mockedValue"/> is <see langword="null"/>. </exception>
         public static Mock<TMockable> With<TMockable, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Mock<TResult> mockedValue, bool enableSetBack = false)
             where TMockable : class
             where TResult : class
@@ -124,7 +124,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="mockedValue"> The mocked value to set. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="mockedValue"/> is <c>null</c>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="mockedValue"/> is <see langword="null"/>. </exception>
         public static Mock<TMockable> With<TMockable, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, Task<TResult>>> memberExpression, Mock<TResult> mockedValue)
             where TMockable : class
             where TResult : class
@@ -157,7 +157,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="mockedValues"> The mocked values to set. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="mockedValues"/> is <c>null</c>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="mockedValues"/> is <see langword="null"/>. </exception>
         public static Mock<TMockable> With<TMockable, TElement>(this Mock<TMockable> mock, Expression<Func<TMockable, IEnumerable<TElement>>> memberExpression, IEnumerable<Mock<TElement>> mockedValues)
             where TMockable : class
             where TElement : class
@@ -190,7 +190,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="mockedValues"> The mocked values to set. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="mockedValues"/> is <c>null</c>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="mockedValues"/> is <see langword="null"/>. </exception>
         public static Mock<TMockable> With<TMockable, TElement>(this Mock<TMockable> mock, Expression<Func<TMockable, Task<IEnumerable<TElement>>>> memberExpression, IEnumerable<Mock<TElement>> mockedValues)
             where TMockable : class
             where TElement : class
@@ -223,7 +223,7 @@ namespace Moq.CompactSetup
         /// <param name="propertySetter"> The property setter. </param>
         /// <param name="callback"> The callback action. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="propertySetter"/> or <paramref name="callback"/> is <c>null</c>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="propertySetter"/> or <paramref name="callback"/> is <see langword="null"/>. </exception>
         public static Mock<TMockable> WithSet<TMockable, TProperty>(this Mock<TMockable> mock, Action<TMockable> propertySetter, Action<TProperty> callback)
             where TMockable : class
         {
