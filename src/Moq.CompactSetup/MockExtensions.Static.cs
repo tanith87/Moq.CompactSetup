@@ -12,6 +12,67 @@ namespace Moq.CompactSetup
     public static partial class MockExtensions
     {
         /// <summary>
+        /// Sets up a member with a mock of its return type and returns that mock.
+        /// </summary>
+        /// <typeparam name="TMockable"> The type of the mockable class or interface. </typeparam>
+        /// <typeparam name="TResult"> The type of the result. </typeparam>
+        /// <typeparam name="TDerivedResult"> The derived type of the result. </typeparam>
+        /// <param name="mock"> The mock. </param>
+        /// <param name="memberExpression"> The member expression to set up. </param>
+        /// <param name="value"> The mock to set. </param>
+        /// <returns> The passed mock. </returns>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="value" /> is <see langword="null" />. </exception>
+        public static Mock<TDerivedResult> SetupMock<TMockable, TResult, TDerivedResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Mock<TDerivedResult> value)
+            where TMockable : class
+            where TResult : class
+            where TDerivedResult : class, TResult
+        {
+            if (mock == null)
+            {
+                throw new ArgumentNullException(nameof(mock));
+            }
+
+            if (memberExpression == null)
+            {
+                throw new ArgumentNullException(nameof(memberExpression));
+            }
+
+            if (value == null)
+            {
+                throw new ArgumentNullException(nameof(value));
+            }
+
+            mock.With(memberExpression, () => value.Object);
+            return value;
+        }
+
+        /// <summary>
+        /// Sets up a member with a new mock of its return type and returns that newly created mock.
+        /// </summary>
+        /// <typeparam name="TMockable"> The type of the mockable class or interface. </typeparam>
+        /// <typeparam name="TResult"> The type of the result. </typeparam>
+        /// <param name="mock"> The mock. </param>
+        /// <param name="memberExpression"> The member expression to set up. </param>
+        /// <returns> The created mock. </returns>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" /> or <paramref name="memberExpression" /> is <see langword="null" />. </exception>
+        public static Mock<TResult> SetupNewMock<TMockable, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression)
+            where TMockable : class
+            where TResult : class
+        {
+            if (mock == null)
+            {
+                throw new ArgumentNullException(nameof(mock));
+            }
+
+            if (memberExpression == null)
+            {
+                throw new ArgumentNullException(nameof(memberExpression));
+            }
+
+            return mock.SetupMock(memberExpression, new Mock<TResult>());
+        }
+
+        /// <summary>
         /// Sets up a member with the specified value.
         /// </summary>
         /// <typeparam name="TMockable"> The type of the mockable class or interface. </typeparam>
@@ -21,7 +82,7 @@ namespace Moq.CompactSetup
         /// <param name="value"> The value to set. </param>
         /// <param name="enableSetBack"> The value indicating, whether for properties the simple set back should be enabled. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/> or <paramref name="memberExpression"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" /> or <paramref name="memberExpression" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, TResult value, bool enableSetBack = false)
             where TMockable : class
         {
@@ -56,7 +117,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="value"> The value to set. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/> or <paramref name="memberExpression"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" /> or <paramref name="memberExpression" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, Task<TResult>>> memberExpression, TResult value)
             where TMockable : class
         {
@@ -79,15 +140,17 @@ namespace Moq.CompactSetup
         /// </summary>
         /// <typeparam name="TMockable"> The type of the mockable class or interface. </typeparam>
         /// <typeparam name="TResult"> The type of the result. </typeparam>
+        /// <typeparam name="TDerivedResult"> The derived type of the result. </typeparam>
         /// <param name="mock"> The mock. </param>
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="mockedValue"> The mocked value to set. </param>
         /// <param name="enableSetBack"> The value indicating, whether for properties the simple set back should be enabled. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="mockedValue"/> is <see langword="null"/>. </exception>
-        public static Mock<TMockable> With<TMockable, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Mock<TResult> mockedValue, bool enableSetBack = false)
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="mockedValue" /> is <see langword="null" />. </exception>
+        public static Mock<TMockable> With<TMockable, TResult, TDerivedResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Mock<TDerivedResult> mockedValue, bool enableSetBack = false)
             where TMockable : class
             where TResult : class
+            where TDerivedResult : class, TResult
         {
             if (mock == null)
             {
@@ -124,7 +187,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="mockedValue"> The mocked value to set. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="mockedValue"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="mockedValue" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, Task<TResult>>> memberExpression, Mock<TResult> mockedValue)
             where TMockable : class
             where TResult : class
@@ -157,7 +220,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="mockedValues"> The mocked values to set. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="mockedValues"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="mockedValues" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TElement>(this Mock<TMockable> mock, Expression<Func<TMockable, IEnumerable<TElement>>> memberExpression, IEnumerable<Mock<TElement>> mockedValues)
             where TMockable : class
             where TElement : class
@@ -190,7 +253,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="mockedValues"> The mocked values to set. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="mockedValues"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="mockedValues" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TElement>(this Mock<TMockable> mock, Expression<Func<TMockable, Task<IEnumerable<TElement>>>> memberExpression, IEnumerable<Mock<TElement>> mockedValues)
             where TMockable : class
             where TElement : class
@@ -223,7 +286,7 @@ namespace Moq.CompactSetup
         /// <param name="propertySetter"> The property setter. </param>
         /// <param name="callback"> The callback action. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="propertySetter"/> or <paramref name="callback"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="propertySetter" /> or <paramref name="callback" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> WithSet<TMockable, TProperty>(this Mock<TMockable> mock, Action<TMockable> propertySetter, Action<TProperty> callback)
             where TMockable : class
         {
