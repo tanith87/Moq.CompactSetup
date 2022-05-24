@@ -180,7 +180,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="action"> The action to call when the member is utilized. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="action" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> WithCallback<TMockable<#= (i > 0 ? ", " : "") #><#= GetParameterTypesString(i) #>>(this Mock<TMockable> mock, Expression<Action<TMockable>> memberExpression, Delegates.Ref<#= i #>Action<#= variation #><#= (i > 0 ? "<" : "") #><#= GetParameterTypesString(i) #><#= (i > 0 ? ">" : "") #> action)
             where TMockable : class
         {

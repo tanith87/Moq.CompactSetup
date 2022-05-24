@@ -1667,7 +1667,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref1Func1<TParameter1, TResult> valueSelector)
             where TMockable : class
         {
@@ -1701,7 +1701,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref1Func2<TParameter1, TResult> valueSelector)
             where TMockable : class
         {
@@ -1736,7 +1736,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref2Func1<TParameter1, TParameter2, TResult> valueSelector)
             where TMockable : class
         {
@@ -1771,7 +1771,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref2Func2<TParameter1, TParameter2, TResult> valueSelector)
             where TMockable : class
         {
@@ -1806,7 +1806,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref2Func3<TParameter1, TParameter2, TResult> valueSelector)
             where TMockable : class
         {
@@ -1841,7 +1841,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref2Func4<TParameter1, TParameter2, TResult> valueSelector)
             where TMockable : class
         {
@@ -1876,7 +1876,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref2Func5<TParameter1, TParameter2, TResult> valueSelector)
             where TMockable : class
         {
@@ -1911,7 +1911,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref2Func6<TParameter1, TParameter2, TResult> valueSelector)
             where TMockable : class
         {
@@ -1946,7 +1946,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref2Func7<TParameter1, TParameter2, TResult> valueSelector)
             where TMockable : class
         {
@@ -1981,7 +1981,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref2Func8<TParameter1, TParameter2, TResult> valueSelector)
             where TMockable : class
         {
@@ -2017,7 +2017,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref3Func1<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
             where TMockable : class
         {
@@ -2053,7 +2053,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref3Func2<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
             where TMockable : class
         {
@@ -2089,7 +2089,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref3Func3<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
             where TMockable : class
         {
@@ -2125,7 +2125,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref3Func4<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
             where TMockable : class
         {
@@ -2161,7 +2161,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref3Func5<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
             where TMockable : class
         {
@@ -2197,7 +2197,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref3Func6<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
             where TMockable : class
         {
@@ -2233,7 +2233,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref3Func7<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
             where TMockable : class
         {
@@ -2269,7 +2269,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref3Func8<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
             where TMockable : class
         {
@@ -2305,7 +2305,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref3Func9<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
             where TMockable : class
         {
@@ -2341,7 +2341,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref3Func10<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
             where TMockable : class
         {
@@ -2377,7 +2377,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref3Func11<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
             where TMockable : class
         {
@@ -2413,7 +2413,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref3Func12<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
             where TMockable : class
         {
@@ -2449,7 +2449,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref3Func13<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
             where TMockable : class
         {
@@ -2485,7 +2485,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref3Func14<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
             where TMockable : class
         {
@@ -2521,7 +2521,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref3Func15<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
             where TMockable : class
         {
@@ -2557,7 +2557,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref3Func16<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
             where TMockable : class
         {
@@ -2593,7 +2593,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref3Func17<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
             where TMockable : class
         {
@@ -2629,7 +2629,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref3Func18<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
             where TMockable : class
         {
@@ -2665,7 +2665,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref3Func19<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
             where TMockable : class
         {
@@ -2701,7 +2701,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref3Func20<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
             where TMockable : class
         {
@@ -2737,7 +2737,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref3Func21<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
             where TMockable : class
         {
@@ -2773,7 +2773,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref3Func22<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
             where TMockable : class
         {
@@ -2809,7 +2809,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref3Func23<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
             where TMockable : class
         {
@@ -2845,7 +2845,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref3Func24<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
             where TMockable : class
         {
@@ -2881,7 +2881,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref3Func25<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
             where TMockable : class
         {
@@ -2917,7 +2917,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref3Func26<TParameter1, TParameter2, TParameter3, TResult> valueSelector)
             where TMockable : class
         {
@@ -2954,7 +2954,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func1<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -2991,7 +2991,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func2<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -3028,7 +3028,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func3<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -3065,7 +3065,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func4<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -3102,7 +3102,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func5<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -3139,7 +3139,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func6<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -3176,7 +3176,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func7<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -3213,7 +3213,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func8<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -3250,7 +3250,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func9<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -3287,7 +3287,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func10<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -3324,7 +3324,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func11<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -3361,7 +3361,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func12<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -3398,7 +3398,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func13<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -3435,7 +3435,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func14<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -3472,7 +3472,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func15<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -3509,7 +3509,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func16<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -3546,7 +3546,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func17<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -3583,7 +3583,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func18<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -3620,7 +3620,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func19<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -3657,7 +3657,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func20<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -3694,7 +3694,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func21<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -3731,7 +3731,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func22<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -3768,7 +3768,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func23<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -3805,7 +3805,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func24<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -3842,7 +3842,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func25<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -3879,7 +3879,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func26<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -3916,7 +3916,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func27<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -3953,7 +3953,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func28<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -3990,7 +3990,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func29<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -4027,7 +4027,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func30<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -4064,7 +4064,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func31<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -4101,7 +4101,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func32<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -4138,7 +4138,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func33<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -4175,7 +4175,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func34<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -4212,7 +4212,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func35<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -4249,7 +4249,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func36<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -4286,7 +4286,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func37<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -4323,7 +4323,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func38<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -4360,7 +4360,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func39<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -4397,7 +4397,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func40<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -4434,7 +4434,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func41<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -4471,7 +4471,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func42<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -4508,7 +4508,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func43<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -4545,7 +4545,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func44<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -4582,7 +4582,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func45<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -4619,7 +4619,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func46<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -4656,7 +4656,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func47<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -4693,7 +4693,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func48<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -4730,7 +4730,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func49<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -4767,7 +4767,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func50<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -4804,7 +4804,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func51<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -4841,7 +4841,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func52<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -4878,7 +4878,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func53<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -4915,7 +4915,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func54<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -4952,7 +4952,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func55<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -4989,7 +4989,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func56<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -5026,7 +5026,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func57<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -5063,7 +5063,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func58<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -5100,7 +5100,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func59<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -5137,7 +5137,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func60<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -5174,7 +5174,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func61<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -5211,7 +5211,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func62<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -5248,7 +5248,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func63<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -5285,7 +5285,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func64<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -5322,7 +5322,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func65<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -5359,7 +5359,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func66<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -5396,7 +5396,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func67<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -5433,7 +5433,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func68<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -5470,7 +5470,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func69<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -5507,7 +5507,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func70<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -5544,7 +5544,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func71<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -5581,7 +5581,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func72<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -5618,7 +5618,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func73<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -5655,7 +5655,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func74<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -5692,7 +5692,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func75<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -5729,7 +5729,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func76<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -5766,7 +5766,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func77<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -5803,7 +5803,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func78<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -5840,7 +5840,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func79<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {
@@ -5877,7 +5877,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <param name="valueSelector"> The function returning the value for specified parameters. </param>
         /// <returns> The same mock again. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="valueSelector"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mock" />, <paramref name="memberExpression" /> or <paramref name="valueSelector" /> is <see langword="null" />. </exception>
         public static Mock<TMockable> With<TMockable, TParameter1, TParameter2, TParameter3, TParameter4, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Delegates.Ref4Func80<TParameter1, TParameter2, TParameter3, TParameter4, TResult> valueSelector)
             where TMockable : class
         {

@@ -15,7 +15,7 @@ namespace Moq.CompactSetup
         /// <typeparam name="TElement"> The type of the element. </typeparam>
         /// <param name="mockEnumerable"> The mock enumerable. </param>
         /// <returns> The enumeration of objects. </returns>
-        /// <exception cref="ArgumentNullException"> When <paramref name="mockEnumerable"/> is <see langword="null"/>. </exception>
+        /// <exception cref="ArgumentNullException"> When <paramref name="mockEnumerable" /> is <see langword="null" />. </exception>
         public static IEnumerable<TElement> Objects<TElement>(this IEnumerable<Mock<TElement>> mockEnumerable)
             where TElement : class
         {
