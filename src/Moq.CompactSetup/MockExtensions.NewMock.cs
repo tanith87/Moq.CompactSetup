@@ -17,7 +17,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/> or <paramref name="memberExpression"/> is <see langword="null"/>. </exception>
-        public static Mock<TMockable> WithNew<TMockable, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression)
+        public static Mock<TMockable> WithNewMock<TMockable, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression)
             where TMockable : class
             where TResult : class
         {
@@ -31,7 +31,7 @@ namespace Moq.CompactSetup
                 throw new ArgumentNullException(nameof(memberExpression));
             }
 
-            mock.WithNew(memberExpression, out _);
+            mock.WithNewMock(memberExpression, out _);
             return mock;
         }
 
@@ -45,7 +45,7 @@ namespace Moq.CompactSetup
         /// <param name="memberExpression"> The member expression to set up. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/> or <paramref name="memberExpression"/> is <see langword="null"/>. </exception>
-        public static Mock<TMockable> WithNew<TMockable, TResult, TSpecificResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression)
+        public static Mock<TMockable> WithNewMock<TMockable, TResult, TSpecificResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression)
             where TMockable : class
             where TResult : class
             where TSpecificResult : class, TResult
@@ -60,7 +60,7 @@ namespace Moq.CompactSetup
                 throw new ArgumentNullException(nameof(memberExpression));
             }
 
-            mock.WithNew<TMockable, TResult, TSpecificResult>(memberExpression, out _);
+            mock.WithNewMock<TMockable, TResult, TSpecificResult>(memberExpression, out _);
             return mock;
         }
 
@@ -74,7 +74,7 @@ namespace Moq.CompactSetup
         /// <param name="newMock"> The newly created mock. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/> or <paramref name="memberExpression"/> is <see langword="null"/>. </exception>
-        public static Mock<TMockable> WithNew<TMockable, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, out Mock<TResult> newMock)
+        public static Mock<TMockable> WithNewMock<TMockable, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, out Mock<TResult> newMock)
             where TMockable : class
             where TResult : class
         {
@@ -105,7 +105,7 @@ namespace Moq.CompactSetup
         /// <param name="newMock"> The newly created mock. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/> or <paramref name="memberExpression"/> is <see langword="null"/>. </exception>
-        public static Mock<TMockable> WithNew<TMockable, TResult, TSpecificResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, out Mock<TSpecificResult> newMock)
+        public static Mock<TMockable> WithNewMock<TMockable, TResult, TSpecificResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, out Mock<TSpecificResult> newMock)
             where TMockable : class
             where TResult : class
             where TSpecificResult : class, TResult
@@ -136,7 +136,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action for modifying the new mock. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <see langword="null"/>. </exception>
-        public static Mock<TMockable> WithNew<TMockable, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Action<Mock<TResult>> action)
+        public static Mock<TMockable> WithNewMock<TMockable, TResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Action<Mock<TResult>> action)
             where TMockable : class
             where TResult : class
         {
@@ -172,7 +172,7 @@ namespace Moq.CompactSetup
         /// <param name="action"> The action for modifying the new mock. </param>
         /// <returns> The same mock again. </returns>
         /// <exception cref="ArgumentNullException"> When <paramref name="mock"/>, <paramref name="memberExpression"/> or <paramref name="action"/> is <see langword="null"/>. </exception>
-        public static Mock<TMockable> WithNew<TMockable, TResult, TSpecificResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Action<Mock<TSpecificResult>> action)
+        public static Mock<TMockable> WithNewMock<TMockable, TResult, TSpecificResult>(this Mock<TMockable> mock, Expression<Func<TMockable, TResult>> memberExpression, Action<Mock<TSpecificResult>> action)
             where TMockable : class
             where TResult : class
             where TSpecificResult : class, TResult
