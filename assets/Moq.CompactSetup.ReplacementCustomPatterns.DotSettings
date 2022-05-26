@@ -1,0 +1,505 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=15AF08CB04963B408BEFA741C7FFD883/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=15AF08CB04963B408BEFA741C7FFD883/Comment/@EntryValue">Chain .WithCallback(*) call with the mock assignment.</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=15AF08CB04963B408BEFA741C7FFD883/CustomPatternPlaceholder/=args/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=15AF08CB04963B408BEFA741C7FFD883/CustomPatternPlaceholder/=args/Properties/=Maximal/@EntryIndexedValue">-1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=15AF08CB04963B408BEFA741C7FFD883/CustomPatternPlaceholder/=args/Properties/=Minimal/@EntryIndexedValue">-1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=15AF08CB04963B408BEFA741C7FFD883/CustomPatternPlaceholder/=args/Type/@EntryValue">ArgumentPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=15AF08CB04963B408BEFA741C7FFD883/CustomPatternPlaceholder/=mock/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=15AF08CB04963B408BEFA741C7FFD883/CustomPatternPlaceholder/=mock/Properties/=CaseSensitive/@EntryIndexedValue">True</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=15AF08CB04963B408BEFA741C7FFD883/CustomPatternPlaceholder/=mock/Properties/=ExactType/@EntryIndexedValue">False</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=15AF08CB04963B408BEFA741C7FFD883/CustomPatternPlaceholder/=mock/Properties/=RegEx/@EntryIndexedValue"></s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=15AF08CB04963B408BEFA741C7FFD883/CustomPatternPlaceholder/=mock/Type/@EntryValue">IdentifierPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=15AF08CB04963B408BEFA741C7FFD883/CustomPatternPlaceholder/=mockAssignmentExpression/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=15AF08CB04963B408BEFA741C7FFD883/CustomPatternPlaceholder/=mockAssignmentExpression/Properties/=ExactType/@EntryIndexedValue">False</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=15AF08CB04963B408BEFA741C7FFD883/CustomPatternPlaceholder/=mockAssignmentExpression/Properties/=ExpressionType/@EntryIndexedValue"></s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=15AF08CB04963B408BEFA741C7FFD883/CustomPatternPlaceholder/=mockAssignmentExpression/Type/@EntryValue">ExpressionPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=15AF08CB04963B408BEFA741C7FFD883/IsReplacePattern/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=15AF08CB04963B408BEFA741C7FFD883/LanguageName/@EntryValue">CSHARP</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=15AF08CB04963B408BEFA741C7FFD883/MatchCatchClauseWithoutExceptionFilter/@EntryValue">False</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=15AF08CB04963B408BEFA741C7FFD883/ReplaceComment/@EntryValue">Transform to chained call.</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=15AF08CB04963B408BEFA741C7FFD883/ReplacePattern/@EntryValue">$mock$ = $mockAssignmentExpression$&#xD;
+    .WithCallback($args$);</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=15AF08CB04963B408BEFA741C7FFD883/SearchPattern/@EntryValue">$mock$ = $mockAssignmentExpression$;&#xD;
+$mock$.WithCallback($args$);</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=15AF08CB04963B408BEFA741C7FFD883/Severity/@EntryValue">SUGGESTION</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=15AF08CB04963B408BEFA741C7FFD883/SuppressionKey/@EntryValue">ChainMockWithCall</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=3EB8CB6AF6B47D4B9553F9F4B7B6BB9E/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=3EB8CB6AF6B47D4B9553F9F4B7B6BB9E/Comment/@EntryValue">Make use of .With() for setting up a member with an async thrown generic exception.</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=3EB8CB6AF6B47D4B9553F9F4B7B6BB9E/CustomPatternPlaceholder/=exceptionType/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=3EB8CB6AF6B47D4B9553F9F4B7B6BB9E/CustomPatternPlaceholder/=exceptionType/Properties/=ExactType/@EntryIndexedValue">False</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=3EB8CB6AF6B47D4B9553F9F4B7B6BB9E/CustomPatternPlaceholder/=exceptionType/Properties/=Type/@EntryIndexedValue">System.Exception</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=3EB8CB6AF6B47D4B9553F9F4B7B6BB9E/CustomPatternPlaceholder/=exceptionType/Type/@EntryValue">TypePlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=3EB8CB6AF6B47D4B9553F9F4B7B6BB9E/CustomPatternPlaceholder/=memberExpression/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=3EB8CB6AF6B47D4B9553F9F4B7B6BB9E/CustomPatternPlaceholder/=memberExpression/Properties/=Maximal/@EntryIndexedValue">1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=3EB8CB6AF6B47D4B9553F9F4B7B6BB9E/CustomPatternPlaceholder/=memberExpression/Properties/=Minimal/@EntryIndexedValue">1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=3EB8CB6AF6B47D4B9553F9F4B7B6BB9E/CustomPatternPlaceholder/=memberExpression/Type/@EntryValue">ArgumentPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=3EB8CB6AF6B47D4B9553F9F4B7B6BB9E/CustomPatternPlaceholder/=mock/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=3EB8CB6AF6B47D4B9553F9F4B7B6BB9E/CustomPatternPlaceholder/=mock/Properties/=ExactType/@EntryIndexedValue">False</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=3EB8CB6AF6B47D4B9553F9F4B7B6BB9E/CustomPatternPlaceholder/=mock/Properties/=ExpressionType/@EntryIndexedValue">Moq.Mock&lt;T&gt;</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=3EB8CB6AF6B47D4B9553F9F4B7B6BB9E/CustomPatternPlaceholder/=mock/Type/@EntryValue">ExpressionPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=3EB8CB6AF6B47D4B9553F9F4B7B6BB9E/IsReplacePattern/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=3EB8CB6AF6B47D4B9553F9F4B7B6BB9E/LanguageName/@EntryValue">CSHARP</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=3EB8CB6AF6B47D4B9553F9F4B7B6BB9E/MatchCatchClauseWithoutExceptionFilter/@EntryValue">False</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=3EB8CB6AF6B47D4B9553F9F4B7B6BB9E/ReplaceComment/@EntryValue">Transform to use .With call.</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=3EB8CB6AF6B47D4B9553F9F4B7B6BB9E/ReplacePattern/@EntryValue">$mock$.WithException($memberExpression$, new $exceptionType$());</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=3EB8CB6AF6B47D4B9553F9F4B7B6BB9E/SearchPattern/@EntryValue">$mock$.Setup($memberExpression$).ThrowsAsync&lt;$exceptionType$&gt;();</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=3EB8CB6AF6B47D4B9553F9F4B7B6BB9E/Severity/@EntryValue">SUGGESTION</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=3EB8CB6AF6B47D4B9553F9F4B7B6BB9E/SuppressionKey/@EntryValue">UseWithCall</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=49D2F77AB318DF43A7769355FF38960F/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=49D2F77AB318DF43A7769355FF38960F/Comment/@EntryValue">Make use of .With() for setting up a member with a callback.</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=49D2F77AB318DF43A7769355FF38960F/CustomPatternPlaceholder/=action/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=49D2F77AB318DF43A7769355FF38960F/CustomPatternPlaceholder/=action/Properties/=Maximal/@EntryIndexedValue">1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=49D2F77AB318DF43A7769355FF38960F/CustomPatternPlaceholder/=action/Properties/=Minimal/@EntryIndexedValue">1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=49D2F77AB318DF43A7769355FF38960F/CustomPatternPlaceholder/=action/Type/@EntryValue">ArgumentPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=49D2F77AB318DF43A7769355FF38960F/CustomPatternPlaceholder/=memberExpression/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=49D2F77AB318DF43A7769355FF38960F/CustomPatternPlaceholder/=memberExpression/Properties/=Maximal/@EntryIndexedValue">-1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=49D2F77AB318DF43A7769355FF38960F/CustomPatternPlaceholder/=memberExpression/Properties/=Minimal/@EntryIndexedValue">-1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=49D2F77AB318DF43A7769355FF38960F/CustomPatternPlaceholder/=memberExpression/Type/@EntryValue">ArgumentPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=49D2F77AB318DF43A7769355FF38960F/CustomPatternPlaceholder/=mock/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=49D2F77AB318DF43A7769355FF38960F/CustomPatternPlaceholder/=mock/Properties/=ExactType/@EntryIndexedValue">False</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=49D2F77AB318DF43A7769355FF38960F/CustomPatternPlaceholder/=mock/Properties/=ExpressionType/@EntryIndexedValue"></s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=49D2F77AB318DF43A7769355FF38960F/CustomPatternPlaceholder/=mock/Type/@EntryValue">ExpressionPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=49D2F77AB318DF43A7769355FF38960F/IsReplacePattern/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=49D2F77AB318DF43A7769355FF38960F/LanguageName/@EntryValue">CSHARP</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=49D2F77AB318DF43A7769355FF38960F/MatchCatchClauseWithoutExceptionFilter/@EntryValue">False</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=49D2F77AB318DF43A7769355FF38960F/ReplaceComment/@EntryValue">Transform to use .With call.</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=49D2F77AB318DF43A7769355FF38960F/ReplacePattern/@EntryValue">$mock$.WithCallback($memberExpression$, $action$);</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=49D2F77AB318DF43A7769355FF38960F/SearchPattern/@EntryValue">$mock$.Setup($memberExpression$).Callback($action$);</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=49D2F77AB318DF43A7769355FF38960F/Severity/@EntryValue">SUGGESTION</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=49D2F77AB318DF43A7769355FF38960F/SuppressionKey/@EntryValue">UseWithCall</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=4ADF73D820F01F44909D09A47B110728/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=4ADF73D820F01F44909D09A47B110728/Comment/@EntryValue">Make use of .With() for setting up a getter with a dynamic value.</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=4ADF73D820F01F44909D09A47B110728/CustomPatternPlaceholder/=getterLogic/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=4ADF73D820F01F44909D09A47B110728/CustomPatternPlaceholder/=getterLogic/Properties/=ExactType/@EntryIndexedValue">False</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=4ADF73D820F01F44909D09A47B110728/CustomPatternPlaceholder/=getterLogic/Properties/=ExpressionType/@EntryIndexedValue"></s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=4ADF73D820F01F44909D09A47B110728/CustomPatternPlaceholder/=getterLogic/Type/@EntryValue">ExpressionPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=4ADF73D820F01F44909D09A47B110728/CustomPatternPlaceholder/=memberExpression/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=4ADF73D820F01F44909D09A47B110728/CustomPatternPlaceholder/=memberExpression/Properties/=Maximal/@EntryIndexedValue">1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=4ADF73D820F01F44909D09A47B110728/CustomPatternPlaceholder/=memberExpression/Properties/=Minimal/@EntryIndexedValue">1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=4ADF73D820F01F44909D09A47B110728/CustomPatternPlaceholder/=memberExpression/Type/@EntryValue">ArgumentPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=4ADF73D820F01F44909D09A47B110728/CustomPatternPlaceholder/=mock/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=4ADF73D820F01F44909D09A47B110728/CustomPatternPlaceholder/=mock/Properties/=ExactType/@EntryIndexedValue">False</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=4ADF73D820F01F44909D09A47B110728/CustomPatternPlaceholder/=mock/Properties/=ExpressionType/@EntryIndexedValue">Moq.Mock&lt;T&gt;</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=4ADF73D820F01F44909D09A47B110728/CustomPatternPlaceholder/=mock/Type/@EntryValue">ExpressionPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=4ADF73D820F01F44909D09A47B110728/IsReplacePattern/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=4ADF73D820F01F44909D09A47B110728/LanguageName/@EntryValue">CSHARP</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=4ADF73D820F01F44909D09A47B110728/MatchCatchClauseWithoutExceptionFilter/@EntryValue">False</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=4ADF73D820F01F44909D09A47B110728/ReplaceComment/@EntryValue">Transform to use .With call.</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=4ADF73D820F01F44909D09A47B110728/ReplacePattern/@EntryValue">$mock$.With($memberExpression$, () =&gt; $getterLogic$);</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=4ADF73D820F01F44909D09A47B110728/SearchPattern/@EntryValue">$mock$.SetupGet($memberExpression$).Returns(() =&gt; $getterLogic$);</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=4ADF73D820F01F44909D09A47B110728/Severity/@EntryValue">SUGGESTION</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=4ADF73D820F01F44909D09A47B110728/SuppressionKey/@EntryValue">UseWithCall</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=5E17AAAB624A214395D27C35B8EE6D4A/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=5E17AAAB624A214395D27C35B8EE6D4A/Comment/@EntryValue">Make use of .With() for setting up a member with a fixed value.</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=5E17AAAB624A214395D27C35B8EE6D4A/CustomPatternPlaceholder/=memberExpression/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=5E17AAAB624A214395D27C35B8EE6D4A/CustomPatternPlaceholder/=memberExpression/Properties/=Maximal/@EntryIndexedValue">1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=5E17AAAB624A214395D27C35B8EE6D4A/CustomPatternPlaceholder/=memberExpression/Properties/=Minimal/@EntryIndexedValue">1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=5E17AAAB624A214395D27C35B8EE6D4A/CustomPatternPlaceholder/=memberExpression/Type/@EntryValue">ArgumentPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=5E17AAAB624A214395D27C35B8EE6D4A/CustomPatternPlaceholder/=mock/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=5E17AAAB624A214395D27C35B8EE6D4A/CustomPatternPlaceholder/=mock/Properties/=ExactType/@EntryIndexedValue">False</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=5E17AAAB624A214395D27C35B8EE6D4A/CustomPatternPlaceholder/=mock/Properties/=ExpressionType/@EntryIndexedValue">Moq.Mock&lt;T&gt;</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=5E17AAAB624A214395D27C35B8EE6D4A/CustomPatternPlaceholder/=mock/Type/@EntryValue">ExpressionPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=5E17AAAB624A214395D27C35B8EE6D4A/CustomPatternPlaceholder/=value/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=5E17AAAB624A214395D27C35B8EE6D4A/CustomPatternPlaceholder/=value/Properties/=Maximal/@EntryIndexedValue">1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=5E17AAAB624A214395D27C35B8EE6D4A/CustomPatternPlaceholder/=value/Properties/=Minimal/@EntryIndexedValue">1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=5E17AAAB624A214395D27C35B8EE6D4A/CustomPatternPlaceholder/=value/Type/@EntryValue">ArgumentPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=5E17AAAB624A214395D27C35B8EE6D4A/IsReplacePattern/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=5E17AAAB624A214395D27C35B8EE6D4A/LanguageName/@EntryValue">CSHARP</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=5E17AAAB624A214395D27C35B8EE6D4A/MatchCatchClauseWithoutExceptionFilter/@EntryValue">False</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=5E17AAAB624A214395D27C35B8EE6D4A/ReplaceComment/@EntryValue">Transform to use .With call.</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=5E17AAAB624A214395D27C35B8EE6D4A/ReplacePattern/@EntryValue">$mock$.With($memberExpression$, $value$);</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=5E17AAAB624A214395D27C35B8EE6D4A/SearchPattern/@EntryValue">$mock$.Setup($memberExpression$).Returns($value$);</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=5E17AAAB624A214395D27C35B8EE6D4A/Severity/@EntryValue">SUGGESTION</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=5E17AAAB624A214395D27C35B8EE6D4A/SuppressionKey/@EntryValue">UseWithCall</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=64A01FCC4232634F84697B895D1704ED/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=64A01FCC4232634F84697B895D1704ED/Comment/@EntryValue">Make use of .With() for setting up a getter with a fixed value.</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=64A01FCC4232634F84697B895D1704ED/CustomPatternPlaceholder/=memberExpression/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=64A01FCC4232634F84697B895D1704ED/CustomPatternPlaceholder/=memberExpression/Properties/=Maximal/@EntryIndexedValue">1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=64A01FCC4232634F84697B895D1704ED/CustomPatternPlaceholder/=memberExpression/Properties/=Minimal/@EntryIndexedValue">1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=64A01FCC4232634F84697B895D1704ED/CustomPatternPlaceholder/=memberExpression/Type/@EntryValue">ArgumentPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=64A01FCC4232634F84697B895D1704ED/CustomPatternPlaceholder/=mock/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=64A01FCC4232634F84697B895D1704ED/CustomPatternPlaceholder/=mock/Properties/=ExactType/@EntryIndexedValue">False</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=64A01FCC4232634F84697B895D1704ED/CustomPatternPlaceholder/=mock/Properties/=ExpressionType/@EntryIndexedValue">Moq.Mock&lt;T&gt;</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=64A01FCC4232634F84697B895D1704ED/CustomPatternPlaceholder/=mock/Type/@EntryValue">ExpressionPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=64A01FCC4232634F84697B895D1704ED/CustomPatternPlaceholder/=value/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=64A01FCC4232634F84697B895D1704ED/CustomPatternPlaceholder/=value/Properties/=Maximal/@EntryIndexedValue">1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=64A01FCC4232634F84697B895D1704ED/CustomPatternPlaceholder/=value/Properties/=Minimal/@EntryIndexedValue">1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=64A01FCC4232634F84697B895D1704ED/CustomPatternPlaceholder/=value/Type/@EntryValue">ArgumentPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=64A01FCC4232634F84697B895D1704ED/IsReplacePattern/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=64A01FCC4232634F84697B895D1704ED/LanguageName/@EntryValue">CSHARP</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=64A01FCC4232634F84697B895D1704ED/MatchCatchClauseWithoutExceptionFilter/@EntryValue">False</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=64A01FCC4232634F84697B895D1704ED/ReplaceComment/@EntryValue">Transform to use .With call.</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=64A01FCC4232634F84697B895D1704ED/ReplacePattern/@EntryValue">$mock$.With($memberExpression$, $value$);</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=64A01FCC4232634F84697B895D1704ED/SearchPattern/@EntryValue">$mock$.SetupGet($memberExpression$).Returns($value$);</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=64A01FCC4232634F84697B895D1704ED/Severity/@EntryValue">SUGGESTION</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=64A01FCC4232634F84697B895D1704ED/SuppressionKey/@EntryValue">UseWithCall</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=6AE4096AD35AEF4786DEBD01F3AC5E39/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=6AE4096AD35AEF4786DEBD01F3AC5E39/Comment/@EntryValue">Chain .WithException(*) call with the mock assignment.</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=6AE4096AD35AEF4786DEBD01F3AC5E39/CustomPatternPlaceholder/=args/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=6AE4096AD35AEF4786DEBD01F3AC5E39/CustomPatternPlaceholder/=args/Properties/=Maximal/@EntryIndexedValue">-1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=6AE4096AD35AEF4786DEBD01F3AC5E39/CustomPatternPlaceholder/=args/Properties/=Minimal/@EntryIndexedValue">-1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=6AE4096AD35AEF4786DEBD01F3AC5E39/CustomPatternPlaceholder/=args/Type/@EntryValue">ArgumentPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=6AE4096AD35AEF4786DEBD01F3AC5E39/CustomPatternPlaceholder/=exceptionType/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=6AE4096AD35AEF4786DEBD01F3AC5E39/CustomPatternPlaceholder/=exceptionType/Properties/=ExactType/@EntryIndexedValue">False</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=6AE4096AD35AEF4786DEBD01F3AC5E39/CustomPatternPlaceholder/=exceptionType/Properties/=Type/@EntryIndexedValue"></s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=6AE4096AD35AEF4786DEBD01F3AC5E39/CustomPatternPlaceholder/=exceptionType/Type/@EntryValue">TypePlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=6AE4096AD35AEF4786DEBD01F3AC5E39/CustomPatternPlaceholder/=mock/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=6AE4096AD35AEF4786DEBD01F3AC5E39/CustomPatternPlaceholder/=mock/Properties/=ExactType/@EntryIndexedValue">False</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=6AE4096AD35AEF4786DEBD01F3AC5E39/CustomPatternPlaceholder/=mock/Properties/=ExpressionType/@EntryIndexedValue"></s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=6AE4096AD35AEF4786DEBD01F3AC5E39/CustomPatternPlaceholder/=mock/Type/@EntryValue">ExpressionPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=6AE4096AD35AEF4786DEBD01F3AC5E39/CustomPatternPlaceholder/=mockAssignmentExpression/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=6AE4096AD35AEF4786DEBD01F3AC5E39/CustomPatternPlaceholder/=mockAssignmentExpression/Properties/=CaseSensitive/@EntryIndexedValue">True</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=6AE4096AD35AEF4786DEBD01F3AC5E39/CustomPatternPlaceholder/=mockAssignmentExpression/Properties/=ExactType/@EntryIndexedValue">False</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=6AE4096AD35AEF4786DEBD01F3AC5E39/CustomPatternPlaceholder/=mockAssignmentExpression/Properties/=RegEx/@EntryIndexedValue"></s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=6AE4096AD35AEF4786DEBD01F3AC5E39/CustomPatternPlaceholder/=mockAssignmentExpression/Type/@EntryValue">IdentifierPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=6AE4096AD35AEF4786DEBD01F3AC5E39/IsReplacePattern/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=6AE4096AD35AEF4786DEBD01F3AC5E39/LanguageName/@EntryValue">CSHARP</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=6AE4096AD35AEF4786DEBD01F3AC5E39/MatchCatchClauseWithoutExceptionFilter/@EntryValue">False</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=6AE4096AD35AEF4786DEBD01F3AC5E39/ReplaceComment/@EntryValue">Transform to chained call.</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=6AE4096AD35AEF4786DEBD01F3AC5E39/ReplacePattern/@EntryValue">$mock$ = $mockAssignmentExpression$&#xD;
+    .WithException&lt;$exceptionType$&gt;($args$);</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=6AE4096AD35AEF4786DEBD01F3AC5E39/SearchPattern/@EntryValue">$mock$ = $mockAssignmentExpression$;&#xD;
+$mock$.WithException&lt;$exceptionType$&gt;($args$);</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=6AE4096AD35AEF4786DEBD01F3AC5E39/Severity/@EntryValue">SUGGESTION</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=6AE4096AD35AEF4786DEBD01F3AC5E39/SuppressionKey/@EntryValue">ChainMockWithCall</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=8018E0516C7E7847913A442361F168ED/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=8018E0516C7E7847913A442361F168ED/Comment/@EntryValue">Make use of .With() for setting up a member with an exception instance.</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=8018E0516C7E7847913A442361F168ED/CustomPatternPlaceholder/=exception/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=8018E0516C7E7847913A442361F168ED/CustomPatternPlaceholder/=exception/Properties/=Maximal/@EntryIndexedValue">1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=8018E0516C7E7847913A442361F168ED/CustomPatternPlaceholder/=exception/Properties/=Minimal/@EntryIndexedValue">1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=8018E0516C7E7847913A442361F168ED/CustomPatternPlaceholder/=exception/Type/@EntryValue">ArgumentPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=8018E0516C7E7847913A442361F168ED/CustomPatternPlaceholder/=memberExpression/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=8018E0516C7E7847913A442361F168ED/CustomPatternPlaceholder/=memberExpression/Properties/=Maximal/@EntryIndexedValue">1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=8018E0516C7E7847913A442361F168ED/CustomPatternPlaceholder/=memberExpression/Properties/=Minimal/@EntryIndexedValue">1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=8018E0516C7E7847913A442361F168ED/CustomPatternPlaceholder/=memberExpression/Type/@EntryValue">ArgumentPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=8018E0516C7E7847913A442361F168ED/CustomPatternPlaceholder/=mock/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=8018E0516C7E7847913A442361F168ED/CustomPatternPlaceholder/=mock/Properties/=ExactType/@EntryIndexedValue">False</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=8018E0516C7E7847913A442361F168ED/CustomPatternPlaceholder/=mock/Properties/=ExpressionType/@EntryIndexedValue">Moq.Mock&lt;T&gt;</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=8018E0516C7E7847913A442361F168ED/CustomPatternPlaceholder/=mock/Type/@EntryValue">ExpressionPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=8018E0516C7E7847913A442361F168ED/IsReplacePattern/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=8018E0516C7E7847913A442361F168ED/LanguageName/@EntryValue">CSHARP</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=8018E0516C7E7847913A442361F168ED/MatchCatchClauseWithoutExceptionFilter/@EntryValue">False</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=8018E0516C7E7847913A442361F168ED/ReplaceComment/@EntryValue">Transform to use .With call.</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=8018E0516C7E7847913A442361F168ED/ReplacePattern/@EntryValue">$mock$.WithException($memberExpression$, $exception$);</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=8018E0516C7E7847913A442361F168ED/SearchPattern/@EntryValue">$mock$.Setup($memberExpression$).Throws($exception$);</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=8018E0516C7E7847913A442361F168ED/Severity/@EntryValue">SUGGESTION</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=8018E0516C7E7847913A442361F168ED/SuppressionKey/@EntryValue">UseWithCall</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=8D6F0FA4059A574DA0B039ACADF6D947/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=8D6F0FA4059A574DA0B039ACADF6D947/Comment/@EntryValue">Make use of .With() for setting up a member with an async thrown exception instance.</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=8D6F0FA4059A574DA0B039ACADF6D947/CustomPatternPlaceholder/=exception/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=8D6F0FA4059A574DA0B039ACADF6D947/CustomPatternPlaceholder/=exception/Properties/=Maximal/@EntryIndexedValue">1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=8D6F0FA4059A574DA0B039ACADF6D947/CustomPatternPlaceholder/=exception/Properties/=Minimal/@EntryIndexedValue">1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=8D6F0FA4059A574DA0B039ACADF6D947/CustomPatternPlaceholder/=exception/Type/@EntryValue">ArgumentPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=8D6F0FA4059A574DA0B039ACADF6D947/CustomPatternPlaceholder/=memberExpression/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=8D6F0FA4059A574DA0B039ACADF6D947/CustomPatternPlaceholder/=memberExpression/Properties/=Maximal/@EntryIndexedValue">1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=8D6F0FA4059A574DA0B039ACADF6D947/CustomPatternPlaceholder/=memberExpression/Properties/=Minimal/@EntryIndexedValue">1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=8D6F0FA4059A574DA0B039ACADF6D947/CustomPatternPlaceholder/=memberExpression/Type/@EntryValue">ArgumentPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=8D6F0FA4059A574DA0B039ACADF6D947/CustomPatternPlaceholder/=mock/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=8D6F0FA4059A574DA0B039ACADF6D947/CustomPatternPlaceholder/=mock/Properties/=ExactType/@EntryIndexedValue">False</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=8D6F0FA4059A574DA0B039ACADF6D947/CustomPatternPlaceholder/=mock/Properties/=ExpressionType/@EntryIndexedValue">Moq.Mock&lt;T&gt;</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=8D6F0FA4059A574DA0B039ACADF6D947/CustomPatternPlaceholder/=mock/Type/@EntryValue">ExpressionPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=8D6F0FA4059A574DA0B039ACADF6D947/IsReplacePattern/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=8D6F0FA4059A574DA0B039ACADF6D947/LanguageName/@EntryValue">CSHARP</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=8D6F0FA4059A574DA0B039ACADF6D947/MatchCatchClauseWithoutExceptionFilter/@EntryValue">False</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=8D6F0FA4059A574DA0B039ACADF6D947/ReplaceComment/@EntryValue">Transform to use .With call.</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=8D6F0FA4059A574DA0B039ACADF6D947/ReplacePattern/@EntryValue">$mock$.WithException($memberExpression$, $exception$);</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=8D6F0FA4059A574DA0B039ACADF6D947/SearchPattern/@EntryValue">$mock$.Setup($memberExpression$).ThrowsAsync($exception$);</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=8D6F0FA4059A574DA0B039ACADF6D947/Severity/@EntryValue">SUGGESTION</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=8D6F0FA4059A574DA0B039ACADF6D947/SuppressionKey/@EntryValue">UseWithCall</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=99109689F398F34AB43EFEBE7D3C369B/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=99109689F398F34AB43EFEBE7D3C369B/Comment/@EntryValue">Chain .WithCallback(*) call with the mock assignment.</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=99109689F398F34AB43EFEBE7D3C369B/CustomPatternPlaceholder/=args/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=99109689F398F34AB43EFEBE7D3C369B/CustomPatternPlaceholder/=args/Properties/=Maximal/@EntryIndexedValue">-1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=99109689F398F34AB43EFEBE7D3C369B/CustomPatternPlaceholder/=args/Properties/=Minimal/@EntryIndexedValue">-1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=99109689F398F34AB43EFEBE7D3C369B/CustomPatternPlaceholder/=args/Type/@EntryValue">ArgumentPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=99109689F398F34AB43EFEBE7D3C369B/CustomPatternPlaceholder/=mock/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=99109689F398F34AB43EFEBE7D3C369B/CustomPatternPlaceholder/=mock/Properties/=CaseSensitive/@EntryIndexedValue">True</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=99109689F398F34AB43EFEBE7D3C369B/CustomPatternPlaceholder/=mock/Properties/=ExactType/@EntryIndexedValue">False</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=99109689F398F34AB43EFEBE7D3C369B/CustomPatternPlaceholder/=mock/Properties/=RegEx/@EntryIndexedValue"></s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=99109689F398F34AB43EFEBE7D3C369B/CustomPatternPlaceholder/=mock/Type/@EntryValue">IdentifierPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=99109689F398F34AB43EFEBE7D3C369B/CustomPatternPlaceholder/=mockAssignmentExpression/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=99109689F398F34AB43EFEBE7D3C369B/CustomPatternPlaceholder/=mockAssignmentExpression/Properties/=ExactType/@EntryIndexedValue">False</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=99109689F398F34AB43EFEBE7D3C369B/CustomPatternPlaceholder/=mockAssignmentExpression/Properties/=ExpressionType/@EntryIndexedValue"></s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=99109689F398F34AB43EFEBE7D3C369B/CustomPatternPlaceholder/=mockAssignmentExpression/Type/@EntryValue">ExpressionPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=99109689F398F34AB43EFEBE7D3C369B/IsReplacePattern/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=99109689F398F34AB43EFEBE7D3C369B/LanguageName/@EntryValue">CSHARP</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=99109689F398F34AB43EFEBE7D3C369B/MatchCatchClauseWithoutExceptionFilter/@EntryValue">False</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=99109689F398F34AB43EFEBE7D3C369B/ReplaceComment/@EntryValue">Transform to chained call.</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=99109689F398F34AB43EFEBE7D3C369B/ReplacePattern/@EntryValue">var $mock$ = $mockAssignmentExpression$&#xD;
+    .WithCallback($args$);</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=99109689F398F34AB43EFEBE7D3C369B/SearchPattern/@EntryValue">var $mock$ = $mockAssignmentExpression$;&#xD;
+$mock$.WithCallback($args$);</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=99109689F398F34AB43EFEBE7D3C369B/Severity/@EntryValue">SUGGESTION</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=99109689F398F34AB43EFEBE7D3C369B/SuppressionKey/@EntryValue">ChainMockWithCall</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=999FF422E30B8041BC44545EE207E66D/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=999FF422E30B8041BC44545EE207E66D/Comment/@EntryValue">Chain .WithNewMock(*) call with the mock assignment.</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=999FF422E30B8041BC44545EE207E66D/CustomPatternPlaceholder/=args/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=999FF422E30B8041BC44545EE207E66D/CustomPatternPlaceholder/=args/Properties/=Maximal/@EntryIndexedValue">-1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=999FF422E30B8041BC44545EE207E66D/CustomPatternPlaceholder/=args/Properties/=Minimal/@EntryIndexedValue">-1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=999FF422E30B8041BC44545EE207E66D/CustomPatternPlaceholder/=args/Type/@EntryValue">ArgumentPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=999FF422E30B8041BC44545EE207E66D/CustomPatternPlaceholder/=mock/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=999FF422E30B8041BC44545EE207E66D/CustomPatternPlaceholder/=mock/Properties/=CaseSensitive/@EntryIndexedValue">True</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=999FF422E30B8041BC44545EE207E66D/CustomPatternPlaceholder/=mock/Properties/=ExactType/@EntryIndexedValue">False</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=999FF422E30B8041BC44545EE207E66D/CustomPatternPlaceholder/=mock/Properties/=RegEx/@EntryIndexedValue"></s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=999FF422E30B8041BC44545EE207E66D/CustomPatternPlaceholder/=mock/Type/@EntryValue">IdentifierPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=999FF422E30B8041BC44545EE207E66D/CustomPatternPlaceholder/=mockAssignmentExpression/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=999FF422E30B8041BC44545EE207E66D/CustomPatternPlaceholder/=mockAssignmentExpression/Properties/=ExactType/@EntryIndexedValue">False</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=999FF422E30B8041BC44545EE207E66D/CustomPatternPlaceholder/=mockAssignmentExpression/Properties/=ExpressionType/@EntryIndexedValue"></s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=999FF422E30B8041BC44545EE207E66D/CustomPatternPlaceholder/=mockAssignmentExpression/Type/@EntryValue">ExpressionPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=999FF422E30B8041BC44545EE207E66D/IsReplacePattern/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=999FF422E30B8041BC44545EE207E66D/LanguageName/@EntryValue">CSHARP</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=999FF422E30B8041BC44545EE207E66D/MatchCatchClauseWithoutExceptionFilter/@EntryValue">False</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=999FF422E30B8041BC44545EE207E66D/ReplaceComment/@EntryValue">Transform to chained call.</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=999FF422E30B8041BC44545EE207E66D/ReplacePattern/@EntryValue">var $mock$ = $mockAssignmentExpression$&#xD;
+    .WithNewMock($args$);</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=999FF422E30B8041BC44545EE207E66D/SearchPattern/@EntryValue">var $mock$ = $mockAssignmentExpression$;&#xD;
+$mock$.WithNewMock($args$);</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=999FF422E30B8041BC44545EE207E66D/Severity/@EntryValue">SUGGESTION</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=999FF422E30B8041BC44545EE207E66D/SuppressionKey/@EntryValue">ChainMockWithCall</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=9D2DABBDFADB6149A2CE0A5C49AA5E3F/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=9D2DABBDFADB6149A2CE0A5C49AA5E3F/Comment/@EntryValue">Chain .WithNewMock(*) call with the mock assignment.</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=9D2DABBDFADB6149A2CE0A5C49AA5E3F/CustomPatternPlaceholder/=args/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=9D2DABBDFADB6149A2CE0A5C49AA5E3F/CustomPatternPlaceholder/=args/Properties/=Maximal/@EntryIndexedValue">-1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=9D2DABBDFADB6149A2CE0A5C49AA5E3F/CustomPatternPlaceholder/=args/Properties/=Minimal/@EntryIndexedValue">-1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=9D2DABBDFADB6149A2CE0A5C49AA5E3F/CustomPatternPlaceholder/=args/Type/@EntryValue">ArgumentPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=9D2DABBDFADB6149A2CE0A5C49AA5E3F/CustomPatternPlaceholder/=mock/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=9D2DABBDFADB6149A2CE0A5C49AA5E3F/CustomPatternPlaceholder/=mock/Properties/=CaseSensitive/@EntryIndexedValue">True</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=9D2DABBDFADB6149A2CE0A5C49AA5E3F/CustomPatternPlaceholder/=mock/Properties/=ExactType/@EntryIndexedValue">False</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=9D2DABBDFADB6149A2CE0A5C49AA5E3F/CustomPatternPlaceholder/=mock/Properties/=RegEx/@EntryIndexedValue"></s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=9D2DABBDFADB6149A2CE0A5C49AA5E3F/CustomPatternPlaceholder/=mock/Type/@EntryValue">IdentifierPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=9D2DABBDFADB6149A2CE0A5C49AA5E3F/CustomPatternPlaceholder/=mockAssignmentExpression/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=9D2DABBDFADB6149A2CE0A5C49AA5E3F/CustomPatternPlaceholder/=mockAssignmentExpression/Properties/=ExactType/@EntryIndexedValue">False</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=9D2DABBDFADB6149A2CE0A5C49AA5E3F/CustomPatternPlaceholder/=mockAssignmentExpression/Properties/=ExpressionType/@EntryIndexedValue"></s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=9D2DABBDFADB6149A2CE0A5C49AA5E3F/CustomPatternPlaceholder/=mockAssignmentExpression/Type/@EntryValue">ExpressionPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=9D2DABBDFADB6149A2CE0A5C49AA5E3F/IsReplacePattern/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=9D2DABBDFADB6149A2CE0A5C49AA5E3F/LanguageName/@EntryValue">CSHARP</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=9D2DABBDFADB6149A2CE0A5C49AA5E3F/MatchCatchClauseWithoutExceptionFilter/@EntryValue">False</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=9D2DABBDFADB6149A2CE0A5C49AA5E3F/ReplaceComment/@EntryValue">Transform to chained call.</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=9D2DABBDFADB6149A2CE0A5C49AA5E3F/ReplacePattern/@EntryValue">$mock$ = $mockAssignmentExpression$&#xD;
+    .WithNewMock($args$);</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=9D2DABBDFADB6149A2CE0A5C49AA5E3F/SearchPattern/@EntryValue">$mock$ = $mockAssignmentExpression$;&#xD;
+$mock$.WithNewMock($args$);</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=9D2DABBDFADB6149A2CE0A5C49AA5E3F/Severity/@EntryValue">SUGGESTION</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=9D2DABBDFADB6149A2CE0A5C49AA5E3F/SuppressionKey/@EntryValue">ChainMockWithCall</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A1D11BC1E0F1C3498F8EF86AE72CA71A/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A1D11BC1E0F1C3498F8EF86AE72CA71A/Comment/@EntryValue">Make use of .With() for setting up a getter with an async returned fixed value.</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A1D11BC1E0F1C3498F8EF86AE72CA71A/CustomPatternPlaceholder/=memberExpression/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A1D11BC1E0F1C3498F8EF86AE72CA71A/CustomPatternPlaceholder/=memberExpression/Properties/=Maximal/@EntryIndexedValue">1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A1D11BC1E0F1C3498F8EF86AE72CA71A/CustomPatternPlaceholder/=memberExpression/Properties/=Minimal/@EntryIndexedValue">1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A1D11BC1E0F1C3498F8EF86AE72CA71A/CustomPatternPlaceholder/=memberExpression/Type/@EntryValue">ArgumentPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A1D11BC1E0F1C3498F8EF86AE72CA71A/CustomPatternPlaceholder/=mock/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A1D11BC1E0F1C3498F8EF86AE72CA71A/CustomPatternPlaceholder/=mock/Properties/=ExactType/@EntryIndexedValue">False</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A1D11BC1E0F1C3498F8EF86AE72CA71A/CustomPatternPlaceholder/=mock/Properties/=ExpressionType/@EntryIndexedValue">Moq.Mock&lt;T&gt;</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A1D11BC1E0F1C3498F8EF86AE72CA71A/CustomPatternPlaceholder/=mock/Type/@EntryValue">ExpressionPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A1D11BC1E0F1C3498F8EF86AE72CA71A/CustomPatternPlaceholder/=value/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A1D11BC1E0F1C3498F8EF86AE72CA71A/CustomPatternPlaceholder/=value/Properties/=Maximal/@EntryIndexedValue">1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A1D11BC1E0F1C3498F8EF86AE72CA71A/CustomPatternPlaceholder/=value/Properties/=Minimal/@EntryIndexedValue">1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A1D11BC1E0F1C3498F8EF86AE72CA71A/CustomPatternPlaceholder/=value/Type/@EntryValue">ArgumentPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A1D11BC1E0F1C3498F8EF86AE72CA71A/IsReplacePattern/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A1D11BC1E0F1C3498F8EF86AE72CA71A/LanguageName/@EntryValue">CSHARP</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A1D11BC1E0F1C3498F8EF86AE72CA71A/MatchCatchClauseWithoutExceptionFilter/@EntryValue">False</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A1D11BC1E0F1C3498F8EF86AE72CA71A/ReplaceComment/@EntryValue">Transform to use .With call.</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A1D11BC1E0F1C3498F8EF86AE72CA71A/ReplacePattern/@EntryValue">$mock$.With($memberExpression$, $value$);</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A1D11BC1E0F1C3498F8EF86AE72CA71A/SearchPattern/@EntryValue">$mock$.SetupGet($memberExpression$).ReturnsAsync($value$);</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A1D11BC1E0F1C3498F8EF86AE72CA71A/Severity/@EntryValue">SUGGESTION</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A1D11BC1E0F1C3498F8EF86AE72CA71A/SuppressionKey/@EntryValue">UseWithCall</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A6575CD6E208A746804027596D11F29C/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A6575CD6E208A746804027596D11F29C/Comment/@EntryValue">Chain .With(*) call with the mock assignment.</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A6575CD6E208A746804027596D11F29C/CustomPatternPlaceholder/=args/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A6575CD6E208A746804027596D11F29C/CustomPatternPlaceholder/=args/Properties/=Maximal/@EntryIndexedValue">-1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A6575CD6E208A746804027596D11F29C/CustomPatternPlaceholder/=args/Properties/=Minimal/@EntryIndexedValue">-1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A6575CD6E208A746804027596D11F29C/CustomPatternPlaceholder/=args/Type/@EntryValue">ArgumentPlaceholder</s:String>
+	
+	
+	
+	
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A6575CD6E208A746804027596D11F29C/CustomPatternPlaceholder/=mock/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A6575CD6E208A746804027596D11F29C/CustomPatternPlaceholder/=mock/Properties/=CaseSensitive/@EntryIndexedValue">True</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A6575CD6E208A746804027596D11F29C/CustomPatternPlaceholder/=mock/Properties/=ExactType/@EntryIndexedValue">False</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A6575CD6E208A746804027596D11F29C/CustomPatternPlaceholder/=mock/Properties/=RegEx/@EntryIndexedValue"></s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A6575CD6E208A746804027596D11F29C/CustomPatternPlaceholder/=mock/Type/@EntryValue">IdentifierPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A6575CD6E208A746804027596D11F29C/CustomPatternPlaceholder/=mockAssignmentExpression/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A6575CD6E208A746804027596D11F29C/CustomPatternPlaceholder/=mockAssignmentExpression/Properties/=ExactType/@EntryIndexedValue">False</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A6575CD6E208A746804027596D11F29C/CustomPatternPlaceholder/=mockAssignmentExpression/Properties/=ExpressionType/@EntryIndexedValue"></s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A6575CD6E208A746804027596D11F29C/CustomPatternPlaceholder/=mockAssignmentExpression/Type/@EntryValue">ExpressionPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A6575CD6E208A746804027596D11F29C/IsReplacePattern/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A6575CD6E208A746804027596D11F29C/LanguageName/@EntryValue">CSHARP</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A6575CD6E208A746804027596D11F29C/MatchCatchClauseWithoutExceptionFilter/@EntryValue">False</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A6575CD6E208A746804027596D11F29C/ReplaceComment/@EntryValue">Transform to chained call.</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A6575CD6E208A746804027596D11F29C/ReplacePattern/@EntryValue">var $mock$ = $mockAssignmentExpression$&#xD;
+    .With($args$);</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A6575CD6E208A746804027596D11F29C/SearchPattern/@EntryValue">var $mock$ = $mockAssignmentExpression$;&#xD;
+$mock$.With($args$);</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A6575CD6E208A746804027596D11F29C/Severity/@EntryValue">SUGGESTION</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A6575CD6E208A746804027596D11F29C/SuppressionKey/@EntryValue">ChainMockWithCall</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A6842750FA3200479ECB9703EFF9CA65/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A6842750FA3200479ECB9703EFF9CA65/Comment/@EntryValue">Make use of .With() for setting up a member with a dynamic value.</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A6842750FA3200479ECB9703EFF9CA65/CustomPatternPlaceholder/=getterLogic/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A6842750FA3200479ECB9703EFF9CA65/CustomPatternPlaceholder/=getterLogic/Properties/=ExactType/@EntryIndexedValue">False</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A6842750FA3200479ECB9703EFF9CA65/CustomPatternPlaceholder/=getterLogic/Properties/=ExpressionType/@EntryIndexedValue"></s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A6842750FA3200479ECB9703EFF9CA65/CustomPatternPlaceholder/=getterLogic/Type/@EntryValue">ExpressionPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A6842750FA3200479ECB9703EFF9CA65/CustomPatternPlaceholder/=memberExpression/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A6842750FA3200479ECB9703EFF9CA65/CustomPatternPlaceholder/=memberExpression/Properties/=Maximal/@EntryIndexedValue">1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A6842750FA3200479ECB9703EFF9CA65/CustomPatternPlaceholder/=memberExpression/Properties/=Minimal/@EntryIndexedValue">1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A6842750FA3200479ECB9703EFF9CA65/CustomPatternPlaceholder/=memberExpression/Type/@EntryValue">ArgumentPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A6842750FA3200479ECB9703EFF9CA65/CustomPatternPlaceholder/=mock/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A6842750FA3200479ECB9703EFF9CA65/CustomPatternPlaceholder/=mock/Properties/=ExactType/@EntryIndexedValue">False</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A6842750FA3200479ECB9703EFF9CA65/CustomPatternPlaceholder/=mock/Properties/=ExpressionType/@EntryIndexedValue">Moq.Mock&lt;T&gt;</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A6842750FA3200479ECB9703EFF9CA65/CustomPatternPlaceholder/=mock/Type/@EntryValue">ExpressionPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A6842750FA3200479ECB9703EFF9CA65/IsReplacePattern/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A6842750FA3200479ECB9703EFF9CA65/LanguageName/@EntryValue">CSHARP</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A6842750FA3200479ECB9703EFF9CA65/MatchCatchClauseWithoutExceptionFilter/@EntryValue">False</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A6842750FA3200479ECB9703EFF9CA65/ReplaceComment/@EntryValue">Transform to use .With call.</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A6842750FA3200479ECB9703EFF9CA65/ReplacePattern/@EntryValue">$mock$.With($memberExpression$, () =&gt; $getterLogic$);</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A6842750FA3200479ECB9703EFF9CA65/SearchPattern/@EntryValue">$mock$.Setup($memberExpression$).Returns(() =&gt; $getterLogic$);</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A6842750FA3200479ECB9703EFF9CA65/Severity/@EntryValue">SUGGESTION</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A6842750FA3200479ECB9703EFF9CA65/SuppressionKey/@EntryValue">UseWithCall</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A7C067CB8843AE45BC467A480B42E32C/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A7C067CB8843AE45BC467A480B42E32C/Comment/@EntryValue">Chain .WithException(*) call with the mock assignment.</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A7C067CB8843AE45BC467A480B42E32C/CustomPatternPlaceholder/=args/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A7C067CB8843AE45BC467A480B42E32C/CustomPatternPlaceholder/=args/Properties/=Maximal/@EntryIndexedValue">-1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A7C067CB8843AE45BC467A480B42E32C/CustomPatternPlaceholder/=args/Properties/=Minimal/@EntryIndexedValue">-1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A7C067CB8843AE45BC467A480B42E32C/CustomPatternPlaceholder/=args/Type/@EntryValue">ArgumentPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A7C067CB8843AE45BC467A480B42E32C/CustomPatternPlaceholder/=mock/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A7C067CB8843AE45BC467A480B42E32C/CustomPatternPlaceholder/=mock/Properties/=CaseSensitive/@EntryIndexedValue">True</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A7C067CB8843AE45BC467A480B42E32C/CustomPatternPlaceholder/=mock/Properties/=ExactType/@EntryIndexedValue">False</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A7C067CB8843AE45BC467A480B42E32C/CustomPatternPlaceholder/=mock/Properties/=RegEx/@EntryIndexedValue"></s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A7C067CB8843AE45BC467A480B42E32C/CustomPatternPlaceholder/=mock/Type/@EntryValue">IdentifierPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A7C067CB8843AE45BC467A480B42E32C/CustomPatternPlaceholder/=mockAssignmentExpression/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A7C067CB8843AE45BC467A480B42E32C/CustomPatternPlaceholder/=mockAssignmentExpression/Properties/=ExactType/@EntryIndexedValue">False</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A7C067CB8843AE45BC467A480B42E32C/CustomPatternPlaceholder/=mockAssignmentExpression/Properties/=ExpressionType/@EntryIndexedValue"></s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A7C067CB8843AE45BC467A480B42E32C/CustomPatternPlaceholder/=mockAssignmentExpression/Type/@EntryValue">ExpressionPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A7C067CB8843AE45BC467A480B42E32C/IsReplacePattern/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A7C067CB8843AE45BC467A480B42E32C/LanguageName/@EntryValue">CSHARP</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A7C067CB8843AE45BC467A480B42E32C/MatchCatchClauseWithoutExceptionFilter/@EntryValue">False</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A7C067CB8843AE45BC467A480B42E32C/ReplaceComment/@EntryValue">Transform to chained call.</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A7C067CB8843AE45BC467A480B42E32C/ReplacePattern/@EntryValue">$mock$ = $mockAssignmentExpression$&#xD;
+    .WithException($args$);</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A7C067CB8843AE45BC467A480B42E32C/SearchPattern/@EntryValue">$mock$ = $mockAssignmentExpression$;&#xD;
+$mock$.WithException($args$);</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A7C067CB8843AE45BC467A480B42E32C/Severity/@EntryValue">SUGGESTION</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=A7C067CB8843AE45BC467A480B42E32C/SuppressionKey/@EntryValue">ChainMockWithCall</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=C6A5581532D4D648B1C6BCAD559C4147/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=C6A5581532D4D648B1C6BCAD559C4147/Comment/@EntryValue">Chain .With(*) call with the mock assignment.</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=C6A5581532D4D648B1C6BCAD559C4147/CustomPatternPlaceholder/=args/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=C6A5581532D4D648B1C6BCAD559C4147/CustomPatternPlaceholder/=args/Properties/=Maximal/@EntryIndexedValue">-1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=C6A5581532D4D648B1C6BCAD559C4147/CustomPatternPlaceholder/=args/Properties/=Minimal/@EntryIndexedValue">-1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=C6A5581532D4D648B1C6BCAD559C4147/CustomPatternPlaceholder/=args/Type/@EntryValue">ArgumentPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=C6A5581532D4D648B1C6BCAD559C4147/CustomPatternPlaceholder/=mock/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=C6A5581532D4D648B1C6BCAD559C4147/CustomPatternPlaceholder/=mock/Properties/=CaseSensitive/@EntryIndexedValue">True</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=C6A5581532D4D648B1C6BCAD559C4147/CustomPatternPlaceholder/=mock/Properties/=ExactType/@EntryIndexedValue">False</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=C6A5581532D4D648B1C6BCAD559C4147/CustomPatternPlaceholder/=mock/Properties/=RegEx/@EntryIndexedValue"></s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=C6A5581532D4D648B1C6BCAD559C4147/CustomPatternPlaceholder/=mock/Type/@EntryValue">IdentifierPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=C6A5581532D4D648B1C6BCAD559C4147/CustomPatternPlaceholder/=mockAssignmentExpression/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=C6A5581532D4D648B1C6BCAD559C4147/CustomPatternPlaceholder/=mockAssignmentExpression/Properties/=ExactType/@EntryIndexedValue">False</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=C6A5581532D4D648B1C6BCAD559C4147/CustomPatternPlaceholder/=mockAssignmentExpression/Properties/=ExpressionType/@EntryIndexedValue"></s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=C6A5581532D4D648B1C6BCAD559C4147/CustomPatternPlaceholder/=mockAssignmentExpression/Type/@EntryValue">ExpressionPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=C6A5581532D4D648B1C6BCAD559C4147/IsReplacePattern/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=C6A5581532D4D648B1C6BCAD559C4147/LanguageName/@EntryValue">CSHARP</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=C6A5581532D4D648B1C6BCAD559C4147/MatchCatchClauseWithoutExceptionFilter/@EntryValue">False</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=C6A5581532D4D648B1C6BCAD559C4147/ReplaceComment/@EntryValue">Transform to chained call.</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=C6A5581532D4D648B1C6BCAD559C4147/ReplacePattern/@EntryValue">$mock$ = $mockAssignmentExpression$&#xD;
+    .With($args$);</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=C6A5581532D4D648B1C6BCAD559C4147/SearchPattern/@EntryValue">$mock$ = $mockAssignmentExpression$;&#xD;
+$mock$.With($args$);</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=C6A5581532D4D648B1C6BCAD559C4147/Severity/@EntryValue">SUGGESTION</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=C6A5581532D4D648B1C6BCAD559C4147/SuppressionKey/@EntryValue">ChainMockWithCall</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=D7F2080CCD37C84DB3828A400827C962/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=D7F2080CCD37C84DB3828A400827C962/Comment/@EntryValue">Make use of .With() for setting up a member with an async returned fixed value.</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=D7F2080CCD37C84DB3828A400827C962/CustomPatternPlaceholder/=memberExpression/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=D7F2080CCD37C84DB3828A400827C962/CustomPatternPlaceholder/=memberExpression/Properties/=Maximal/@EntryIndexedValue">1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=D7F2080CCD37C84DB3828A400827C962/CustomPatternPlaceholder/=memberExpression/Properties/=Minimal/@EntryIndexedValue">1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=D7F2080CCD37C84DB3828A400827C962/CustomPatternPlaceholder/=memberExpression/Type/@EntryValue">ArgumentPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=D7F2080CCD37C84DB3828A400827C962/CustomPatternPlaceholder/=mock/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=D7F2080CCD37C84DB3828A400827C962/CustomPatternPlaceholder/=mock/Properties/=ExactType/@EntryIndexedValue">False</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=D7F2080CCD37C84DB3828A400827C962/CustomPatternPlaceholder/=mock/Properties/=ExpressionType/@EntryIndexedValue">Moq.Mock&lt;T&gt;</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=D7F2080CCD37C84DB3828A400827C962/CustomPatternPlaceholder/=mock/Type/@EntryValue">ExpressionPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=D7F2080CCD37C84DB3828A400827C962/CustomPatternPlaceholder/=value/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=D7F2080CCD37C84DB3828A400827C962/CustomPatternPlaceholder/=value/Properties/=Maximal/@EntryIndexedValue">1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=D7F2080CCD37C84DB3828A400827C962/CustomPatternPlaceholder/=value/Properties/=Minimal/@EntryIndexedValue">1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=D7F2080CCD37C84DB3828A400827C962/CustomPatternPlaceholder/=value/Type/@EntryValue">ArgumentPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=D7F2080CCD37C84DB3828A400827C962/IsReplacePattern/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=D7F2080CCD37C84DB3828A400827C962/LanguageName/@EntryValue">CSHARP</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=D7F2080CCD37C84DB3828A400827C962/MatchCatchClauseWithoutExceptionFilter/@EntryValue">False</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=D7F2080CCD37C84DB3828A400827C962/ReplaceComment/@EntryValue">Transform to use .With call.</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=D7F2080CCD37C84DB3828A400827C962/ReplacePattern/@EntryValue">$mock$.With($memberExpression$, $value$);</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=D7F2080CCD37C84DB3828A400827C962/SearchPattern/@EntryValue">$mock$.Setup($memberExpression$).ReturnsAsync($value$);</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=D7F2080CCD37C84DB3828A400827C962/Severity/@EntryValue">SUGGESTION</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=D7F2080CCD37C84DB3828A400827C962/SuppressionKey/@EntryValue">UseWithCall</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=DD34D968006D2D46901661803DCF51AA/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=DD34D968006D2D46901661803DCF51AA/Comment/@EntryValue">Chain .WithException(*) call with the mock assignment.</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=DD34D968006D2D46901661803DCF51AA/CustomPatternPlaceholder/=args/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=DD34D968006D2D46901661803DCF51AA/CustomPatternPlaceholder/=args/Properties/=Maximal/@EntryIndexedValue">-1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=DD34D968006D2D46901661803DCF51AA/CustomPatternPlaceholder/=args/Properties/=Minimal/@EntryIndexedValue">-1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=DD34D968006D2D46901661803DCF51AA/CustomPatternPlaceholder/=args/Type/@EntryValue">ArgumentPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=DD34D968006D2D46901661803DCF51AA/CustomPatternPlaceholder/=exceptionType/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=DD34D968006D2D46901661803DCF51AA/CustomPatternPlaceholder/=exceptionType/Properties/=ExactType/@EntryIndexedValue">False</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=DD34D968006D2D46901661803DCF51AA/CustomPatternPlaceholder/=exceptionType/Properties/=Type/@EntryIndexedValue"></s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=DD34D968006D2D46901661803DCF51AA/CustomPatternPlaceholder/=exceptionType/Type/@EntryValue">TypePlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=DD34D968006D2D46901661803DCF51AA/CustomPatternPlaceholder/=mock/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=DD34D968006D2D46901661803DCF51AA/CustomPatternPlaceholder/=mock/Properties/=ExactType/@EntryIndexedValue">False</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=DD34D968006D2D46901661803DCF51AA/CustomPatternPlaceholder/=mock/Properties/=ExpressionType/@EntryIndexedValue"></s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=DD34D968006D2D46901661803DCF51AA/CustomPatternPlaceholder/=mock/Type/@EntryValue">ExpressionPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=DD34D968006D2D46901661803DCF51AA/CustomPatternPlaceholder/=mockAssignmentExpression/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=DD34D968006D2D46901661803DCF51AA/CustomPatternPlaceholder/=mockAssignmentExpression/Properties/=CaseSensitive/@EntryIndexedValue">True</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=DD34D968006D2D46901661803DCF51AA/CustomPatternPlaceholder/=mockAssignmentExpression/Properties/=ExactType/@EntryIndexedValue">False</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=DD34D968006D2D46901661803DCF51AA/CustomPatternPlaceholder/=mockAssignmentExpression/Properties/=RegEx/@EntryIndexedValue"></s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=DD34D968006D2D46901661803DCF51AA/CustomPatternPlaceholder/=mockAssignmentExpression/Type/@EntryValue">IdentifierPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=DD34D968006D2D46901661803DCF51AA/IsReplacePattern/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=DD34D968006D2D46901661803DCF51AA/LanguageName/@EntryValue">CSHARP</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=DD34D968006D2D46901661803DCF51AA/MatchCatchClauseWithoutExceptionFilter/@EntryValue">False</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=DD34D968006D2D46901661803DCF51AA/ReplaceComment/@EntryValue">Transform to chained call.</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=DD34D968006D2D46901661803DCF51AA/ReplacePattern/@EntryValue">var $mock$ = $mockAssignmentExpression$&#xD;
+    .WithException&lt;$exceptionType$&gt;($args$);</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=DD34D968006D2D46901661803DCF51AA/SearchPattern/@EntryValue">var $mock$ = $mockAssignmentExpression$;&#xD;
+$mock$.WithException&lt;$exceptionType$&gt;($args$);</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=DD34D968006D2D46901661803DCF51AA/Severity/@EntryValue">SUGGESTION</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=DD34D968006D2D46901661803DCF51AA/SuppressionKey/@EntryValue">ChainMockWithCall</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=E43AF2038F085442B6E22C538C2CFD25/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=E43AF2038F085442B6E22C538C2CFD25/Comment/@EntryValue">Make use of .With() for setting up a member with a generic exception.</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=E43AF2038F085442B6E22C538C2CFD25/CustomPatternPlaceholder/=exceptionType/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=E43AF2038F085442B6E22C538C2CFD25/CustomPatternPlaceholder/=exceptionType/Properties/=ExactType/@EntryIndexedValue">False</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=E43AF2038F085442B6E22C538C2CFD25/CustomPatternPlaceholder/=exceptionType/Properties/=Type/@EntryIndexedValue">System.Exception</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=E43AF2038F085442B6E22C538C2CFD25/CustomPatternPlaceholder/=exceptionType/Type/@EntryValue">TypePlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=E43AF2038F085442B6E22C538C2CFD25/CustomPatternPlaceholder/=memberExpression/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=E43AF2038F085442B6E22C538C2CFD25/CustomPatternPlaceholder/=memberExpression/Properties/=Maximal/@EntryIndexedValue">1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=E43AF2038F085442B6E22C538C2CFD25/CustomPatternPlaceholder/=memberExpression/Properties/=Minimal/@EntryIndexedValue">1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=E43AF2038F085442B6E22C538C2CFD25/CustomPatternPlaceholder/=memberExpression/Type/@EntryValue">ArgumentPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=E43AF2038F085442B6E22C538C2CFD25/CustomPatternPlaceholder/=mock/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=E43AF2038F085442B6E22C538C2CFD25/CustomPatternPlaceholder/=mock/Properties/=ExactType/@EntryIndexedValue">False</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=E43AF2038F085442B6E22C538C2CFD25/CustomPatternPlaceholder/=mock/Properties/=ExpressionType/@EntryIndexedValue">Moq.Mock&lt;T&gt;</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=E43AF2038F085442B6E22C538C2CFD25/CustomPatternPlaceholder/=mock/Type/@EntryValue">ExpressionPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=E43AF2038F085442B6E22C538C2CFD25/IsReplacePattern/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=E43AF2038F085442B6E22C538C2CFD25/LanguageName/@EntryValue">CSHARP</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=E43AF2038F085442B6E22C538C2CFD25/MatchCatchClauseWithoutExceptionFilter/@EntryValue">False</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=E43AF2038F085442B6E22C538C2CFD25/ReplaceComment/@EntryValue">Transform to use .With call.</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=E43AF2038F085442B6E22C538C2CFD25/ReplacePattern/@EntryValue">$mock$.WithException($memberExpression$, new $exceptionType$());</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=E43AF2038F085442B6E22C538C2CFD25/SearchPattern/@EntryValue">$mock$.Setup($memberExpression$).Throws&lt;$exceptionType$&gt;();</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=E43AF2038F085442B6E22C538C2CFD25/Severity/@EntryValue">SUGGESTION</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=E43AF2038F085442B6E22C538C2CFD25/SuppressionKey/@EntryValue">UseWithCall</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=E6AFFABDBEA96948BEBB522C7F1ADC1F/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=E6AFFABDBEA96948BEBB522C7F1ADC1F/Comment/@EntryValue">Chain .WithException(*) call with the mock assignment.</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=E6AFFABDBEA96948BEBB522C7F1ADC1F/CustomPatternPlaceholder/=args/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=E6AFFABDBEA96948BEBB522C7F1ADC1F/CustomPatternPlaceholder/=args/Properties/=Maximal/@EntryIndexedValue">-1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=E6AFFABDBEA96948BEBB522C7F1ADC1F/CustomPatternPlaceholder/=args/Properties/=Minimal/@EntryIndexedValue">-1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=E6AFFABDBEA96948BEBB522C7F1ADC1F/CustomPatternPlaceholder/=args/Type/@EntryValue">ArgumentPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=E6AFFABDBEA96948BEBB522C7F1ADC1F/CustomPatternPlaceholder/=mock/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=E6AFFABDBEA96948BEBB522C7F1ADC1F/CustomPatternPlaceholder/=mock/Properties/=CaseSensitive/@EntryIndexedValue">True</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=E6AFFABDBEA96948BEBB522C7F1ADC1F/CustomPatternPlaceholder/=mock/Properties/=ExactType/@EntryIndexedValue">False</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=E6AFFABDBEA96948BEBB522C7F1ADC1F/CustomPatternPlaceholder/=mock/Properties/=RegEx/@EntryIndexedValue"></s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=E6AFFABDBEA96948BEBB522C7F1ADC1F/CustomPatternPlaceholder/=mock/Type/@EntryValue">IdentifierPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=E6AFFABDBEA96948BEBB522C7F1ADC1F/CustomPatternPlaceholder/=mockAssignmentExpression/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=E6AFFABDBEA96948BEBB522C7F1ADC1F/CustomPatternPlaceholder/=mockAssignmentExpression/Properties/=ExactType/@EntryIndexedValue">False</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=E6AFFABDBEA96948BEBB522C7F1ADC1F/CustomPatternPlaceholder/=mockAssignmentExpression/Properties/=ExpressionType/@EntryIndexedValue"></s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=E6AFFABDBEA96948BEBB522C7F1ADC1F/CustomPatternPlaceholder/=mockAssignmentExpression/Type/@EntryValue">ExpressionPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=E6AFFABDBEA96948BEBB522C7F1ADC1F/IsReplacePattern/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=E6AFFABDBEA96948BEBB522C7F1ADC1F/LanguageName/@EntryValue">CSHARP</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=E6AFFABDBEA96948BEBB522C7F1ADC1F/MatchCatchClauseWithoutExceptionFilter/@EntryValue">False</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=E6AFFABDBEA96948BEBB522C7F1ADC1F/ReplaceComment/@EntryValue">Transform to chained call.</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=E6AFFABDBEA96948BEBB522C7F1ADC1F/ReplacePattern/@EntryValue">var $mock$ = $mockAssignmentExpression$&#xD;
+    .WithException($args$);</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=E6AFFABDBEA96948BEBB522C7F1ADC1F/SearchPattern/@EntryValue">var $mock$ = $mockAssignmentExpression$;&#xD;
+$mock$.WithException($args$);</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=E6AFFABDBEA96948BEBB522C7F1ADC1F/Severity/@EntryValue">SUGGESTION</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=E6AFFABDBEA96948BEBB522C7F1ADC1F/SuppressionKey/@EntryValue">ChainMockWithCall</s:String></wpf:ResourceDictionary>
