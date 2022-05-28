@@ -1,0 +1,89 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=1D747F6D8E6A824985384AD4804BB8B1/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=1D747F6D8E6A824985384AD4804BB8B1/Comment/@EntryValue">Make use of Collection.Contains instead of iterating it with a n Any value comparison.</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=1D747F6D8E6A824985384AD4804BB8B1/CustomPatternPlaceholder/=collection/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=1D747F6D8E6A824985384AD4804BB8B1/CustomPatternPlaceholder/=collection/Properties/=ExactType/@EntryIndexedValue">False</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=1D747F6D8E6A824985384AD4804BB8B1/CustomPatternPlaceholder/=collection/Properties/=ExpressionType/@EntryIndexedValue">System.Collections.Generic.ICollection&lt;T&gt;</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=1D747F6D8E6A824985384AD4804BB8B1/CustomPatternPlaceholder/=collection/Type/@EntryValue">ExpressionPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=1D747F6D8E6A824985384AD4804BB8B1/CustomPatternPlaceholder/=element/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=1D747F6D8E6A824985384AD4804BB8B1/CustomPatternPlaceholder/=element/Properties/=CaseSensitive/@EntryIndexedValue">True</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=1D747F6D8E6A824985384AD4804BB8B1/CustomPatternPlaceholder/=element/Properties/=ExactType/@EntryIndexedValue">False</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=1D747F6D8E6A824985384AD4804BB8B1/CustomPatternPlaceholder/=element/Properties/=RegEx/@EntryIndexedValue"></s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=1D747F6D8E6A824985384AD4804BB8B1/CustomPatternPlaceholder/=element/Type/@EntryValue">IdentifierPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=1D747F6D8E6A824985384AD4804BB8B1/CustomPatternPlaceholder/=value/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=1D747F6D8E6A824985384AD4804BB8B1/CustomPatternPlaceholder/=value/Properties/=ExactType/@EntryIndexedValue">False</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=1D747F6D8E6A824985384AD4804BB8B1/CustomPatternPlaceholder/=value/Properties/=ExpressionType/@EntryIndexedValue"></s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=1D747F6D8E6A824985384AD4804BB8B1/CustomPatternPlaceholder/=value/Type/@EntryValue">ExpressionPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=1D747F6D8E6A824985384AD4804BB8B1/IsReplacePattern/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=1D747F6D8E6A824985384AD4804BB8B1/LanguageName/@EntryValue">CSHARP</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=1D747F6D8E6A824985384AD4804BB8B1/MatchCatchClauseWithoutExceptionFilter/@EntryValue">False</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=1D747F6D8E6A824985384AD4804BB8B1/ReplaceComment/@EntryValue">Transform to use Collection.Contains.</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=1D747F6D8E6A824985384AD4804BB8B1/ReplacePattern/@EntryValue">$collection$.Contains($value$)</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=1D747F6D8E6A824985384AD4804BB8B1/SearchPattern/@EntryValue">$collection$.Any($element$ =&gt; $element$ == $value$)</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=1D747F6D8E6A824985384AD4804BB8B1/Severity/@EntryValue">SUGGESTION</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=1D747F6D8E6A824985384AD4804BB8B1/SuppressionKey/@EntryValue">UseContainsInsteadOfAny</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=312A1D8675BF944396DCA03212650745/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=312A1D8675BF944396DCA03212650745/Comment/@EntryValue">Make use of Array.Empty instead of allocating an empty array.</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=312A1D8675BF944396DCA03212650745/CustomPatternPlaceholder/=elementType/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=312A1D8675BF944396DCA03212650745/CustomPatternPlaceholder/=elementType/Properties/=ExactType/@EntryIndexedValue">False</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=312A1D8675BF944396DCA03212650745/CustomPatternPlaceholder/=elementType/Properties/=Type/@EntryIndexedValue"></s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=312A1D8675BF944396DCA03212650745/CustomPatternPlaceholder/=elementType/Type/@EntryValue">TypePlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=312A1D8675BF944396DCA03212650745/IsReplacePattern/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=312A1D8675BF944396DCA03212650745/LanguageName/@EntryValue">CSHARP</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=312A1D8675BF944396DCA03212650745/MatchCatchClauseWithoutExceptionFilter/@EntryValue">False</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=312A1D8675BF944396DCA03212650745/ReplaceComment/@EntryValue">Transform to use Array.Empty.</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=312A1D8675BF944396DCA03212650745/ReplacePattern/@EntryValue">Array.Empty&lt;$elementType$&gt;()</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=312A1D8675BF944396DCA03212650745/SearchPattern/@EntryValue">new $elementType$[0]</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=312A1D8675BF944396DCA03212650745/Severity/@EntryValue">SUGGESTION</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=312A1D8675BF944396DCA03212650745/SuppressionKey/@EntryValue">UseArrayEmpty</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=AB309E4DA5881F468E555C1AAB56966A/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=AB309E4DA5881F468E555C1AAB56966A/Comment/@EntryValue">Make use of Array.Contains instead of iterating it with a n Any value comparison.</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=AB309E4DA5881F468E555C1AAB56966A/CustomPatternPlaceholder/=array/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=AB309E4DA5881F468E555C1AAB56966A/CustomPatternPlaceholder/=array/Properties/=ExactType/@EntryIndexedValue">False</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=AB309E4DA5881F468E555C1AAB56966A/CustomPatternPlaceholder/=array/Properties/=ExpressionType/@EntryIndexedValue">System.Array</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=AB309E4DA5881F468E555C1AAB56966A/CustomPatternPlaceholder/=array/Type/@EntryValue">ExpressionPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=AB309E4DA5881F468E555C1AAB56966A/CustomPatternPlaceholder/=element/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=AB309E4DA5881F468E555C1AAB56966A/CustomPatternPlaceholder/=element/Properties/=CaseSensitive/@EntryIndexedValue">True</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=AB309E4DA5881F468E555C1AAB56966A/CustomPatternPlaceholder/=element/Properties/=ExactType/@EntryIndexedValue">False</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=AB309E4DA5881F468E555C1AAB56966A/CustomPatternPlaceholder/=element/Properties/=RegEx/@EntryIndexedValue"></s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=AB309E4DA5881F468E555C1AAB56966A/CustomPatternPlaceholder/=element/Type/@EntryValue">IdentifierPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=AB309E4DA5881F468E555C1AAB56966A/CustomPatternPlaceholder/=value/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=AB309E4DA5881F468E555C1AAB56966A/CustomPatternPlaceholder/=value/Properties/=ExactType/@EntryIndexedValue">False</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=AB309E4DA5881F468E555C1AAB56966A/CustomPatternPlaceholder/=value/Properties/=ExpressionType/@EntryIndexedValue"></s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=AB309E4DA5881F468E555C1AAB56966A/CustomPatternPlaceholder/=value/Type/@EntryValue">ExpressionPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=AB309E4DA5881F468E555C1AAB56966A/IsReplacePattern/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=AB309E4DA5881F468E555C1AAB56966A/LanguageName/@EntryValue">CSHARP</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=AB309E4DA5881F468E555C1AAB56966A/MatchCatchClauseWithoutExceptionFilter/@EntryValue">False</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=AB309E4DA5881F468E555C1AAB56966A/ReplaceComment/@EntryValue">Transform to use Array.Contains.</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=AB309E4DA5881F468E555C1AAB56966A/ReplacePattern/@EntryValue">$array$.Contains($value$)</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=AB309E4DA5881F468E555C1AAB56966A/SearchPattern/@EntryValue">$array$.Any($element$ =&gt; $element$ == $value$)</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=AB309E4DA5881F468E555C1AAB56966A/Severity/@EntryValue">SUGGESTION</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=AB309E4DA5881F468E555C1AAB56966A/SuppressionKey/@EntryValue">UseContainsInsteadOfAny</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=C86EEE95D63E0142ABEE35DE98E66BF0/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=C86EEE95D63E0142ABEE35DE98E66BF0/Comment/@EntryValue">Make use of Array.Empty instead of allocating an empty array.</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=C86EEE95D63E0142ABEE35DE98E66BF0/CustomPatternPlaceholder/=elementType/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=C86EEE95D63E0142ABEE35DE98E66BF0/CustomPatternPlaceholder/=elementType/Properties/=ExactType/@EntryIndexedValue">False</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=C86EEE95D63E0142ABEE35DE98E66BF0/CustomPatternPlaceholder/=elementType/Properties/=Type/@EntryIndexedValue"></s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=C86EEE95D63E0142ABEE35DE98E66BF0/CustomPatternPlaceholder/=elementType/Type/@EntryValue">TypePlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=C86EEE95D63E0142ABEE35DE98E66BF0/IsReplacePattern/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=C86EEE95D63E0142ABEE35DE98E66BF0/LanguageName/@EntryValue">CSHARP</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=C86EEE95D63E0142ABEE35DE98E66BF0/MatchCatchClauseWithoutExceptionFilter/@EntryValue">False</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=C86EEE95D63E0142ABEE35DE98E66BF0/ReplaceComment/@EntryValue">Transform to use Array.Empty.</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=C86EEE95D63E0142ABEE35DE98E66BF0/ReplacePattern/@EntryValue">Array.Empty&lt;$elementType$&gt;()</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=C86EEE95D63E0142ABEE35DE98E66BF0/SearchPattern/@EntryValue">new $elementType$[] {}</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=C86EEE95D63E0142ABEE35DE98E66BF0/Severity/@EntryValue">SUGGESTION</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=C86EEE95D63E0142ABEE35DE98E66BF0/SuppressionKey/@EntryValue">UseArrayEmpty</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=E42A23E398B1B64F8EEAA4FD71D10F39/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=E42A23E398B1B64F8EEAA4FD71D10F39/Comment/@EntryValue">Make use of negation instead of comparison with false.</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=E42A23E398B1B64F8EEAA4FD71D10F39/CustomPatternPlaceholder/=expr/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=E42A23E398B1B64F8EEAA4FD71D10F39/CustomPatternPlaceholder/=expr/Properties/=ExactType/@EntryIndexedValue">False</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=E42A23E398B1B64F8EEAA4FD71D10F39/CustomPatternPlaceholder/=expr/Properties/=ExpressionType/@EntryIndexedValue">System.Boolean</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=E42A23E398B1B64F8EEAA4FD71D10F39/CustomPatternPlaceholder/=expr/Type/@EntryValue">ExpressionPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=E42A23E398B1B64F8EEAA4FD71D10F39/IsReplacePattern/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=E42A23E398B1B64F8EEAA4FD71D10F39/LanguageName/@EntryValue">CSHARP</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=E42A23E398B1B64F8EEAA4FD71D10F39/MatchCatchClauseWithoutExceptionFilter/@EntryValue">False</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=E42A23E398B1B64F8EEAA4FD71D10F39/ReplaceComment/@EntryValue">Transform to negation.</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=E42A23E398B1B64F8EEAA4FD71D10F39/ReplacePattern/@EntryValue">!($expr$)</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=E42A23E398B1B64F8EEAA4FD71D10F39/SearchPattern/@EntryValue">$expr$ == false</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=E42A23E398B1B64F8EEAA4FD71D10F39/Severity/@EntryValue">SUGGESTION</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=E42A23E398B1B64F8EEAA4FD71D10F39/SuppressionKey/@EntryValue">UseNegation</s:String></wpf:ResourceDictionary>

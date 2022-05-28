@@ -1,104 +1,126 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-    <AssemblyName>Moq.CompactSetup</AssemblyName>
-    <RootNamespace>Moq.CompactSetup</RootNamespace>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<AssemblyName>Moq.CompactSetup</AssemblyName>
+		<RootNamespace>Moq.CompactSetup</RootNamespace>
+	</PropertyGroup>
 
-  <PropertyGroup>
-    <Version>0.1.0.0</Version>
-    <Company>Christoph Meißner</Company>
-    <Title>Moq.CompactSetup</Title>
-    <Product>Moq Compact Setup</Product>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Authors>Christoph Meißner</Authors>
-    <Copyright>Copyright (c) 2022 Christoph Meißner</Copyright>
-    <PackageProjectUrl>https://github.com/tanith87/Moq.CompactSetup</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/tanith87/Moq.CompactSetup</RepositoryUrl>
-    <RepositoryType>Github</RepositoryType>
-    <Description>This is a library to make Moq setups more compact and enhance its capabilities though.</Description>
-    <PackageLicenseExpression></PackageLicenseExpression>
-    <PackageTags>moq tdd mocking mocks unittesting agile unittest compact fluent</PackageTags>
-    <PackageLicenseFile>LICENSE</PackageLicenseFile>
-    <PackageReleaseNotes>Version 0.1.0.0
-- Initial release</PackageReleaseNotes>
-    <PackageIcon>packageicon.png</PackageIcon>
-    <PackageIconUrl />
-  </PropertyGroup>
+	<PropertyGroup>
+		<Version>0.1.0.0</Version>
+		<Company>Christoph Meißner</Company>
+		<Title>Moq.CompactSetup</Title>
+		<Product>Moq Compact Setup</Product>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<Authors>Christoph Meißner</Authors>
+		<Copyright>Copyright (c) 2022 Christoph Meißner</Copyright>
+		<PackageProjectUrl>https://github.com/tanith87/Moq.CompactSetup</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/tanith87/Moq.CompactSetup</RepositoryUrl>
+		<RepositoryType>Github</RepositoryType>
+		<Description>This is a library to make Moq setups more compact and enhance its capabilities though.</Description>
+		<PackageLicenseExpression></PackageLicenseExpression>
+		<PackageTags>moq tdd mocking mocks unittesting agile unittest compact fluent</PackageTags>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<PackageReleaseNotes>
+			Version 0.1.0.0
+			- Initial release
+		</PackageReleaseNotes>
+		<PackageIcon>packageicon.png</PackageIcon>
+		<PackageIconUrl />
+	</PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <OutputPath>..\..\bin</OutputPath>
-    <DocumentationFile>..\..\bin\Moq.CompactSetup.xml</DocumentationFile>
-  </PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<OutputPath>..\..\bin</OutputPath>
+		<DocumentationFile>..\..\bin\Moq.CompactSetup.xml</DocumentationFile>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <Compile Remove="Package\**" />
-    <EmbeddedResource Remove="Package\**" />
-    <None Remove="Package\**" />
-    <None Include="..\..\LICENSE">
-      <Pack>True</Pack>
-      <PackagePath></PackagePath>
-    </None>
-    <None Include="..\Packaging\packageicon.png">
-      <Pack>True</Pack>
-      <PackagePath></PackagePath>
-    </None>
-  </ItemGroup>
+	<ItemGroup>
+		<Compile Remove="Package\**" />
+		<EmbeddedResource Remove="Package\**" />
+		<None Remove="Package\**" />
+		<None Include="..\..\LICENSE">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+		</None>
+		<None Include="..\Packaging\packageicon.png">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+		</None>
+	</ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Moq" Version="4.16.1" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Moq" Version="4.16.1" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <None Update="MockExtensions.Actions.tt">
-      <LastGenOutput>MockExtensions.Actions.cs</LastGenOutput>
-      <Generator>TextTemplatingFileGenerator</Generator>
-    </None>
-    <None Update="MockExtensions.Functions.tt">
-      <LastGenOutput>MockExtensions.Functions.cs</LastGenOutput>
-      <Generator>TextTemplatingFileGenerator</Generator>
-    </None>
-    <None Update="MockExtensions.RefActions.tt">
-      <LastGenOutput>MockExtensions.RefActions.cs</LastGenOutput>
-      <Generator>TextTemplatingFileGenerator</Generator>
-    </None>
-    <None Update="MockExtensions.RefFunctions.tt">
-      <LastGenOutput>MockExtensions.RefFunctions.cs</LastGenOutput>
-      <Generator>TextTemplatingFileGenerator</Generator>
-    </None>
-  </ItemGroup>
+	<ItemGroup>
+		<None Update="MockExtensions.Actions.tt">
+			<LastGenOutput>MockExtensions.Actions.cs</LastGenOutput>
+			<Generator>TextTemplatingFileGenerator</Generator>
+		</None>
+		<None Update="MockExtensions.Functions.tt">
+			<LastGenOutput>MockExtensions.Functions.cs</LastGenOutput>
+			<Generator>TextTemplatingFileGenerator</Generator>
+		</None>
+		<None Update="MockExtensions.RefActions.tt">
+			<LastGenOutput>MockExtensions.RefActions.cs</LastGenOutput>
+			<Generator>TextTemplatingFileGenerator</Generator>
+		</None>
+		<None Update="MockExtensions.RefFunctions.tt">
+			<LastGenOutput>MockExtensions.RefFunctions.cs</LastGenOutput>
+			<Generator>TextTemplatingFileGenerator</Generator>
+		</None>
+	</ItemGroup>
 
-  <ItemGroup>
-    <Compile Update="MockExtensions.Actions.cs">
-      <DependentUpon>MockExtensions.Actions.tt</DependentUpon>
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-    </Compile>
-    <Compile Update="MockExtensions.Functions.cs">
-      <DependentUpon>MockExtensions.Functions.tt</DependentUpon>
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-    </Compile>
-    <Compile Update="MockExtensions.RefActions.cs">
-      <DependentUpon>MockExtensions.RefActions.tt</DependentUpon>
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-    </Compile>
-    <Compile Update="MockExtensions.RefFunctions.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>MockExtensions.RefFunctions.tt</DependentUpon>
-    </Compile>
-  </ItemGroup>
+	<ItemGroup>
+		<Compile Update="MockExtensions.Actions.cs">
+			<DependentUpon>MockExtensions.Actions.tt</DependentUpon>
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+		</Compile>
+		<Compile Update="MockExtensions.Functions.cs">
+			<DependentUpon>MockExtensions.Functions.tt</DependentUpon>
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+		</Compile>
+		<Compile Update="MockExtensions.RefActions.cs">
+			<DependentUpon>MockExtensions.RefActions.tt</DependentUpon>
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+		</Compile>
+		<Compile Update="MockExtensions.RefFunctions.cs">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>MockExtensions.RefFunctions.tt</DependentUpon>
+		</Compile>
+	</ItemGroup>
 
-  <ItemGroup>
-    <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
-  </ItemGroup>
+	<ItemGroup>
+		<Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+	</ItemGroup>
 
-  <PropertyGroup>
-    <AnalysisLevel>latest-all</AnalysisLevel>
-  </PropertyGroup>
+	<PropertyGroup>
+		<AnalysisLevel>latest-all</AnalysisLevel>
+
+		<!-- This is simply a rule that I do not want to follow, as I do not see any good reason for that. -->
+		<NoWarn>$(NoWarn);CA1308</NoWarn>
+		<!-- For unit tests I want to use certain methods explicitly for the sake of testing them. -->
+		<NoWarn Condition="$(MSBuildProjectName.EndsWith('.Tests'))">$(NoWarn);CA1849</NoWarn>
+		<!-- For unit tests this is just annoying but not adding any value. -->
+		<NoWarn Condition="$(MSBuildProjectName.EndsWith('.Tests'))">$(NoWarn);CA2007</NoWarn>
+		<!-- I do not want to use boilerplate file headers. -->
+		<NoWarn>$(NoWarn);SA1633</NoWarn>
+		<!-- I do not prefer this style of putting usings into the namespace, and want it exactly the other way around. -->
+		<NoWarn>$(NoWarn);SA1200</NoWarn>
+
+		<TreatWarningsAsErrors Condition="'$(Configuration)' == 'Release'">true</TreatWarningsAsErrors>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
 
 </Project>
