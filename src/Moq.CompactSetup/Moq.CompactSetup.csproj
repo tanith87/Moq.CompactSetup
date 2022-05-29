@@ -110,8 +110,6 @@
 		<NoWarn Condition="$(MSBuildProjectName.EndsWith('.Tests'))">$(NoWarn);CA2007</NoWarn>
 		<!-- I do not want to use boilerplate file headers. -->
 		<NoWarn>$(NoWarn);SA1633</NoWarn>
-		<!-- I do not prefer this style of putting usings into the namespace, and want it exactly the other way around. -->
-		<NoWarn>$(NoWarn);SA1200</NoWarn>
 
 		<TreatWarningsAsErrors Condition="'$(Configuration)' == 'Release'">true</TreatWarningsAsErrors>
 	</PropertyGroup>
@@ -121,6 +119,7 @@
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
+		<AdditionalFiles Include="$(MSBuildThisFileDirectory)..\..\assets\StyleCop.json" Link="StyleCop.json" Visible="false" />
 	</ItemGroup>
 
 </Project>
