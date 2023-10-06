@@ -13,7 +13,7 @@
 		<Title>Moq CompactSetup: An enhancement for even simpler work with Moq</Title>
 		<Product>Moq Compact Setup</Product>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-		<Authors>Christoph Meißner</Authors>
+		<Authors>Christoph Meißner, tanith87</Authors>
 		<Copyright>Copyright (c) 2023 Christoph Meißner</Copyright>
 		<PackageProjectUrl>https://github.com/tanith87/Moq.CompactSetup</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/tanith87/Moq.CompactSetup</RepositoryUrl>
