@@ -18,6 +18,8 @@
 		<PackageProjectUrl>https://github.com/tanith87/Moq.CompactSetup</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/tanith87/Moq.CompactSetup</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
+		<RepositoryBranch>main</RepositoryBranch>
+		<RepositoryCommit>b0a4c41c61400fbd0824a23c89811903de8815d1</RepositoryCommit> 
 		<Description>This is a library to make Moq setups more compact and enhance its capabilities though.</Description>
 		<PackageTags>moq;tdd;mocking;mocks;unittesting;agile;unittest;compact;fluent</PackageTags>
 		<PackageLicenseExpression></PackageLicenseExpression>
