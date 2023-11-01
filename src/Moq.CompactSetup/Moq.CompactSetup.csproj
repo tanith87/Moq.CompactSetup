@@ -8,7 +8,7 @@
 	</PropertyGroup>
 
 	<PropertyGroup>
-		<Version>0.1.0.0</Version>
+		<Version>0.1.1.0</Version>
 		<Company>Christoph Meißner</Company>
 		<Title>Moq CompactSetup: An enhancement for even simpler work with Moq</Title>
 		<Product>Moq Compact Setup</Product>
